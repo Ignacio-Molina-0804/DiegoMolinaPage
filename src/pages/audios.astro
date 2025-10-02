@@ -1,7 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const { 
+  pageTitle = "Audios | Diego Molina | Redes de Mercadeo", 
+  pageDescription = "Escucha los audios de Diego Molina: herramientas, inspiración y motivación para impulsar tu crecimiento personal y profesional en redes de mercadeo." 
+} = Astro.props;
+
 ---
 
-<Layout>
+<Layout title = {pageTitle} description = {pageDescription}>
 
 </Layout>

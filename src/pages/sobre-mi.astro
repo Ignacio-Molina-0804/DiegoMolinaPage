@@ -1,9 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import ButtonContact from "../components/ButtonContact.astro";
+
+const { 
+  pageTitle = "Sobre mí | Diego Molina | Redes de Mercadeo", 
+  pageDescription = "Conoce la historia de Diego Molina: quién soy, qué hacía antes y por qué decidí emprender en redes de mercadeo para transformar mi vida y la de otros." 
+} = Astro.props;
 ---
 
-<Layout title="Sobre mí">
+<Layout title={pageTitle} description = {pageDescription}>
   <section class="relative max-w-6xl mx-auto px-6 py-24 text-white">
     <h1 class="text-5xl font-bold text-center mb-20 pt-10">
       Conocé <span class="text-[#00ff7f]">mi historia</span>

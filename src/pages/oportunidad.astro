@@ -1,7 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const { 
+  pageTitle = "Oportunidad | Diego Molina | Redes de Mercadeo", 
+  pageDescription = "Descubre la oportunidad de crecer en redes de mercadeo junto a Diego Molina. Desarrolla tu potencial, alcanza libertad financiera y una vida con propósito." 
+} = Astro.props;
 ---
 
-<Layout>
+<Layout title = {pageTitle} description = {pageDescription}>
 
 </Layout>

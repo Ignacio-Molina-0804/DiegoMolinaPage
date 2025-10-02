@@ -1,7 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const { 
+  pageTitle = "Contacto | Diego Molina | Redes de Mercadeo", 
+  pageDescription = "Ponte en contacto con Diego Molina. Da el primer paso hacia tu desarrollo personal y financiero en redes de mercadeo." 
+} = Astro.props;
 ---
 
-<Layout>
+<Layout title = {pageTitle} description = {pageDescription}>
 
 </Layout>
