@@ -6,8 +6,72 @@ const {
   pageDescription = "Escucha los audios de Diego Molina: herramientas, inspiración y motivación para impulsar tu crecimiento personal y profesional en redes de mercadeo." 
 } = Astro.props;
 
+const spotifyAudios = [
+  {
+    title: "Titulo Ejemplo",
+    description: "Descripcion Ejemplo",
+    embed: "https://open.spotify.com/embed/episode/2JZRlmjFiOPXG2vkYNaRAh?si=iJfzn8IGTxiAujyAcJiXyQ"
+  },
+  {
+    title: "Titulo Ejemplo",
+    description: "Descripcion Ejemplo",
+    embed: "https://open.spotify.com/embed/episode/2JZRlmjFiOPXG2vkYNaRAh?si=iJfzn8IGTxiAujyAcJiXyQ"
+  },
+  {
+    title: "Titulo Ejemplo",
+    description: "Descripcion Ejemplo",
+    embed: "https://open.spotify.com/embed/episode/2JZRlmjFiOPXG2vkYNaRAh?si=iJfzn8IGTxiAujyAcJiXyQ"
+  },
+  {
+    title: "Titulo Ejemplo",
+    description: "Descripcion Ejemplo",
+    embed: "https://open.spotify.com/embed/episode/2JZRlmjFiOPXG2vkYNaRAh?si=iJfzn8IGTxiAujyAcJiXyQ"
+  },
+  {
+    title: "Titulo Ejemplo",
+    description: "Descripcion Ejemplo",
+    embed: "https://open.spotify.com/embed/episode/2JZRlmjFiOPXG2vkYNaRAh?si=iJfzn8IGTxiAujyAcJiXyQ"
+  },
+  {
+    title: "Titulo Ejemplo",
+    description: "Descripcion Ejemplo",
+    embed: "https://open.spotify.com/embed/episode/2JZRlmjFiOPXG2vkYNaRAh?si=iJfzn8IGTxiAujyAcJiXyQ"
+  },
+];
 ---
 
-<Layout title = {pageTitle} description = {pageDescription}>
+<Layout title={pageTitle} description={pageDescription}>
+  <section class="relative max-w-6xl mx-auto px-6 py-24 text-white">
+    <h1 class="text-5xl font-bold text-center mb-8">
+      🎧 Mis <span class="text-[#00ff7f]">Audios</span>
+    </h1>
+    <div class="max-w-3xl mx-auto text-center text-gray-300 mb-16">
+      <p class="text-lg mb-4">
+        Aquí encontrarás algunos de mis <span class="text-[#00ff7f] font-semibold">episodios destacados en Spotify</span>, 
+        creados para inspirarte, motivarte y ayudarte a crecer en tu camino.
+      </p>
+      <p class="italic text-gray-400">
+        “Un audio puede ser el inicio de un gran cambio.”
+      </p>
+    </div>
 
+    <!-- Grid de Spotify -->
+    <div class="grid md:grid-cols-3 gap-10">
+      {spotifyAudios.map((audio) => (
+        <div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h2 class="text-xl font-semibold text-[#00ff7f] mb-3">{audio.title}</h2>
+          <p class="text-gray-300 text-sm mb-4">{audio.description}</p>
+          <iframe 
+            src={audio.embed} 
+            width="100%" 
+            height="152" 
+            frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy" 
+            class="rounded-lg"
+          ></iframe>
+        </div>
+      ))}
+    </div>
+  </section>
 </Layout>
