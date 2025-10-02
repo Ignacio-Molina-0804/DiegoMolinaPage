@@ -1,7 +1,92 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import ButtonContact from "../components/ButtonContact.astro";
 ---
 
-<Layout>
+<Layout title="Sobre mí">
+  <section class="relative max-w-6xl mx-auto px-6 py-24 text-white">
+    <h1 class="text-5xl font-bold text-center mb-20 pt-10">
+      Conocé <span class="text-[#00ff7f]">mi historia</span>
+    </h1>
 
+    <div class="space-y-24">
+      <!-- Quién soy -->
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <img 
+          src="/pageImages/diegoPerfilAhora.jpg" 
+          alt="Diego Molina" 
+          class="rounded-2xl shadow-lg w-full object-cover"
+        />
+        <div class="bg-white/5 p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-3xl font-semibold text-[#00ff7f] mb-4">¿Quién soy?</h2>
+          <p class="text-lg leading-relaxed">
+            Soy <span class="font-semibold text-[#00ff7f]">Diego Molina</span>: esposo, papá y <span class="font-semibold">emprendedor</span>.  
+            Me mueve la <span class="font-semibold text-[#00ff7f]">mentalidad de crecimiento</span> y la convicción de que cada <span class="font-semibold">desafío</span> es una <span class="font-semibold">oportunidad</span>.  
+            Mi objetivo: <span class="font-semibold text-[#00ff7f]">construir libertad</span> y compartir ese camino con otros.
+          </p>
+        </div>
+      </div>
+
+      <!-- Qué hacía antes -->
+      <div class="grid md:grid-cols-2 gap-12 items-center md:flex-row-reverse">
+        <div class="bg-white/5 p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-3xl font-semibold text-[#00ff7f] mb-4">¿Qué hacía antes?</h2>
+          <p class="text-lg leading-relaxed">
+            Trabajaba en un <span class="font-semibold">empleo tradicional</span>, con <span class="font-semibold text-[#00ff7f]">poco tiempo</span> para mi familia y sin un <span class="font-semibold">plan B</span>.  
+            La <span class="font-semibold">rutina</span> me dejaba agotado y con la sensación de que <span class="italic">nada cambiaba</span>.  
+            Hasta que descubrí que con la <span class="font-semibold text-[#00ff7f]">formación correcta</span> y una <span class="font-semibold">actitud positiva</span>, era posible construir un futuro diferente.
+          </p>
+        </div>
+        <img 
+          src="/pageImages/diegoPerfilAntes.jpg" 
+          alt="Diego antes" 
+          class="rounded-2xl shadow-lg w-full object-cover"
+        />
+      </div>
+
+      <!-- Por qué decidí entrar -->
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <img 
+          src="/pageImages/diegoLiderando.jpg" 
+          alt="Diego Molina Liderando" 
+          class="rounded-2xl shadow-lg w-full object-cover"
+        />
+        <div class="bg-white/5 p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-3xl font-semibold text-[#00ff7f] mb-4">¿Por qué decidí entrar?</h2>
+          <p class="text-lg leading-relaxed">
+            Tres frases marcaron mi vida:  
+            <span class="block mt-2">• <span class="text-[#00ff7f] font-semibold">¿Cómo te ves en cinco años?</span></span>
+            <span class="block">• <span class="font-semibold">No esperes resultados distintos</span> si haces siempre lo mismo.</span>
+            <span class="block">• Lo más valioso no es el dinero, sino el <span class="text-[#00ff7f] font-semibold">tiempo con tu familia</span>.</span>
+          </p>
+          <p class="text-lg leading-relaxed mt-4">
+            Entendí que debía <span class="font-semibold">accionar de inmediato</span>.  
+            No quería heredar <span class="italic">limitaciones</span>, sino enseñar con el ejemplo que siempre hay <span class="font-semibold text-[#00ff7f]">caminos de crecimiento</span>.
+          </p>
+        </div>
+      </div>
+
+      <!-- Qué busco transmitir -->
+      <div class="grid md:grid-cols-2 gap-12 items-center md:flex-row-reverse">
+        <div class="bg-white/5 p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-3xl font-semibold text-[#00ff7f] mb-4">¿Qué busco transmitir?</h2>
+          <p class="text-lg leading-relaxed">
+            Mi misión es <span class="font-semibold">inspirar</span> a que más personas construyan <span class="text-[#00ff7f] font-semibold">libertad</span>, con <span class="font-semibold">visión</span> y <span class="font-semibold">actitud positiva</span>.  
+            No hay <span class="font-semibold">problemas</span>, solo <span class="text-[#00ff7f]">desafíos</span>.  
+            No hay <span class="font-semibold">techo</span>, solo <span class="text-[#00ff7f]">oportunidades</span>.  
+            No hay <span class="font-semibold">quejas</span>, solo <span class="text-[#00ff7f]">aprendizajes</span>.  
+            ✨ Cuando una <span class="font-semibold">buena idea</span> se comparte, siempre llega a las <span class="text-[#00ff7f] font-semibold">personas correctas</span>.
+          </p>
+        </div>
+        <img 
+          src="/pageImages/diegoTransmitiendo.jpg" 
+          alt="Diego transmitiendo" 
+          class="rounded-2xl shadow-lg w-full object-cover"
+        />
+      </div>
+    </div>
+
+    <!-- CTA final -->
+    <ButtonContact/>
+  </section>
 </Layout>
