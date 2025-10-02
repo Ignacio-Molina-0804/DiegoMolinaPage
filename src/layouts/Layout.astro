@@ -5,10 +5,13 @@ import '@fontsource/poppins';
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
-const { title = "Diego Molina | Redes de Mercadeo", description = "Descubre tu oportunidad en redes de mercadeo junto a Diego Molina. Crecimiento personal, libertad financiera y visión de futuro." } = Astro.props;
+const { 
+  title = "Diego Molina | Redes de Mercadeo", 
+  description = "Descubre tu oportunidad en redes de mercadeo junto a Diego Molina. Crecimiento personal, libertad financiera y visión de futuro." 
+} = Astro.props;
 
 const siteUrl = "https://diegomolina.ar";
-const imagePreview = "/public/logos/isotipoVerde.webp";
+const imagePreview = "/logos/isotipoVerde.webp";
 ---
 
 <!doctype html>
@@ -40,10 +43,10 @@ const imagePreview = "/public/logos/isotipoVerde.webp";
     <meta name="twitter:image" content={imagePreview} />
 
     <!-- Favicons -->
-    <link rel="icon" type="image/png" href={imagePreview} />
+    <link rel="icon" type="image/webp" href={imagePreview} />
     <link rel="apple-touch-icon" sizes="180x180" href={imagePreview} />
-    <link rel="icon" type="image/png" sizes="32x32" href={imagePreview} />
-    <link rel="icon" type="image/png" sizes="16x16" href={imagePreview} />
+    <link rel="icon" type="image/webp" sizes="32x32" href={imagePreview} />
+    <link rel="icon" type="image/webp" sizes="16x16" href={imagePreview} />
 
     <!-- FontAwesome -->
     <link
