@@ -1,44 +1,52 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
-const { 
-  pageTitle = "Audios | Diego Molina | Redes de Mercadeo", 
-  pageDescription = "Escucha los audios de Diego Molina: herramientas, inspiración y motivación para impulsar tu crecimiento personal y profesional en redes de mercadeo." 
+import ButtonContact from "../components/ButtonContact.astro";
+
+const {
+  pageTitle = "Audios | Diego Molina | Redes de Mercadeo",
+  pageDescription = "Escucha los audios de Diego Molina: herramientas, inspiración y motivación para impulsar tu crecimiento personal y profesional en redes de mercadeo.",
 } = Astro.props;
 
 const spotifyAudios = [
   {
     title: "Juegos de la Vida",
     description: "",
-    embed: "https://open.spotify.com/embed/episode/5ffjDLcEyqxbL2qDfigW5f?si=L8fj7xYxQRaJbaVMAr4nUA"
+    embed:
+      "https://open.spotify.com/embed/episode/5ffjDLcEyqxbL2qDfigW5f?si=L8fj7xYxQRaJbaVMAr4nUA",
   },
   {
     title: "Creemos Conciencia",
     description: "",
-    embed: "https://open.spotify.com/embed/episode/0hjPDBvWtxrjKy8P2yWriw?si=ibH5HdMXRC6wvha5Ll9QyA"
+    embed:
+      "https://open.spotify.com/embed/episode/0hjPDBvWtxrjKy8P2yWriw?si=ibH5HdMXRC6wvha5Ll9QyA",
   },
   {
     title: "Ser Empresario",
     description: "",
-    embed: "https://open.spotify.com/embed/episode/3UUOXpvw1I7AvVhRv9nJL4?si=_uq3VjLFSDyOK8Bh2Wgs3g"
+    embed:
+      "https://open.spotify.com/embed/episode/3UUOXpvw1I7AvVhRv9nJL4?si=_uq3VjLFSDyOK8Bh2Wgs3g",
   },
   {
     title: "El Acueducto",
     description: "",
-    embed: "https://open.spotify.com/embed/episode/6VecQGmzJJTcMrrpQ6h9FE?si=o_OkxDxhSiKA292KzovaBA"
+    embed:
+      "https://open.spotify.com/embed/episode/6VecQGmzJJTcMrrpQ6h9FE?si=o_OkxDxhSiKA292KzovaBA",
   },
 ];
 ---
 
 <Layout title={pageTitle} description={pageDescription}>
-  <section class="relative max-w-6xl mx-auto px-6 py-20 text-white"> 
+  <section class="relative max-w-6xl mx-auto px-6 py-20 text-white">
     <h1 class="text-5xl font-bold text-center mb-8 pt-10">
       Mis <span class="text-[#00ff7f]">Audios</span>
     </h1>
     <div class="max-w-3xl mx-auto text-center text-gray-300 mb-16">
       <p class="text-lg mb-4">
-        Aquí encontrarás algunos de mis <span class="text-[#00ff7f] font-semibold">episodios destacados en Spotify</span>, 
-        creados para inspirarte, motivarte y ayudarte a crecer en tu camino.
+        Aquí encontrarás algunos de mis <span
+          class="text-[#00ff7f] font-semibold"
+          >episodios destacados en Spotify</span
+        >, creados para inspirarte, motivarte y ayudarte a crecer en tu camino.
       </p>
       <p class="italic text-gray-400">
         “Un audio puede ser el inicio de un gran cambio.”
@@ -47,21 +55,32 @@ const spotifyAudios = [
 
     <!-- Grid de Spotify -->
     <div class="grid md:grid-cols-2 gap-10">
-      {spotifyAudios.map((audio) => (
-        <div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition">
-          <h2 class="text-xl font-semibold text-[#00ff7f] mb-3">{audio.title}</h2>
-          <p class="text-gray-300 text-sm mb-4">{audio.description}</p>
-          <iframe 
-            src={audio.embed} 
-            width="100%" 
-            height="152" 
-            frameborder="0"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-            loading="lazy" 
-            class="rounded-lg"
-          ></iframe>
-        </div>
-      ))}
+      {
+        spotifyAudios.map((audio) => (
+          <div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+            <h2 class="text-xl font-semibold text-[#00ff7f] mb-3">
+              {audio.title}
+            </h2>
+            <p class="text-gray-300 text-sm mb-4">{audio.description}</p>
+            <iframe
+              src={audio.embed}
+              width="100%"
+              height="152"
+              frameborder="0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              class="rounded-lg"
+            />
+          </div>
+        ))
+      }
     </div>
   </section>
+
+  <ButtonContact
+    title="¿Querés dar el siguiente paso?"
+    subtitle="Si lo que escuchaste te inspiró, escribime y empecemos a trabajar juntos en tu crecimiento."
+    buttonText="Hablemos"
+    buttonLink="/contacto"
+  />
 </Layout>
