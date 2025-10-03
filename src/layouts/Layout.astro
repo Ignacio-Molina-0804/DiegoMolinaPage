@@ -11,12 +11,6 @@ const {
 } = Astro.props;
 
 const siteUrl = "https://diegomolina.ar";
-
-// Favicons en PNG (compatibilidad universal)
-const imageFavicon = "/public/logos/isotipoVerde.png";
-
-// Previews en WebP (para redes sociales, SEO)
-const imagePreview = "/logos/isotipoVerdeConFondo.webp";
 ---
 
 <!doctype html>
@@ -38,20 +32,20 @@ const imagePreview = "/logos/isotipoVerdeConFondo.webp";
     <meta property="og:url" content={siteUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={imagePreview} />
+    <meta property="og:image" content="/logos/isotipoVerdeConFondo.webp" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content={siteUrl} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={imagePreview} />
+    <meta name="twitter:image" content="/logos/isotipoVerdeConFondo.webp" />
 
     <!-- Favicons (PNG para compatibilidad total) -->
-    <link rel="icon" href={imageFavicon} type="image/png" />
-    <link rel="icon" type="image/png" sizes="32x32" href={imageFavicon} />
-    <link rel="icon" type="image/png" sizes="16x16" href={imageFavicon} />
-    <link rel="apple-touch-icon" sizes="180x180" href={imageFavicon} />
+    <link rel="icon" href="/logos/isotipoVerde.png" type="image/png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/logos/isotipoVerde.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/logos/isotipoVerde.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/logos/isotipoVerde.png" />
   </head>
 
   <body

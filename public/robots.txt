@@ -1,0 +1,12 @@
+# robots.txt para diegomolina.ar
+# Control de rastreo e indexación SEO
+
+# Permitir a todos los buscadores rastrear el sitio
+User-agent: *
+Disallow: /admin/
+Disallow: /api/
+Disallow: /tmp/
+Allow: /
+
+# Sitemap (importante para SEO)
+Sitemap: https://diegomolina.ar/sitemap.xml
