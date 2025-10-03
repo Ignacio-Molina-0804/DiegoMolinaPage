@@ -11,7 +11,12 @@ const {
 } = Astro.props;
 
 const siteUrl = "https://diegomolina.ar";
-const imagePreview = "/logos/isotipoVerde.webp";
+
+// Favicons en PNG (compatibilidad universal)
+const imageFavicon = "/public/logos/isotipoVerde.png";
+
+// Previews en WebP (para redes sociales, SEO)
+const imagePreview = "/public/logos/isotipoVerdeConFondo.webp";
 ---
 
 <!doctype html>
@@ -42,11 +47,11 @@ const imagePreview = "/logos/isotipoVerde.webp";
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={imagePreview} />
 
-    <!-- Favicons -->
-    <link rel="icon" type="image/webp" href={imagePreview} />
-    <link rel="apple-touch-icon" sizes="180x180" href={imagePreview} />
-    <link rel="icon" type="image/webp" sizes="32x32" href={imagePreview} />
-    <link rel="icon" type="image/webp" sizes="16x16" href={imagePreview} />
+    <!-- Favicons (PNG para compatibilidad total) -->
+    <link rel="icon" href={imageFavicon} type="image/png" />
+    <link rel="icon" type="image/png" sizes="32x32" href={imageFavicon} />
+    <link rel="icon" type="image/png" sizes="16x16" href={imageFavicon} />
+    <link rel="apple-touch-icon" sizes="180x180" href={imageFavicon} />
 
     <!-- FontAwesome -->
     <link

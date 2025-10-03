@@ -9,9 +9,7 @@ import ButtonContact from "../components/ButtonContact.astro";
   <Hero />
 
   <!-- Qué es lo que vas a encontrar -->
-  <section
-    class="py-24 px-6 text-center text-white"
-  >
+  <section class="py-24 px-6 text-center text-white">
     <h2 class="text-4xl font-bold mb-8">
       ¿Qué vas a encontrar en <span class="text-[#00ff7f]">diegomolina.ar</span
       >?
@@ -29,28 +27,42 @@ import ButtonContact from "../components/ButtonContact.astro";
     </p>
 
     <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-      <div class="p-6 bg-white/5 rounded-xl shadow hover:scale-105 transition">
-        <h3 class="text-2xl font-semibold mb-4 text-[#00ff7f]">Formación</h3>
+      <!-- SOBRE MI -->
+      <a
+        href="/sobre-mi"
+        class="block p-6 bg-white/5 rounded-xl shadow hover:scale-105 transition"
+      >
+        <h3 class="text-2xl font-semibold mb-4 text-[#00ff7f]">Sobre Mi</h3>
         <p>
-          Contenido para desarrollar tu <span class="font-semibold"
-            >mentalidad</span
-          > y potenciar tu <span class="font-semibold">crecimiento</span>.
+          Conocé mi historia, mis aprendizajes y el camino que me llevó a
+          dedicarme a las
+          <span class="font-semibold">redes de mercadeo</span>.
         </p>
-      </div>
-      <div class="p-6 bg-white/5 rounded-xl shadow hover:scale-105 transition">
+      </a>
+
+      <!-- INSPIRACIÓN -->
+      <a
+        href="/audios"
+        class="block p-6 bg-white/5 rounded-xl shadow hover:scale-105 transition"
+      >
         <h3 class="text-2xl font-semibold mb-4 text-[#00ff7f]">Inspiración</h3>
         <p>
           Acceso a <span class="font-semibold">audios</span> y mensajes que te ayudan
           a mantener la <span class="font-semibold">energía</span> enfocada.
         </p>
-      </div>
-      <div class="p-6 bg-white/5 rounded-xl shadow hover:scale-105 transition">
+      </a>
+
+      <!-- OPORTUNIDAD -->
+      <a
+        href="/oportunidad"
+        class="block p-6 bg-white/5 rounded-xl shadow hover:scale-105 transition"
+      >
         <h3 class="text-2xl font-semibold mb-4 text-[#00ff7f]">Oportunidad</h3>
         <p>
           Descubrí cómo las <span class="font-semibold">redes de mercadeo</span>
           pueden abrirte un <span class="font-semibold">nuevo futuro</span>.
         </p>
-      </div>
+      </a>
     </div>
   </section>
 
