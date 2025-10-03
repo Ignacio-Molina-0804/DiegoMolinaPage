@@ -13,36 +13,26 @@ const spotifyAudios = [
     embed: "https://open.spotify.com/embed/episode/5ffjDLcEyqxbL2qDfigW5f?si=L8fj7xYxQRaJbaVMAr4nUA"
   },
   {
-    title: "Titulo Ejemplo",
+    title: "Creemos Conciencia",
     description: "",
-    embed: "https://open.spotify.com/embed/episode/2JZRlmjFiOPXG2vkYNaRAh?si=iJfzn8IGTxiAujyAcJiXyQ"
+    embed: "https://open.spotify.com/embed/episode/0hjPDBvWtxrjKy8P2yWriw?si=ibH5HdMXRC6wvha5Ll9QyA"
   },
   {
-    title: "Titulo Ejemplo",
+    title: "Ser Empresario",
     description: "",
-    embed: "https://open.spotify.com/embed/episode/2JZRlmjFiOPXG2vkYNaRAh?si=iJfzn8IGTxiAujyAcJiXyQ"
+    embed: "https://open.spotify.com/embed/episode/3UUOXpvw1I7AvVhRv9nJL4?si=_uq3VjLFSDyOK8Bh2Wgs3g"
   },
   {
-    title: "Titulo Ejemplo",
+    title: "El Acueducto",
     description: "",
-    embed: "https://open.spotify.com/embed/episode/2JZRlmjFiOPXG2vkYNaRAh?si=iJfzn8IGTxiAujyAcJiXyQ"
-  },
-  {
-    title: "Titulo Ejemplo",
-    description: "",
-    embed: "https://open.spotify.com/embed/episode/2JZRlmjFiOPXG2vkYNaRAh?si=iJfzn8IGTxiAujyAcJiXyQ"
-  },
-  {
-    title: "Titulo Ejemplo",
-    description: "",
-    embed: "https://open.spotify.com/embed/episode/2JZRlmjFiOPXG2vkYNaRAh?si=iJfzn8IGTxiAujyAcJiXyQ"
+    embed: "https://open.spotify.com/embed/episode/6VecQGmzJJTcMrrpQ6h9FE?si=o_OkxDxhSiKA292KzovaBA"
   },
 ];
 ---
 
 <Layout title={pageTitle} description={pageDescription}>
-  <section class="relative max-w-6xl mx-auto px-6 py-24 text-white">
-    <h1 class="text-5xl font-bold text-center mb-8">
+  <section class="relative max-w-6xl mx-auto px-6 py-20 text-white"> 
+    <h1 class="text-5xl font-bold text-center mb-8 pt-10">
       Mis <span class="text-[#00ff7f]">Audios</span>
     </h1>
     <div class="max-w-3xl mx-auto text-center text-gray-300 mb-16">
@@ -56,7 +46,7 @@ const spotifyAudios = [
     </div>
 
     <!-- Grid de Spotify -->
-    <div class="grid md:grid-cols-3 gap-10">
+    <div class="grid md:grid-cols-2 gap-10">
       {spotifyAudios.map((audio) => (
         <div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition">
           <h2 class="text-xl font-semibold text-[#00ff7f] mb-3">{audio.title}</h2>
