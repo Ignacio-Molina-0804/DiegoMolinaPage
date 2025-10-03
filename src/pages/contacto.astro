@@ -1,0 +1,156 @@
+---
+import Layout from "../layouts/Layout.astro";
+import WhatsappIcon from "../components/icons/WhatsappIcon.astro";
+import InstagramIcon from "../components/icons/InstagramIcon.astro";
+
+const {
+  pageTitle = "Contacto | Diego Molina | Redes de Mercadeo",
+  pageDescription = "Ponte en contacto con Diego Molina. Da el primer paso hacia tu desarrollo personal y financiero en redes de mercadeo.",
+} = Astro.props;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <section
+    class="relative min-h-screen flex flex-col items-center px-6 py-20 text-white"
+  >
+    <!-- Intro -->
+    <div class="max-w-3xl text-center mb-16 pt-10">
+      <h1 class="text-5xl font-bold text-[#00ff7f] mb-4">Hablemos</h1>
+      <p class="text-gray-300 text-lg">
+        Si llegaste hasta aquí es porque estás buscando dar un paso importante.
+        Completá el cuestionario o escribime directamente: estaré encantado de
+        acompañarte en este camino de crecimiento.
+      </p>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="max-w-6xl w-full grid md:grid-cols-2 gap-10">
+      <!-- Formulario -->
+      <div class="bg-[#1a0b20]/90 backdrop-blur-md rounded-2xl shadow-lg p-8">
+        <h2 class="text-2xl font-bold text-[#00ff7f] mb-6">Tu Cuestionario</h2>
+
+        <form
+          action="https://formsubmit.co/diegocomomaradona@gmail.com"
+          method="POST"
+          class="space-y-6"
+        >
+          <!-- Nombre -->
+          <div>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Tu nombre"
+              required
+              class="w-full px-4 py-3 rounded-lg bg-[#0f172a] border border-gray-700 text-white placeholder-gray-400 focus:border-[#00ff7f] focus:ring-2 focus:ring-[#00ff7f] outline-none transition"
+            />
+          </div>
+
+          <!-- Email -->
+          <div>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Tu email"
+              required
+              class="w-full px-4 py-3 rounded-lg bg-[#0f172a] border border-gray-700 text-white placeholder-gray-400 focus:border-[#00ff7f] focus:ring-2 focus:ring-[#00ff7f] outline-none transition"
+            />
+          </div>
+
+          <!-- Celular -->
+          <div>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Tu celular"
+              required
+              class="w-full px-4 py-3 rounded-lg bg-[#0f172a] border border-gray-700 text-white placeholder-gray-400 focus:border-[#00ff7f] focus:ring-2 focus:ring-[#00ff7f] outline-none transition"
+            />
+          </div>
+
+          <!-- Mensaje -->
+          <div>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Escribe tu mensaje..."
+              required
+              class="w-full px-4 py-3 rounded-lg bg-[#0f172a] border border-gray-700 text-white placeholder-gray-400 focus:border-[#00ff7f] focus:ring-2 focus:ring-[#00ff7f] outline-none transition"
+            ></textarea>
+          </div>
+
+          <!-- Botón -->
+          <button
+            type="submit"
+            class="w-full py-3 rounded-lg bg-gradient-to-r from-[#00ff7f] to-[#00cc66] text-[#15011c] font-semibold text-lg hover:opacity-90 transition"
+          >
+            Enviar
+          </button>
+
+          <!-- Config formsubmit -->
+          <input
+            type="hidden"
+            name="_next"
+            value="https://diegomolina.ar/contacto"
+          />
+          <input type="hidden" name="_captcha" value="true" />
+        </form>
+      </div>
+
+      <!-- Contacto directo -->
+      <!-- Contacto directo -->
+      <div
+        class="bg-[#1a0b20]/90 backdrop-blur-md rounded-2xl shadow-lg p-8 flex flex-col justify-between"
+      >
+        <div>
+          <h2 class="text-2xl font-bold text-[#00ff7f] mb-4">Contacto</h2>
+          <p class="text-gray-300 mb-6">
+            ¿Querés escribirme directamente? Estas son las formas más rápidas de
+            ponerte en contacto conmigo:
+          </p>
+
+          <div class="space-y-4 text-lg mb-8">
+            <a
+              href="https://www.instagram.com/diegomolina.ar"
+              target="_blank"
+              class="flex items-center space-x-3 hover:text-[#00ff7f] transition"
+            >
+              <InstagramIcon class="w-6 h-6" />
+              <span>@diegomolina.ar</span>
+            </a>
+
+            <a
+              href="https://wa.me/+5492616331357"
+              target="_blank"
+              class="flex items-center space-x-3 hover:text-[#00ff7f] transition"
+            >
+              <WhatsappIcon class="w-6 h-6" />
+              <span>+54 9 261 633 1357</span>
+            </a>
+          </div>
+
+          <!-- Texto invitación -->
+          <p class="text-sm text-gray-400 leading-relaxed">
+            Además de escribirme, seguime en redes: comparto contenido de
+            crecimiento personal, motivación y estrategias en redes de mercadeo
+            todos los días. ¡Sumate y mantenete inspirado!
+          </p>
+        </div>
+
+        <!-- Extra: motivos de contacto -->
+        <div class="mt-6 bg-[#0f172a]/70 rounded-xl p-6">
+          <h3 class="text-lg font-semibold mb-4">¿Por qué contactarme?</h3>
+          <ul class="space-y-2 text-gray-300 text-sm">
+            <li>✅ Acompañamiento personalizado</li>
+            <li>✅ Experiencia en redes de mercadeo</li>
+            <li>✅ Crecimiento personal y financiero</li>
+            <li>✅ Inspiración y motivación constante</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
