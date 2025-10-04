@@ -9,8 +9,18 @@
       />
     </a>
 
-    <!-- Navigation -->
-    <nav class="space-x-6 font-medium">
+    <!-- Botón hamburguesa (solo en móvil) -->
+    <button 
+      id="menu-btn"
+      class="md:hidden flex flex-col justify-center items-center space-y-1 focus:outline-none relative w-8 h-8"
+    >
+      <span class="line1 block w-6 h-0.5 bg-white transition-all duration-300"></span>
+      <span class="line2 block w-6 h-0.5 bg-white transition-all duration-300"></span>
+      <span class="line3 block w-6 h-0.5 bg-white transition-all duration-300"></span>
+    </button>
+
+    <!-- Navegación escritorio -->
+    <nav class="hidden md:flex space-x-6 font-medium">
       <a href="/" class="hover:text-[#00ff7f] transition">Home</a>
       <a href="/sobre-mi" class="hover:text-[#00ff7f] transition">Sobre mí</a>
       <a href="/oportunidad" class="hover:text-[#00ff7f] transition">Oportunidad</a>
@@ -18,4 +28,21 @@
       <a href="/contacto" class="hover:text-[#00ff7f] transition">Contacto</a>
     </nav>
   </div>
+
+  <!-- Navegación móvil (acordeón) -->
+  <nav 
+    id="mobile-menu" 
+    class="md:hidden max-h-0 overflow-hidden transition-all duration-500 bg-[#15011c]/90 backdrop-blur-md"
+  >
+    <div class="flex flex-col space-y-4 px-6 py-4 font-medium">
+      <a href="/" class="hover:text-[#00ff7f] transition">Home</a>
+      <a href="/sobre-mi" class="hover:text-[#00ff7f] transition">Sobre mí</a>
+      <a href="/oportunidad" class="hover:text-[#00ff7f] transition">Oportunidad</a>
+      <a href="/audios" class="hover:text-[#00ff7f] transition">Audios</a>
+      <a href="/contacto" class="hover:text-[#00ff7f] transition">Contacto</a>
+    </div>
+  </nav>
 </header>
+
+<!-- Import del JS -->
+<script src="/src/scripts/menuHeader.js" defer></script>
