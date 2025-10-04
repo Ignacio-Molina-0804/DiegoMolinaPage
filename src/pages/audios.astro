@@ -1,6 +1,7 @@
 ---
-import Layout from "../layouts/Layout.astro";
+// audios.astro
 
+import Layout from "../layouts/Layout.astro";
 import ButtonContact from "../components/ButtonContact.astro";
 
 const {
@@ -49,31 +50,33 @@ const spotifyAudios = [
 ---
 
 <Layout title={pageTitle} description={pageDescription}>
-  <section class="relative max-w-6xl mx-auto px-6 py-20 text-white">
-    <h1 class="text-5xl font-bold text-center mb-8 pt-10">
+  <section class="relative max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 text-white">
+    <!-- Título -->
+    <h1 class="text-4xl sm:text-5xl font-bold text-center mb-8 pt-6 sm:pt-10">
       Mis <span class="text-[#00ff7f]">Audios</span>
     </h1>
-    <div class="max-w-3xl mx-auto text-center text-gray-300 mb-16">
-      <p class="text-lg mb-4">
-        Aquí encontrarás algunos de mis <span
-          class="text-[#00ff7f] font-semibold"
-          >episodios destacados en Spotify</span
-        >, creados para inspirarte, motivarte y ayudarte a crecer en tu camino.
+
+    <!-- Descripción -->
+    <div class="max-w-2xl sm:max-w-3xl mx-auto text-center text-gray-300 mb-12 sm:mb-16">
+      <p class="text-base sm:text-lg mb-4">
+        Aquí encontrarás algunos de mis
+        <span class="text-[#00ff7f] font-semibold">episodios destacados en Spotify</span>,
+        creados para inspirarte, motivarte y ayudarte a crecer en tu camino.
       </p>
-      <p class="italic text-gray-400">
+      <p class="italic text-gray-400 text-sm sm:text-base">
         “Un audio puede ser el inicio de un gran cambio.”
       </p>
     </div>
 
-    <!-- Grid de Spotify -->
-    <div class="grid md:grid-cols-2 gap-10">
+    <!-- Grid -->
+    <div class="grid gap-8 sm:gap-10 md:grid-cols-2">
       {
         spotifyAudios.map((audio) => (
-          <div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition">
-            <h2 class="text-xl font-semibold text-[#00ff7f] mb-3">
+          <div class="bg-white/5 backdrop-blur-md p-5 sm:p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+            <h2 class="text-lg sm:text-xl font-semibold text-[#00ff7f] mb-2 sm:mb-3">
               {audio.title}
             </h2>
-            <p class="text-gray-300 text-sm mb-4">{audio.description}</p>
+            <p class="text-gray-300 text-xs sm:text-sm mb-3 sm:mb-4">{audio.description}</p>
             <iframe
               src={audio.embed}
               width="100%"
