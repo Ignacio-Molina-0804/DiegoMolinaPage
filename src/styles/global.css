@@ -8,9 +8,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* Fix para iOS Safari */
-@supports (-webkit-touch-callout: none) {
-  body {
-    background-attachment: scroll !important;
-  }
+.bg-gradient {
+  background-image:
+    radial-gradient(circle at 50% -400px, #00ff7f 0%, transparent 68%),
+    radial-gradient(circle at 80% 600px, rgba(255, 255, 255, 0.08) 0%, transparent 50%),
+    linear-gradient(to bottom, #000000 0%, #15011c 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
