@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="¡Gracias por tu mensaje!" description="Tu mensaje fue enviado con éxito. Muy pronto me pondré en contacto contigo.">
+  <section class="relative max-w-4xl mx-auto px-6 py-24 text-center text-white">
+    <!-- Icono check animado -->
+    <div class="flex justify-center mb-8 pt-10">
+      <div class="w-20 h-20 flex items-center justify-center rounded-full bg-[#00ff7f]/20 border-4 border-[#00ff7f] animate-bounce">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#00ff7f]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Título -->
+    <h1 class="text-4xl font-bold mb-4">¡Gracias por tu mensaje!</h1>
+
+    <!-- Texto -->
+    <p class="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
+      Tu consulta fue enviada con éxito y la recibí correctamente.  
+      En breve me pondré en contacto contigo para responder todas tus dudas.
+    </p>
+
+    <!-- Botones -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a 
+        href="/" 
+        class="px-8 py-3 rounded-xl bg-[#00ff7f] text-gray-900 font-semibold shadow-lg hover:bg-[#00e670] transition-colors duration-300"
+      >
+        Volver al inicio
+      </a>
+      <a 
+        href="/oportunidad" 
+        class="px-8 py-3 rounded-xl bg-white/10 text-white font-semibold shadow-lg hover:bg-white/20 transition-colors duration-300"
+      >
+        Ver la oportunidad
+      </a>
+    </div>
+  </section>
+</Layout>
