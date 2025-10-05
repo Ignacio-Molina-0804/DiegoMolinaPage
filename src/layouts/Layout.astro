@@ -20,54 +20,41 @@ const siteUrl = "https://diegomolina.ar";
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
 
-    <!-- Title -->
     <title>{title}</title>
-
-    <!-- Primary SEO -->
     <meta name="description" content={description} />
     <link rel="canonical" href={siteUrl} />
 
-    <!-- Open Graph / Facebook -->
+    <!-- OG / Twitter -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={siteUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content="/logos/isotipoVerdeConFondo.webp" />
 
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content={siteUrl} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content="/logos/isotipoVerdeConFondo.webp" />
 
-    <!-- Favicons (PNG para compatibilidad total) -->
+    <!-- Favicons -->
     <link rel="icon" href="/logos/isotipoVerde.png" type="image/png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/logos/isotipoVerde.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/logos/isotipoVerde.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/logos/isotipoVerde.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/logos/isotipoVerde.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/logos/isotipoVerde.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/logos/isotipoVerde.png" />
   </head>
 
-  <body class="min-h-screen text-white relative">
-    <!-- Fondo fijo -->
+  <body class="flex flex-col min-h-screen text-white relative">
+    <!-- Fondo -->
     <div class="pointer-events-none fixed inset-0 -z-10 bg-gradient"></div>
 
     <Header />
+
+    <!-- Contenido principal que ocupa el espacio disponible -->
+  <main class="flex-grow">
     <slot />
+  </main>
+
     <Footer />
   </body>
 </html>
