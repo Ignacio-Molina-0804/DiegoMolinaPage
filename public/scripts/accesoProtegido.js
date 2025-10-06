@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   overlay.style.width = "100vw";
   overlay.style.height = "100vh";
   overlay.style.background = "rgba(0,0,0,0.85)";
-  overlay.style.backdropFilter = "blur(10px)";
+  overlay.style.backdropFilter = "blur(16px)";
   overlay.style.zIndex = "9999";
   overlay.style.display = "flex";
   overlay.style.flexDirection = "column";
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ">
       <h2 style="color: #00ff7f; margin-bottom: 1rem;">Acceso restringido</h2>
       <p style="margin-bottom: 1rem; font-size: 1rem;">Ingresá la clave para continuar</p>
-      <input id="claveInput" type="password" placeholder="Clave de acceso"
+      <input id="claveInput" type="password" placeholder="Ingresa la Contraseña"
         style="padding: 0.6rem 1rem; border-radius: 0.5rem; border: none; outline: none; text-align: center; font-size: 1rem; width: 100%;" />
       <button id="btnAcceder" style="
         display: block;
