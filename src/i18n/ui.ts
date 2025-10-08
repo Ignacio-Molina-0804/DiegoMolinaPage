@@ -409,6 +409,26 @@ export const labels = {
           </ul>
         </div>
     `,
+
+    // Gracias
+
+    "thanks.pageTitle" : "Gracias | Diego Molina | Redes de Mercadeo",
+    "thanks.pageDescription" : "Tu mensaje fue enviado con éxito. Muy pronto me pondré en contacto contigo.",
+
+    "thanks.title" : "¡Gracias por tu mensaje!",
+    "thanks.description" : "Tu consulta fue enviada con éxito y la recibí correctamente. En breve me pondré en contacto contigo para responder todas tus dudas.",
+    "thanks.redirect" : 
+    `
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/" class="px-8 py-3 rounded-xl bg-[#00ff7f] text-gray-900 font-semibold shadow-lg hover:bg-[#00e670] transition-colors duration-300">
+        Volver al inicio
+      </a>
+      <a href="/oportunidad" class="px-8 py-3 rounded-xl bg-white/10 text-white font-semibold shadow-lg hover:bg-white/20 transition-colors duration-300">
+        Ver la oportunidad
+      </a>
+    </div>
+    `
+
   },
 
   pt: {
@@ -813,5 +833,24 @@ export const labels = {
           </ul>
         </div>
     `,
+
+    // Obrigado
+
+    "thanks.pageTitle" : "Obrigado | Diego Molina | Redes de Marketing",
+    "thanks.pageDescription" : "Sua mensagem foi enviada com sucesso. Em breve entrarei em contato com você.",
+
+    "thanks.title" : "Obrigado pela sua mensagem!",
+    "thanks.description" : "Sua consulta foi enviada com sucesso e recebi corretamente. Em breve entrarei em contato para responder todas as suas dúvidas.",
+    "thanks.redirect" : 
+    `
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/" class="px-8 py-3 rounded-xl bg-[#00ff7f] text-gray-900 font-semibold shadow-lg hover:bg-[#00e670] transition-colors duration-300">
+        Voltar ao início
+      </a>
+      <a href="/oportunidad" class="px-8 py-3 rounded-xl bg-white/10 text-white font-semibold shadow-lg hover:bg-white/20 transition-colors duration-300">
+        Ver a oportunidade
+      </a>
+    </div>
+    `
   },
 };
