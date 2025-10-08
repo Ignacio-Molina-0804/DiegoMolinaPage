@@ -237,6 +237,102 @@ export const labels = {
         </div>
       </div>
     `,
+
+    // Oportunidad
+    
+    "oportunity.pageTitle" : `Oportunidad | Diego Molina | Redes de Mercadeo`,
+    "oportunity.pageDescription" : `Descubrí cómo generar ingresos con un supermercado digital global, presente en más de 100 países y con más de 60 años de historia. Transforma tu consumo en una oportunidad de negocio.`,
+
+    "oportunity.buttonContact.title" : "¿Listo para aprender cómo hacerlo?",
+    "oportunity.buttonContact.subtitle" : "Podés comenzar hoy mismo. En 5 años vas a agradecer haber dado este paso hacia tu libertad.",
+    "oportunity.buttonContact.buttonText" : "Quiero aprender cómo hacerlo",
+
+    "oportunity.intro" : 
+    `
+    <div class="text-center mb-12 sm:mb-20">
+      <h1 class="text-3xl sm:text-5xl font-bold mb-6 pt-10">
+        Una <span class="text-[#00ff7f]">Oportunidad</span> que puede cambiar tu vida
+      </h1>
+      <p class="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+        ¿Sabías que tu casa puede convertirse en una <span class="font-semibold">mina de oro</span>… sin salir de ella?
+        Hoy existe una <span class="text-[#00ff7f]">plataforma global</span>, con más de 60 años de historia y presente en más de 100 países,
+        que funciona como un <span class="font-semibold">supermercado 100% digital</span>.
+      </p>
+    </div>
+    `,
+    "oportunity.benefitsOfConsumption":
+    `
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center mb-16 sm:mb-20">
+      <div class="bg-white/5 p-6 sm:p-8 rounded-2xl backdrop-blur-sm shadow-lg hover:scale-[1.02] transition">
+        <h2 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">¿Qué ofrece?</h2>
+        <p class="text-gray-300 leading-relaxed">
+          Te permite <span class="font-semibold">comprar directamente de fábrica</span>, evitando intermediarios y pagando menos por lo que ya consumís:
+          <br /><br />
+          ✔ Nutrición <br />
+          ✔ Cuidado personal <br />
+          ✔ Cuidado del hogar <br />
+          ✔ Belleza
+        </p>
+      </div>
+      <div>
+        <img src="/pageImages/oportunidadSupermercado.webp" alt="Supermercado digital"
+          class="rounded-2xl w-full object-cover" />
+      </div>
+    </div>
+    `,
+    "oportunity.generateIncome" : 
+    `
+    <div class="bg-gradient-to-r from-[#0f172a] to-[#1a0b20] p-8 sm:p-10 rounded-2xl shadow-xl mb-16 sm:mb-20">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center">Lo más interesante...</h2>
+      <p class="text-base sm:text-lg text-gray-300 text-center max-w-3xl mx-auto">
+        También podés <span class="text-[#00ff7f] font-semibold">generar ingresos</span> recomendando la plataforma a otros.
+      </p>
+    </div>
+    `,
+    "oportunity.incomeExample" : 
+    `
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center mb-16 sm:mb-20">
+      <div>
+        <img src="/pageImages/redDeUsuarios.webp" alt="Red de usuarios"
+          class="rounded-2xl w-full object-cover" />
+      </div>
+      <div class="bg-white/5 p-6 sm:p-8 rounded-2xl backdrop-blur-sm shadow-lg">
+        <h2 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">Imaginá esto</h2>
+        <p class="text-gray-300 leading-relaxed">
+          Tenés tu propia red de <span class="font-semibold">1.000 usuarios</span>, cada uno consumiendo
+          <span class="text-[#00ff7f] font-semibold"> U$D 50 al mes</span>. Esa red movería
+          <span class="font-semibold"> U$D 50.000 mensuales</span>.
+        </p>
+        <p class="mt-4 text-gray-300 leading-relaxed">
+          De esa facturación mensual, podrías ganar entre el <span class="font-semibold">3% y el 21%</span>.
+          Tu ingreso estaría entre <span class="text-[#00ff7f] font-semibold">U$D 1.500 y U$D 10.000</span>.
+        </p>
+      </div>
+    </div>
+    `,
+    "oportunity.marketingPower":
+    `
+    <div class="bg-[#00ff7f]/10 p-6 sm:p-8 rounded-2xl shadow-lg mb-16 sm:mb-20 text-center">
+      <p class="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        ✨ Y probablemente vos solo invitaste a <span class="font-semibold">10 personas</span>…
+        El resto se multiplicó gracias al <span class="text-[#00ff7f] font-semibold">poder del mercadeo en red</span>.
+      </p>
+    </div>
+    `,
+    "oportunity.finalReflection":
+    `
+    <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4">Si te tomara de 2 a 5 años construirlo...</h2>
+      <p class="text-base sm:text-lg text-gray-300 mb-4">
+        ¿Te interesaría descubrir el <span class="text-[#00ff7f] font-semibold">paso a paso</span>?
+      </p>
+      <p class="text-base sm:text-lg text-gray-300 mb-4">
+        Lo mejor es que esta oportunidad no tiene fronteras: estamos en gran parte de
+        <span class="text-[#00ff7f] font-semibold"> Latinoamérica</span>.
+      </p>
+    </div>
+    `,
+
   },
 
   pt: {
@@ -469,6 +565,101 @@ export const labels = {
             class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
         </div>
       </div>
+    `,
+
+    // Oportunidade
+
+    "oportunity.pageTitle" : `Oportunidade | Diego Molina | Redes de Marketing`,
+    "oportunity.pageDescription" : `Descubra como gerar renda com um supermercado digital global, presente em mais de 100 países e com mais de 60 anos de história. Transforme seu consumo em uma oportunidade de negócio.`,
+
+    "oportunity.buttonContact.title" : "Pronto para aprender como fazer?",
+    "oportunity.buttonContact.subtitle" : "Você pode começar hoje mesmo. Em 5 anos vai agradecer por ter dado esse passo rumo à sua liberdade.",
+    "oportunity.buttonContact.buttonText" : "Quero aprender como fazer",
+
+    "oportunity.intro" : 
+    `
+    <div class="text-center mb-12 sm:mb-20">
+      <h1 class="text-3xl sm:text-5xl font-bold mb-6 pt-10">
+        Uma <span class="text-[#00ff7f]">Oportunidade</span> que pode mudar sua vida
+      </h1>
+      <p class="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+        Sabia que sua casa pode se tornar uma <span class="font-semibold">mina de ouro</span>… sem sair dela?
+        Hoje existe uma <span class="text-[#00ff7f]">plataforma global</span>, com mais de 60 anos de história e presente em mais de 100 países,
+        que funciona como um <span class="font-semibold">supermercado 100% digital</span>.
+      </p>
+    </div>
+    `,
+    "oportunity.benefitsOfConsumption":
+    `
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center mb-16 sm:mb-20">
+      <div class="bg-white/5 p-6 sm:p-8 rounded-2xl backdrop-blur-sm shadow-lg hover:scale-[1.02] transition">
+        <h2 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">O que oferece?</h2>
+        <p class="text-gray-300 leading-relaxed">
+          Permite que você <span class="font-semibold">compre diretamente da fábrica</span>, evitando intermediários e pagando menos pelo que já consome:
+          <br /><br />
+          ✔ Nutrição <br />
+          ✔ Cuidados pessoais <br />
+          ✔ Cuidados com o lar <br />
+          ✔ Beleza
+        </p>
+      </div>
+      <div>
+        <img src="/pageImages/oportunidadSupermercado.webp" alt="Supermercado digital"
+          class="rounded-2xl w-full object-cover" />
+      </div>
+    </div>
+    `,
+    "oportunity.generateIncome" : 
+    `
+    <div class="bg-gradient-to-r from-[#0f172a] to-[#1a0b20] p-8 sm:p-10 rounded-2xl shadow-xl mb-16 sm:mb-20">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center">O mais interessante...</h2>
+      <p class="text-base sm:text-lg text-gray-300 text-center max-w-3xl mx-auto">
+        Você também pode <span class="text-[#00ff7f] font-semibold">gerar renda</span> recomendando a plataforma para outras pessoas.
+      </p>
+    </div>
+    `,
+    "oportunity.incomeExample" : 
+    `
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center mb-16 sm:mb-20">
+      <div>
+        <img src="/pageImages/redDeUsuarios.webp" alt="Rede de usuários"
+          class="rounded-2xl w-full object-cover" />
+      </div>
+      <div class="bg-white/5 p-6 sm:p-8 rounded-2xl backdrop-blur-sm shadow-lg">
+        <h2 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">Imagine isso</h2>
+        <p class="text-gray-300 leading-relaxed">
+          Você tem sua própria rede de <span class="font-semibold">1.000 usuários</span>, cada um consumindo
+          <span class="text-[#00ff7f] font-semibold"> U$D 50 por mês</span>. Essa rede movimentaria
+          <span class="font-semibold"> U$D 50.000 mensais</span>.
+        </p>
+        <p class="mt-4 text-gray-300 leading-relaxed">
+          Dessa receita mensal, você poderia ganhar entre <span class="font-semibold">3% e 21%</span>.
+          Sua renda estaria entre <span class="text-[#00ff7f] font-semibold">U$D 1.500 e U$D 10.000</span>.
+        </p>
+      </div>
+    </div>
+    `,
+    "oportunity.marketingPower":
+    `
+    <div class="bg-[#00ff7f]/10 p-6 sm:p-8 rounded-2xl shadow-lg mb-16 sm:mb-20 text-center">
+      <p class="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        ✨ E provavelmente você só convidou <span class="font-semibold">10 pessoas</span>…
+        O resto se multiplicou graças ao <span class="text-[#00ff7f] font-semibold">poder do marketing de rede</span>.
+      </p>
+    </div>
+    `,
+    "oportunity.finalReflection":
+    `
+    <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4">Se levasse de 2 a 5 anos para construir...</h2>
+      <p class="text-base sm:text-lg text-gray-300 mb-4">
+        Gostaria de descobrir o <span class="text-[#00ff7f] font-semibold">passo a passo</span>?
+      </p>
+      <p class="text-base sm:text-lg text-gray-300 mb-4">
+        O melhor é que essa oportunidade não tem fronteiras: estamos em grande parte da
+        <span class="text-[#00ff7f] font-semibold"> América Latina</span>.
+      </p>
+    </div>
     `,
   },
 };
