@@ -1,17 +1,16 @@
+---
+import { useTranslations } from "../i18n/util";
+import { languageList } from "../i18n/ui";
+
+const currentLang = Astro.currentLocale || "es";
+const t = useTranslations(currentLang as keyof typeof languageList);
+---
+
 <section class="relative py-16">
   <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center px-4 gap-10 md:gap-8 pt-10">
     
     <!-- Texto -->
-    <div class="z-10 text-white text-center md:text-left">
-      <h1 class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
-        Descubre tu oportunidad en <br />
-        <span class="text-[#00ff7f]">Redes de Mercadeo</span>
-      </h1>
-      <p class="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 max-w-md mx-auto md:mx-0">
-        <span class="text-[#00ff7f] font-semibold">Súmate a nuestro equipo</span> y comienza
-        tu camino hacia una nueva experiencia de crecimiento personal y financiero.
-      </p>
-    </div>
+    <div set:html={t('home.hero.texto')}></div>
 
     <!-- Imagen -->
     <div class="flex justify-center md:justify-end relative">
