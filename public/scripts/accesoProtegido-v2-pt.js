@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const CLAVE_ACCESO = "tiempoydinero"; // Cambiá esta clave si querés
   const STORAGE_KEY = "accesoAmwayOk";
-  const CONTACTO_URL = "/contacto";
+  const CONTACTO_URL = "/pt/contacto";
   let intentos = 0;
 
   // Si ya ingresó antes, no pedimos clave otra vez

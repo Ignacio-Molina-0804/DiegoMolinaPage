@@ -966,10 +966,10 @@ export const labels = {
     "thanks.redirect" : 
     `
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="/" class="px-8 py-3 rounded-xl bg-[#00ff7f] text-gray-900 font-semibold shadow-lg hover:bg-[#00e670] transition-colors duration-300">
+      <a href="/pt" class="px-8 py-3 rounded-xl bg-[#00ff7f] text-gray-900 font-semibold shadow-lg hover:bg-[#00e670] transition-colors duration-300">
         Voltar ao início
       </a>
-      <a href="/oportunidad" class="px-8 py-3 rounded-xl bg-white/10 text-white font-semibold shadow-lg hover:bg-white/20 transition-colors duration-300">
+      <a href="/pt/oportunidad" class="px-8 py-3 rounded-xl bg-white/10 text-white font-semibold shadow-lg hover:bg-white/20 transition-colors duration-300">
         Ver a oportunidade
       </a>
     </div>
