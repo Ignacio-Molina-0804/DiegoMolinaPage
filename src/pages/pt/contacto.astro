@@ -3,9 +3,15 @@ import Layout from "../../layouts/Layout.astro";
 import WhatsappIcon from "../../components/icons/WhatsappIcon.astro";
 import InstagramIcon from "../../components/icons/InstagramIcon.astro";
 
+import { useTranslations } from "../../i18n/util";
+import { languageList } from "../../i18n/ui";
+
+const currentLang = Astro.currentLocale || "es";
+const t = useTranslations(currentLang as keyof typeof languageList);
+
 const {
-  pageTitle = "Contacto | Diego Molina | Redes de Mercadeo",
-  pageDescription = "Ponte en contacto con Diego Molina. Da el primer paso hacia tu desarrollo personal y financiero en redes de mercadeo.",
+  pageTitle = t("contact.pageTitle"),
+  pageDescription = t("contact.pageDescription"),
 } = Astro.props;
 ---
 
@@ -14,18 +20,7 @@ const {
     class="relative min-h-screen flex flex-col items-center px-4 sm:px-6 py-16 sm:py-20 text-white"
   >
     <!-- Intro -->
-    <div
-      class="max-w-2xl sm:max-w-3xl text-center mb-12 sm:mb-16 pt-6 sm:pt-10"
-    >
-      <h1 class="text-4xl sm:text-5xl font-bold text-[#00ff7f] mb-4">
-        Hablemos
-      </h1>
-      <p class="text-gray-300 text-base sm:text-lg">
-        Si llegaste hasta aquí es porque estás buscando dar un paso importante.
-        Completá el cuestionario o escribime directamente: estaré encantado de
-        acompañarte en este camino de crecimiento.
-      </p>
-    </div>
+    <div set:html={t('contact.intro')}></div>
 
     <!-- Contenido principal -->
     <div class="max-w-6xl w-full grid gap-8 md:gap-10 md:grid-cols-2">
@@ -34,7 +29,7 @@ const {
         class="bg-[#1a0b20]/90 backdrop-blur-md rounded-2xl shadow-lg p-6 sm:p-8"
       >
         <h2 class="text-xl sm:text-2xl font-bold text-[#00ff7f] mb-4 sm:mb-6">
-          Tu Cuestionario
+          {t("contact.form.title")}
         </h2>
 
         <form
@@ -48,7 +43,7 @@ const {
             type="text"
             name="name"
             id="nombre"
-            placeholder="Tu nombre"
+            placeholder={t("contact.form.placehoolderName")}
             required
             class="w-full px-4 py-3 rounded-lg bg-[#0f172a] border border-gray-700 text-sm sm:text-base text-white placeholder-gray-400 focus:border-[#00ff7f] focus:ring-2 focus:ring-[#00ff7f] outline-none transition"
           />
@@ -58,7 +53,7 @@ const {
             type="email"
             name="email"
             id="email"
-            placeholder="Tu email"
+            placeholder={t("contact.form.placehoolderEmail")}
             required
             class="w-full px-4 py-3 rounded-lg bg-[#0f172a] border border-gray-700 text-sm sm:text-base text-white placeholder-gray-400 focus:border-[#00ff7f] focus:ring-2 focus:ring-[#00ff7f] outline-none transition"
           />
@@ -68,7 +63,7 @@ const {
             type="tel"
             name="phone"
             id="telefono"
-            placeholder="Tu celular"
+            placeholder={t("contact.form.placehoolderPhone")}
             required
             class="w-full px-4 py-3 rounded-lg bg-[#0f172a] border border-gray-700 text-sm sm:text-base text-white placeholder-gray-400 focus:border-[#00ff7f] focus:ring-2 focus:ring-[#00ff7f] outline-none transition"
           />
@@ -78,7 +73,7 @@ const {
             name="message"
             id="mensaje"
             rows="4"
-            placeholder="Escribe tu mensaje..."
+            placeholder={t("contact.form.placehoolderMessage")}
             required
             class="w-full px-4 py-3 rounded-lg bg-[#0f172a] border border-gray-700 text-sm sm:text-base text-white placeholder-gray-400 focus:border-[#00ff7f] focus:ring-2 focus:ring-[#00ff7f] outline-none transition resize-none"
           ></textarea>
@@ -88,7 +83,7 @@ const {
             type="submit"
             class="w-full py-3 rounded-lg bg-gradient-to-r from-[#00ff7f] to-[#00cc66] text-[#15011c] font-semibold text-base sm:text-lg hover:opacity-90 transition cursor-pointer"
           >
-            Enviar
+            {t("contact.form.placehoolderButton")}
           </button>
 
           <!-- Config formsubmit -->
@@ -107,11 +102,10 @@ const {
       >
         <div>
           <h2 class="text-xl sm:text-2xl font-bold text-[#00ff7f] mb-3 sm:mb-4">
-            Contacto
+            {t("contact.directContact.title")}
           </h2>
           <p class="text-gray-300 mb-5 sm:mb-6 text-sm sm:text-base">
-            ¿Querés escribirme directamente? Estas son las formas más rápidas de
-            ponerte en contacto conmigo:
+            {t("contact.directContact.description")}
           </p>
 
           <div class="space-y-3 sm:space-y-4 text-base sm:text-lg mb-6 sm:mb-8">
@@ -136,24 +130,12 @@ const {
 
           <!-- Texto invitación -->
           <p class="text-xs sm:text-sm text-gray-400 leading-relaxed">
-            Además de escribirme, seguime en redes: comparto contenido de
-            crecimiento personal, motivación y estrategias en redes de mercadeo
-            todos los días. ¡Sumate y mantenete inspirado!
+            {t("contact.directContact.invitationText")}
           </p>
         </div>
 
         <!-- Extra -->
-        <div class="mt-6 bg-[#0f172a]/70 rounded-xl p-4 sm:p-6">
-          <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
-            ¿Por qué contactarme?
-          </h3>
-          <ul class="space-y-1 sm:space-y-2 text-gray-300 text-xs sm:text-sm">
-            <li>✅ Acompañamiento personalizado</li>
-            <li>✅ Experiencia en redes de mercadeo</li>
-            <li>✅ Crecimiento personal y financiero</li>
-            <li>✅ Inspiración y motivación constante</li>
-          </ul>
-        </div>
+          <div set:html={t("contact.directContact.extra")}></div>
       </div>
     </div>
   </section>
@@ -171,9 +153,7 @@ const {
         document.getElementById("mensaje") as HTMLTextAreaElement
       ).value;
 
-      const texto = encodeURIComponent(
-        `¡Hola Diego! 👋\n\nMi nombre es *${nombre}*.\nQuería ponerme en contacto contigo para conocerte un poco más y hablar sobre tu propuesta en redes de mercadeo.\n\n📧 Email: ${email}\n📱 Teléfono: ${telefono}\n💬 Mensaje:\n${mensaje}\n\n¡Espero tu respuesta! 🙌`
-      );
+      const texto = encodeURIComponent(`Olá Diego! 👋\n\nMeu nome é *${nombre}*.\nGostaria de entrar em contato com você para conhecê-lo um pouco melhor e conversar sobre sua proposta de marketing de rede.\n\n📧 E-mail: ${email}\n📱 Telefone: ${telefono}\n💬 Mensagem:\n${mensaje}\n\nAguardo sua resposta! 🙌`);
 
       const numero = "5492616331357"; // Número del cliente
       const url = `https://api.whatsapp.com/send?phone=${numero}&text=${texto}`;

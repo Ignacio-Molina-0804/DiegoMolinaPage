@@ -363,6 +363,52 @@ export const labels = {
     </div>
     `,
 
+    // Contacto
+
+    "contact.pageTitle" : "Contacto | Diego Molina | Redes de Mercadeo",
+    "contact.pageDescription" : "Ponte en contacto con Diego Molina. Da el primer paso hacia tu desarrollo personal y financiero en redes de mercadeo.",
+
+    "contact.intro" : 
+    `
+    <div
+      class="max-w-2xl sm:max-w-3xl text-center mb-12 sm:mb-16 pt-6 sm:pt-10"
+    >
+      <h1 class="text-4xl sm:text-5xl font-bold text-[#00ff7f] mb-4">
+        Hablemos
+      </h1>
+      <p class="text-gray-300 text-base sm:text-lg">
+        Si llegaste hasta aquí es porque estás buscando dar un paso importante.
+        Completá el cuestionario o escribime directamente: estaré encantado de
+        acompañarte en este camino de crecimiento.
+      </p>
+    </div>
+    `,
+
+    "contact.form.title" : "Tu Cuestionario",
+    "contact.form.placehoolderName" : "Tu Nombre",
+    "contact.form.placehoolderEmail" : "Tu email",
+    "contact.form.placehoolderPhone" : "Tu celular",
+    "contact.form.placehoolderMessage" : "Escribe tu mensaje...",
+    "contact.form.placehoolderButton" : "Enviar Whatsapp",
+    
+    "contact.directContact.title" : "Contacto",
+    "contact.directContact.description" : "¿Querés escribirme directamente? Estas son las formas más rápidas de ponerte en contacto conmigo:",
+    "contact.directContact.invitationText" : "Además de escribirme, seguime en redes: comparto contenido de crecimiento personal, motivación y estrategias en redes de mercadeo todos los días. ¡Sumate y mantenete inspirado!",
+
+    "contact.directContact.extra" : 
+    `
+        <div class="mt-6 bg-[#0f172a]/70 rounded-xl p-4 sm:p-6">
+          <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
+            ¿Por qué contactarme?
+          </h3>
+          <ul class="space-y-1 sm:space-y-2 text-gray-300 text-xs sm:text-sm">
+            <li>✅ Acompañamiento personalizado</li>
+            <li>✅ Experiencia en redes de mercadeo</li>
+            <li>✅ Crecimiento personal y financiero</li>
+            <li>✅ Inspiración y motivación constante</li>
+          </ul>
+        </div>
+    `,
   },
 
   pt: {
@@ -720,6 +766,52 @@ export const labels = {
         “Um áudio pode ser o início de uma grande mudança.”
       </p>
     </div>
+    `,
+
+    // Contato
+
+    "contact.pageTitle" : "Contato | Diego Molina | Redes de Marketing",
+    "contact.pageDescription" : "Entre em contato com Diego Molina. Dê o primeiro passo para o seu desenvolvimento pessoal e financeiro em redes de marketing.",
+
+    "contact.intro" : 
+    `
+    <div
+      class="max-w-2xl sm:max-w-3xl text-center mb-12 sm:mb-16 pt-6 sm:pt-10"
+    >
+      <h1 class="text-4xl sm:text-5xl font-bold text-[#00ff7f] mb-4">
+        Vamos conversar
+      </h1>
+      <p class="text-gray-300 text-base sm:text-lg">
+        Se você chegou até aqui é porque está buscando dar um passo importante.
+        Preencha o questionário ou escreva diretamente: terei prazer em te acompanhar nesse caminho de crescimento.
+      </p>
+    </div>
+    `,
+
+    "contact.form.title" : "Seu Questionário",
+    "contact.form.placehoolderName" : "Seu Nome",
+    "contact.form.placehoolderEmail" : "Seu email",
+    "contact.form.placehoolderPhone" : "Seu celular",
+    "contact.form.placehoolderMessage" : "Escreva sua mensagem...",
+    "contact.form.placehoolderButton" : "Enviar Whatsapp",
+    
+    "contact.directContact.title" : "Contato",
+    "contact.directContact.description" : "Quer falar diretamente comigo? Estas são as formas mais rápidas de entrar em contato:",
+    "contact.directContact.invitationText" : "Além de escrever para mim, siga-me nas redes: compartilho conteúdo de crescimento pessoal, motivação e estratégias em redes de marketing todos os dias. Junte-se e mantenha-se inspirado!",
+
+    "contact.directContact.extra" : 
+    `
+        <div class="mt-6 bg-[#0f172a]/70 rounded-xl p-4 sm:p-6">
+          <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
+            Por que falar comigo?
+          </h3>
+          <ul class="space-y-1 sm:space-y-2 text-gray-300 text-xs sm:text-sm">
+            <li>✅ Acompanhamento personalizado</li>
+            <li>✅ Experiência em redes de marketing</li>
+            <li>✅ Crescimento pessoal e financeiro</li>
+            <li>✅ Inspiração e motivação constante</li>
+          </ul>
+        </div>
     `,
   },
 };
