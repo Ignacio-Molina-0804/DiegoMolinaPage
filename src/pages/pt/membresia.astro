@@ -2,110 +2,37 @@
 import Layout from "../../layouts/Layout.astro";
 import ButtonContact from "../../components/ButtonContact.astro";
 
+import { useTranslations } from "../../i18n/util";
+import { languageList } from "../../i18n/ui";
+
+const currentLang = Astro.currentLocale || "es";
+const t = useTranslations(currentLang as keyof typeof languageList);
+
 const {
-  pageTitle = "Membresía | Diego Molina | Redes de Mercadeo",
-  pageDescription = "Con la membresía de Amway accedés a un mundo de beneficios: productos de calidad en nutrición, cuidado personal, hogar y belleza, comprados directamente de fábrica con descuentos exclusivos. Además, obtenés la posibilidad de emprender tu propio negocio digital, con respaldo global y más de 60 años de trayectoria.",
+  pageTitle = t("oportunity.pageTitle"),
+  pageDescription = t("oportunity.pageDescription"),
 } = Astro.props;
+
 ---
 
 <Layout title={pageTitle} description={pageDescription}>
   <section class="max-w-6xl mx-auto px-4 sm:px-8 py-20 text-white">
     <!-- INTRODUCCIÓN -->
-    <div class="text-center mb-16 pt-10">
-      <h1 class="text-4xl sm:text-6xl font-bold mb-6 leading-tight">
-        Conocé <span class="text-[#00ff7f]">Amway</span>
-      </h1>
-      <p
-        class="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed"
-      >
-        Amway es una compañía global con más de 60 años de trayectoria, presente
-        en más de 100 países. Su misión es empoderar a las personas a través del
-        emprendimiento, ofreciendo productos de clase mundial en nutrición,
-        belleza, hogar y bienestar. A través de su modelo de negocio, miles de
-        personas en todo el mundo construyen ingresos sostenibles mientras
-        desarrollan liderazgo, habilidades y libertad personal.
-      </p>
-    </div>
+  <div set:html={t("membership.introduction")}></div>
 
     <!-- HERO -->
-    <div class="text-center mb-20">
-      <h2 class="text-4xl sm:text-5xl font-bold mb-6 leading-tight">
-        ¿Por qué elegir <span class="text-[#00ff7f]">Amway</span>?
-      </h2>
-      <p class="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto">
-        Porque es una oportunidad real para construir <span
-          class="font-semibold text-[#00ff7f]">ingresos</span
-        > y <span class="font-semibold text-[#00ff7f]">libertad</span> a largo plazo.
-        No se trata solo de vender productos: se trata de <span
-          class="font-semibold">desarrollar personas</span
-        >, <span class="font-semibold">formar líderes</span> y <span
-          class="font-semibold">crear redes con propósito</span
-        >.
-      </p>
-    </div>
+    <div set:html={t("membership.hero")}></div>
 
     <!-- BENEFICIOS -->
-    <div class="grid md:grid-cols-2 gap-10 mb-20">
-      <div
-        class="bg-gradient-to-br from-white/10 to-transparent rounded-2xl p-8 shadow-xl hover:scale-[1.02] transition"
-      >
-        <h3 class="text-2xl font-semibold text-[#00ff7f] mb-4">
-          Ingresos escalables
-        </h3>
-        <p>
-          Tu esfuerzo determina tus ganancias, no tus horas. Construí un activo
-          que crece con vos.
-        </p>
-      </div>
-      <div
-        class="bg-gradient-to-br from-white/10 to-transparent rounded-2xl p-8 shadow-xl hover:scale-[1.02] transition"
-      >
-        <h3 class="text-2xl font-semibold text-[#00ff7f] mb-4">
-          Formación constante
-        </h3>
-        <p>
-          Accedé a mentorías, entrenamientos y una comunidad de crecimiento
-          personal y financiero.
-        </p>
-      </div>
-      <div
-        class="bg-gradient-to-br from-white/10 to-transparent rounded-2xl p-8 shadow-xl hover:scale-[1.02] transition"
-      >
-        <h3 class="text-2xl font-semibold text-[#00ff7f] mb-4">
-          Flexibilidad total
-        </h3>
-        <p>
-          Trabajá desde donde quieras y a tu ritmo. Es tu negocio, a tu manera.
-        </p>
-      </div>
-      <div
-        class="bg-gradient-to-br from-white/10 to-transparent rounded-2xl p-8 shadow-xl hover:scale-[1.02] transition"
-      >
-        <h3 class="text-2xl font-semibold text-[#00ff7f] mb-4">Impacto real</h3>
-        <p>
-          Ayudá a otros a mejorar su economía y calidad de vida mientras creás
-          tu propio éxito.
-        </p>
-      </div>
-    </div>
+    <div set:html={t("membership.benefits")}></div>
 
     <!-- LLAMADO A LA ACCIÓN -->
-    <div class="text-center mb-20">
-      <h2 class="text-3xl sm:text-4xl font-semibold text-[#00ff7f] mb-4">
-        Si estás leyendo esto, es por algo
-      </h2>
-      <p class="text-lg text-gray-300 max-w-3xl mx-auto">
-        Ya diste el paso más importante: <span
-          class="font-semibold text-[#00ff7f]">informarte</span
-        >. Ahora es momento de <span class="font-semibold">accionar</span> y construir
-        el futuro que querés.
-      </p>
-    </div>
+    <div set:html={t("membership.callToAction")}></div>
 
     <!-- PAISES -->
     <div class="text-center mb-24">
       <h2 class="text-2xl sm:text-3xl font-semibold text-[#00ff7f] mb-10">
-        Elegí tu país para registrarte
+        {t("membership.titleCountry")}
       </h2>
 
       <div
@@ -191,28 +118,18 @@ const {
     </div>
 
     <!-- DESPEDIDA -->
-    <div class="text-center mb-20">
-      <h2 class="text-3xl sm:text-4xl font-extrabold mb-4 text-[#00ff7f]">
-        Tu historia puede empezar hoy
-      </h2>
-      <p class="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
-        Todos los grandes cambios comienzan con una decisión. Amway no es solo
-        una oportunidad económica: es un camino de crecimiento, liderazgo y
-        libertad. Si estás dispuesto a aprender, a trabajar en vos mismo y a
-        ayudar a otros a hacer lo mismo, este es el lugar indicado.
-      </p>
-    </div>
+    <div set:html={t("membership.farewell")}></div>
 
     <!-- CTA FINAL -->
     <div class="mt-20">
       <ButtonContact
-        title="¿Tenés dudas sobre cómo comenzar?"
-        subtitle="Podés escribirme y te ayudo paso a paso para crear tu cuenta Amway y empezar tu negocio."
-        buttonText="Contactame"
+        title= {t("membership.buttonContact.title")}
+        subtitle= {t("membership.buttonContact.subtitle")}
+        buttonText= {t("membership.buttonContact.buttonText")}
         buttonLink="/contacto"
       />
     </div>
   </section>
 </Layout>
 
-<script src="/scripts/accesoProtegido-v2.js" defer></script>
+<script src="/scripts/accesoProtegido-v2-pt.js" defer></script>

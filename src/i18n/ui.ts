@@ -427,7 +427,129 @@ export const labels = {
         Ver la oportunidad
       </a>
     </div>
+    `,
+
+    // Membresia
+
+    "membership.pageTitle" : "Membresía | Diego Molina | Redes de Mercadeo",
+    "membership.pageDescription" : "Con la membresía de Amway accedés a un mundo de beneficios: productos de calidad en nutrición, cuidado personal, hogar y belleza, comprados directamente de fábrica con descuentos exclusivos. Además, obtenés la posibilidad de emprender tu propio negocio digital, con respaldo global y más de 60 años de trayectoria.",
+
+    "membership.buttonContact.title" : "¿Tenés dudas sobre cómo comenzar?",
+    "membership.buttonContact.subtitle" : "Podés escribirme y te ayudo paso a paso para crear tu cuenta Amway y empezar tu negocio.",
+    "membership.buttonContact.buttonText" : "Contactame",
+
+    "membership.introduction" : 
     `
+    <div class="text-center mb-16 pt-10">
+      <h1 class="text-4xl sm:text-6xl font-bold mb-6 leading-tight">
+        Conocé <span class="text-[#00ff7f]">Amway</span>
+      </h1>
+      <p
+        class="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed"
+      >
+        Amway es una compañía global con más de 60 años de trayectoria, presente
+        en más de 100 países. Su misión es empoderar a las personas a través del
+        emprendimiento, ofreciendo productos de clase mundial en nutrición,
+        belleza, hogar y bienestar. A través de su modelo de negocio, miles de
+        personas en todo el mundo construyen ingresos sostenibles mientras
+        desarrollan liderazgo, habilidades y libertad personal.
+      </p>
+    </div>
+    `,
+    "membership.hero":
+    `
+    <div class="text-center mb-20">
+      <h2 class="text-4xl sm:text-5xl font-bold mb-6 leading-tight">
+        ¿Por qué elegir <span class="text-[#00ff7f]">Amway</span>?
+      </h2>
+      <p class="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto">
+        Porque es una oportunidad real para construir <span
+          class="font-semibold text-[#00ff7f]">ingresos</span
+        > y <span class="font-semibold text-[#00ff7f]">libertad</span> a largo plazo.
+        No se trata solo de vender productos: se trata de <span
+          class="font-semibold">desarrollar personas</span
+        >, <span class="font-semibold">formar líderes</span> y <span
+          class="font-semibold">crear redes con propósito</span
+        >.
+      </p>
+    </div>
+    `,
+    "membership.benefits":
+    `
+    <div class="grid md:grid-cols-2 gap-10 mb-20">
+      <div
+        class="bg-gradient-to-br from-white/10 to-transparent rounded-2xl p-8 shadow-xl hover:scale-[1.02] transition"
+      >
+        <h3 class="text-2xl font-semibold text-[#00ff7f] mb-4">
+          Ingresos escalables
+        </h3>
+        <p>
+          Tu esfuerzo determina tus ganancias, no tus horas. Construí un activo
+          que crece con vos.
+        </p>
+      </div>
+      <div
+        class="bg-gradient-to-br from-white/10 to-transparent rounded-2xl p-8 shadow-xl hover:scale-[1.02] transition"
+      >
+        <h3 class="text-2xl font-semibold text-[#00ff7f] mb-4">
+          Formación constante
+        </h3>
+        <p>
+          Accedé a mentorías, entrenamientos y una comunidad de crecimiento
+          personal y financiero.
+        </p>
+      </div>
+      <div
+        class="bg-gradient-to-br from-white/10 to-transparent rounded-2xl p-8 shadow-xl hover:scale-[1.02] transition"
+      >
+        <h3 class="text-2xl font-semibold text-[#00ff7f] mb-4">
+          Flexibilidad total
+        </h3>
+        <p>
+          Trabajá desde donde quieras y a tu ritmo. Es tu negocio, a tu manera.
+        </p>
+      </div>
+      <div
+        class="bg-gradient-to-br from-white/10 to-transparent rounded-2xl p-8 shadow-xl hover:scale-[1.02] transition"
+      >
+        <h3 class="text-2xl font-semibold text-[#00ff7f] mb-4">Impacto real</h3>
+        <p>
+          Ayudá a otros a mejorar su economía y calidad de vida mientras creás
+          tu propio éxito.
+        </p>
+      </div>
+    </div>
+    `,
+    "membership.callToAction" : 
+    `
+    <div class="text-center mb-20">
+      <h2 class="text-3xl sm:text-4xl font-semibold text-[#00ff7f] mb-4">
+        Si estás leyendo esto, es por algo
+      </h2>
+      <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+        Ya diste el paso más importante: <span
+          class="font-semibold text-[#00ff7f]">informarte</span
+        >. Ahora es momento de <span class="font-semibold">accionar</span> y construir
+        el futuro que querés.
+      </p>
+    </div> 
+    `,
+    "membership.titleCountry": "Elegí tu país para registrarte",
+    "membership.farewell":
+    `
+    <div class="text-center mb-20">
+      <h2 class="text-3xl sm:text-4xl font-extrabold mb-4 text-[#00ff7f]">
+        Tu historia puede empezar hoy
+      </h2>
+      <p class="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        Todos los grandes cambios comienzan con una decisión. Amway no es solo
+        una oportunidad económica: es un camino de crecimiento, liderazgo y
+        libertad. Si estás dispuesto a aprender, a trabajar en vos mismo y a
+        ayudar a otros a hacer lo mismo, este es el lugar indicado.
+      </p>
+    </div>
+    `
+
 
   },
 
@@ -850,6 +972,115 @@ export const labels = {
       <a href="/oportunidad" class="px-8 py-3 rounded-xl bg-white/10 text-white font-semibold shadow-lg hover:bg-white/20 transition-colors duration-300">
         Ver a oportunidade
       </a>
+    </div>
+    `,
+
+    // Assinatura
+
+    "membership.pageTitle" : "Assinatura | Diego Molina | Redes de Marketing",
+    "membership.pageDescription" : "Com a assinatura Amway, você tem acesso a um mundo de benefícios: produtos de qualidade em nutrição, cuidados pessoais, lar e beleza, comprados diretamente da fábrica com descontos exclusivos. Além disso, você pode empreender seu próprio negócio digital, com respaldo global e mais de 60 anos de história.",
+
+    "membership.buttonContact.title" : "Tem dúvidas sobre como começar?",
+    "membership.buttonContact.subtitle" : "Pode me escrever e eu te ajudo passo a passo para criar sua conta Amway e iniciar seu negócio.",
+    "membership.buttonContact.buttonText" : "Fale comigo",
+
+    "membership.introduction" : 
+    `
+    <div class="text-center mb-16 pt-10">
+      <h1 class="text-4xl sm:text-6xl font-bold mb-6 leading-tight">
+        Conheça <span class="text-[#00ff7f]">Amway</span>
+      </h1>
+      <p
+        class="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed"
+      >
+        A Amway é uma empresa global com mais de 60 anos de história, presente em mais de 100 países. Sua missão é empoderar pessoas através do empreendedorismo, oferecendo produtos de classe mundial em nutrição, beleza, lar e bem-estar. Por meio do seu modelo de negócio, milhares de pessoas ao redor do mundo constroem rendas sustentáveis enquanto desenvolvem liderança, habilidades e liberdade pessoal.
+      </p>
+    </div>
+    `,
+    "membership.hero":
+    `
+    <div class="text-center mb-20">
+      <h2 class="text-4xl sm:text-5xl font-bold mb-6 leading-tight">
+        Por que escolher <span class="text-[#00ff7f]">Amway</span>?
+      </h2>
+      <p class="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto">
+        Porque é uma oportunidade real para construir <span
+          class="font-semibold text-[#00ff7f]">renda</span
+        > e <span class="font-semibold text-[#00ff7f]">liberdade</span> a longo prazo.
+        Não se trata apenas de vender produtos: trata-se de <span
+          class="font-semibold">desenvolver pessoas</span
+        >, <span class="font-semibold">formar líderes</span> e <span
+          class="font-semibold">criar redes com propósito</span
+        >.
+      </p>
+    </div>
+    `,
+    "membership.benefits":
+    `
+    <div class="grid md:grid-cols-2 gap-10 mb-20">
+      <div
+        class="bg-gradient-to-br from-white/10 to-transparent rounded-2xl p-8 shadow-xl hover:scale-[1.02] transition"
+      >
+        <h3 class="text-2xl font-semibold text-[#00ff7f] mb-4">
+          Renda escalável
+        </h3>
+        <p>
+          Seu esforço determina seus ganhos, não suas horas. Construa um ativo que cresce com você.
+        </p>
+      </div>
+      <div
+        class="bg-gradient-to-br from-white/10 to-transparent rounded-2xl p-8 shadow-xl hover:scale-[1.02] transition"
+      >
+        <h3 class="text-2xl font-semibold text-[#00ff7f] mb-4">
+          Formação constante
+        </h3>
+        <p>
+          Tenha acesso a mentorias, treinamentos e uma comunidade de crescimento pessoal e financeiro.
+        </p>
+      </div>
+      <div
+        class="bg-gradient-to-br from-white/10 to-transparent rounded-2xl p-8 shadow-xl hover:scale-[1.02] transition"
+      >
+        <h3 class="text-2xl font-semibold text-[#00ff7f] mb-4">
+          Flexibilidade total
+        </h3>
+        <p>
+          Trabalhe de onde quiser e no seu ritmo. É o seu negócio, do seu jeito.
+        </p>
+      </div>
+      <div
+        class="bg-gradient-to-br from-white/10 to-transparent rounded-2xl p-8 shadow-xl hover:scale-[1.02] transition"
+      >
+        <h3 class="text-2xl font-semibold text-[#00ff7f] mb-4">Impacto real</h3>
+        <p>
+          Ajude outros a melhorar sua economia e qualidade de vida enquanto constrói seu próprio sucesso.
+        </p>
+      </div>
+    </div>
+    `,
+    "membership.callToAction" : 
+    `
+    <div class="text-center mb-20">
+      <h2 class="text-3xl sm:text-4xl font-semibold text-[#00ff7f] mb-4">
+        Se você está lendo isso, não é por acaso
+      </h2>
+      <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+        Você já deu o passo mais importante: <span
+          class="font-semibold text-[#00ff7f]">se informar</span
+        >. Agora é hora de <span class="font-semibold">agir</span> e construir o futuro que deseja.
+      </p>
+    </div> 
+    `,
+    "membership.titleCountry": "Escolha seu país para se cadastrar",
+    "membership.farewell":
+    `
+    <div class="text-center mb-20">
+      <h2 class="text-3xl sm:text-4xl font-extrabold mb-4 text-[#00ff7f]">
+        Sua história pode começar hoje
+      </h2>
+      <p class="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        Todas as grandes mudanças começam com uma decisão. Amway não é apenas uma oportunidade econômica: é um caminho de crescimento, liderança e liberdade. Se você está disposto a aprender, trabalhar em si mesmo e ajudar outros a fazer o mesmo, este é o lugar certo.
+      </p>
     </div>
     `
   },
