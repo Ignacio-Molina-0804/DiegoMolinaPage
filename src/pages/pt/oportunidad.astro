@@ -1,0 +1,106 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ButtonContact from "../../components/ButtonContact.astro";
+
+const {
+  pageTitle = "Oportunidad | Diego Molina | Redes de Mercadeo",
+  pageDescription = "Descubrí cómo generar ingresos con un supermercado digital global, presente en más de 100 países y con más de 60 años de historia. Transforma tu consumo en una oportunidad de negocio.",
+} = Astro.props;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <section class="relative max-w-6xl mx-auto px-6 py-16 sm:py-20 text-white">
+    <!-- Intro -->
+    <div class="text-center mb-12 sm:mb-20">
+      <h1 class="text-3xl sm:text-5xl font-bold mb-6 pt-10">
+        Una <span class="text-[#00ff7f]">Oportunidad</span> que puede cambiar tu vida
+      </h1>
+      <p class="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+        ¿Sabías que tu casa puede convertirse en una <span class="font-semibold">mina de oro</span>… sin salir de ella?
+        Hoy existe una <span class="text-[#00ff7f]">plataforma global</span>, con más de 60 años de historia y presente en más de 100 países,
+        que funciona como un <span class="font-semibold">supermercado 100% digital</span>.
+      </p>
+    </div>
+
+    <!-- Beneficios del consumo -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center mb-16 sm:mb-20">
+      <div class="bg-white/5 p-6 sm:p-8 rounded-2xl backdrop-blur-sm shadow-lg hover:scale-[1.02] transition">
+        <h2 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">¿Qué ofrece?</h2>
+        <p class="text-gray-300 leading-relaxed">
+          Te permite <span class="font-semibold">comprar directamente de fábrica</span>, evitando intermediarios y pagando menos por lo que ya consumís:
+          <br /><br />
+          ✔ Nutrición <br />
+          ✔ Cuidado personal <br />
+          ✔ Cuidado del hogar <br />
+          ✔ Belleza
+        </p>
+      </div>
+      <div>
+        <img src="/pageImages/oportunidadSupermercado.webp" alt="Supermercado digital"
+          class="rounded-2xl w-full object-cover" />
+      </div>
+    </div>
+
+    <!-- Generar ingresos -->
+    <div class="bg-gradient-to-r from-[#0f172a] to-[#1a0b20] p-8 sm:p-10 rounded-2xl shadow-xl mb-16 sm:mb-20">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center">Lo más interesante...</h2>
+      <p class="text-base sm:text-lg text-gray-300 text-center max-w-3xl mx-auto">
+        También podés <span class="text-[#00ff7f] font-semibold">generar ingresos</span> recomendando la plataforma a otros.
+      </p>
+    </div>
+
+    <!-- Ejemplo de ingresos -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center mb-16 sm:mb-20">
+      <div>
+        <img src="/pageImages/redDeUsuarios.webp" alt="Red de usuarios"
+          class="rounded-2xl w-full object-cover" />
+      </div>
+      <div class="bg-white/5 p-6 sm:p-8 rounded-2xl backdrop-blur-sm shadow-lg">
+        <h2 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">Imaginá esto</h2>
+        <p class="text-gray-300 leading-relaxed">
+          Tenés tu propia red de <span class="font-semibold">1.000 usuarios</span>, cada uno consumiendo
+          <span class="text-[#00ff7f] font-semibold"> U$D 50 al mes</span>. Esa red movería
+          <span class="font-semibold"> U$D 50.000 mensuales</span>.
+        </p>
+        <p class="mt-4 text-gray-300 leading-relaxed">
+          De esa facturación mensual, podrías ganar entre el <span class="font-semibold">3% y el 21%</span>.
+          Tu ingreso estaría entre <span class="text-[#00ff7f] font-semibold">U$D 1.500 y U$D 10.000</span>.
+        </p>
+      </div>
+    </div>
+
+    <!-- Poder del mercadeo -->
+    <div class="bg-[#00ff7f]/10 p-6 sm:p-8 rounded-2xl shadow-lg mb-16 sm:mb-20 text-center">
+      <p class="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        ✨ Y probablemente vos solo invitaste a <span class="font-semibold">10 personas</span>…
+        El resto se multiplicó gracias al <span class="text-[#00ff7f] font-semibold">poder del mercadeo en red</span>.
+      </p>
+    </div>
+
+    <!-- Reflexión final -->
+    <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4">Si te tomara de 2 a 5 años construirlo...</h2>
+      <p class="text-base sm:text-lg text-gray-300 mb-4">
+        ¿Te interesaría descubrir el <span class="text-[#00ff7f] font-semibold">paso a paso</span>?
+      </p>
+      <p class="text-base sm:text-lg text-gray-300 mb-4">
+        Lo mejor es que esta oportunidad no tiene fronteras: estamos en gran parte de
+        <span class="text-[#00ff7f] font-semibold"> Latinoamérica</span>.
+      </p>
+    </div>
+
+    <!-- Imagen de países -->
+    <div class="flex justify-center mb-8 sm:mb-12">
+      <img src="/pageImages/banderas.webp" alt="Países disponibles"
+        class="max-w-full w-full sm:w-[800px] object-contain" />
+    </div>
+
+    <!-- CTA con componente -->
+    <ButtonContact
+      title="¿Listo para aprender cómo hacerlo?"
+      subtitle="Podés comenzar hoy mismo. En 5 años vas a agradecer haber dado este paso hacia tu libertad."
+      buttonText="Quiero aprender cómo hacerlo"
+      buttonLink="/contacto"
+    />
+  </section>
+</Layout>

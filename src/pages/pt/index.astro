@@ -1,0 +1,87 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/Hero.astro";
+import ButtonContact from "../../components/ButtonContact.astro";
+---
+
+<Layout>
+  <!-- Hero principal -->
+  <Hero />
+
+  <!-- Qué es lo que vas a encontrar -->
+  <section class="py-16 sm:py-24 px-6 text-center text-white">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-8">
+      ¿Qué vas a encontrar en <span class="text-[#00ff7f]">diegomolina.ar</span>?
+    </h2>
+    <p class="max-w-2xl mx-auto text-base sm:text-lg text-gray-300 leading-relaxed mb-12">
+      Este espacio está diseñado para que descubras
+      <span class="text-[#00ff7f] font-semibold"> nuevas oportunidades</span>, 
+      aprendas de <span class="font-semibold">liderazgo</span>, escuches
+      <span class="font-semibold"> audios de inspiración</span>
+      y encuentres el camino para construir tu
+      <span class="text-[#00ff7f] font-semibold"> libertad personal y financiera</span>.
+    </p>
+
+    <!-- Tarjetas -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">
+      <!-- SOBRE MI -->
+      <a href="/sobre-mi"
+        class="block p-6 rounded-xl shadow bg-white/5 border border-[#00ff7f]/50 hover:scale-105 transition">
+        <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-[#00ff7f]">Sobre Mi</h3>
+        <p>
+          Conocé mi historia, mis aprendizajes y el camino que me llevó a dedicarme a las
+          <span class="font-semibold">redes de mercadeo</span>.
+        </p>
+      </a>
+
+      <!-- OPORTUNIDAD -->
+      <a href="/oportunidad"
+        class="block p-6 rounded-xl shadow-lg hover:scale-105 transition
+           bg-gradient-to-br from-[#00ff7f]/20 to-[#00ff7f]/5
+           border border-[#00ff7f]/50 ring-1 sm:ring-2 ring-[#00ff7f]/30
+           hover:ring-[#00ff7f]/70 hover:shadow-[#00ff7f]/50">
+        <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-[#00ff7f]">Oportunidad</h3>
+        <p>
+          Descubrí cómo las <span class="font-semibold">redes de mercadeo</span>
+          pueden abrirte un <span class="font-semibold">nuevo futuro</span>.
+        </p>
+      </a>
+
+      <!-- INSPIRACIÓN -->
+      <a href="/audios"
+        class="block p-6 rounded-xl shadow bg-white/5 border border-[#00ff7f]/50 hover:scale-105 transition">
+        <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-[#00ff7f]">Inspiración</h3>
+        <p>
+          Acceso a <span class="font-semibold">audios</span> y mensajes que te ayudan
+          a mantener la <span class="font-semibold">energía</span> enfocada.
+        </p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section class="py-16 sm:py-24 px-6 text-white text-center">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-8">Beneficios de sumarte</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-12 max-w-5xl mx-auto">
+      <div class="bg-white/5 p-6 sm:p-8 rounded-2xl hover:scale-[1.02] transition">
+        <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">Tiempo Parcial</h3>
+        <p>Ganás <span class="font-semibold">flexibilidad</span> para compartir más momentos con quienes más querés.</p>
+      </div>
+      <div class="bg-white/5 p-6 sm:p-8 rounded-2xl hover:scale-[1.02] transition">
+        <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">Crecimiento Exponencial</h3>
+        <p>Mejorás tu <span class="font-semibold">mentalidad</span>, desarrollás <span class="font-semibold">habilidades</span> y creás nuevas oportunidades.</p>
+      </div>
+      <div class="bg-white/5 p-6 sm:p-8 rounded-2xl hover:scale-[1.02] transition">
+        <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">Ingresos</h3>
+        <p>Construís un <span class="font-semibold">plan B financiero</span> que puede transformarse en tu principal fuente de ingresos.</p>
+      </div>
+      <div class="bg-white/5 p-6 sm:p-8 rounded-2xl hover:scale-[1.02] transition">
+        <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">Comunidad</h3>
+        <p>Formás parte de un <span class="font-semibold">equipo de apoyo</span> que crece y avanza junto a vos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA intermedio -->
+  <ButtonContact />
+</Layout>
