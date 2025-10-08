@@ -2,123 +2,47 @@
 import Layout from "../layouts/Layout.astro";
 import ButtonContact from "../components/ButtonContact.astro";
 
+import { useTranslations } from "../i18n/util";
+import { languageList } from "../i18n/ui";
+
+const currentLang = Astro.currentLocale || "es";
+const t = useTranslations(currentLang as keyof typeof languageList);
+
 const {
-  pageTitle = "Sobre mí | Diego Molina | Redes de Mercadeo",
-  pageDescription = "Conoce la historia de Diego Molina: quién soy, qué hacía antes y por qué decidí emprender en redes de mercadeo para transformar mi vida y la de otros.",
+  pageTitle = t("about.pageTitle"),
+  pageDescription = t("about.pageDescription"),
 } = Astro.props;
 ---
 
 <Layout title={pageTitle} description={pageDescription}>
   <section class="relative max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-20 text-white">
-    <h1 class="text-2xl sm:text-5xl font-bold text-center mb-10 sm:mb-20 pt-6">
-      Conocé <span class="text-[#00ff7f]">mi historia</span>
-    </h1>
+    <h1 set:html={t("about.title")}></h1>
 
     <div class="space-y-8 sm:space-y-24">
       <!-- Quién soy -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
-        <div class="order-1 flex justify-center">
-          <img src="/pageImages/diegoPerfilAhora.webp" alt="Diego Molina"
-            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
-        </div>
-        <div class="order-2 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
-          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">¿Quién soy?</h2>
-          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
-            Soy <span class="font-semibold text-[#00ff7f]">Diego Molina</span>: esposo, papá y <span class="font-semibold">emprendedor</span>.
-            Me mueve la <span class="font-semibold text-[#00ff7f]">mentalidad de crecimiento</span> y la convicción de que cada
-            <span class="font-semibold">desafío</span> es una <span class="font-semibold">oportunidad</span>.
-          </p>
-        </div>
-      </div>
+      <div set:html={t("about.whoAmI")}></div>
 
       <!-- Qué hacía antes -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
-        <div class="order-2 md:order-1 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
-          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">¿Qué hacía antes?</h2>
-          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
-            Trabajaba en un <span class="font-semibold">empleo tradicional</span>, con <span class="font-semibold text-[#00ff7f]">poco tiempo</span>
-            para mi familia y sin un <span class="font-semibold">plan B</span>.
-          </p>
-        </div>
-        <div class="order-1 md:order-2 flex justify-center">
-          <img src="/pageImages/diegoPerfilAntes.webp" alt="Diego antes"
-            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
-        </div>
-      </div>
+      <div set:html={t("about.whatDidIDoBefore")}></div>
 
       <!-- Cómo conocí el proyecto -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
-        <div class="order-1 flex justify-center">
-          <img src="/pageImages/diegoConFabi.webp" alt="Cómo conocí el proyecto"
-            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
-        </div>
-        <div class="order-2 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
-          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">¿Cómo conocí el proyecto?</h2>
-          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
-            Un día, casi por casualidad, encontré una publicación en internet sobre un modelo de negocio distinto.
-            Al principio desconfié, pero pronto entendí la clave: con la capacitación correcta y una actitud positiva,
-            es totalmente posible construir algo grande y alcanzar esa estabilidad financiera que tanto buscaba.
-          </p>
-        </div>
-      </div>
+      <div set:html={t("about.howIFoundOutAboutTheProject")}></div>
 
       <!-- Por qué decidí entrar -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
-        <div class="order-1 md:order-2 flex justify-center">
-          <img src="/pageImages/diegoLiderando.webp" alt="Diego Molina Liderando"
-            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
-        </div>
-        <div class="order-2 md:order-1 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
-          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">¿Por qué decidí entrar?</h2>
-          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
-            Tres frases marcaron mi vida:
-          </p>
-          <div class="mt-2 space-y-2 text-sm sm:text-base md:text-lg">
-            <p>• <span class="text-[#00ff7f] font-semibold">¿Cómo te ves en cinco años?</span></p>
-            <p>• <span class="font-semibold">No esperes resultados distintos</span> si haces siempre lo mismo.</p>
-            <p>• Lo más valioso no es el dinero, sino el <span class="text-[#00ff7f] font-semibold">tiempo con tu familia</span>.</p>
-          </div>
-        </div>
-      </div>
+      <div set:html={t("about.whyDidIDecideToEnter")}></div>
 
       <!-- Mentoría de líderes -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
-        <div class="order-2 md:order-2 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
-          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">Mentoría de líderes</h2>
-          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
-            No caminé este camino solo. Tuve la oportunidad de aprender directamente de <span class="font-semibold text-[#00ff7f]">líderes de la industria</span>,
-            personas con resultados comprobados que me guiaron en cada paso.  
-            Gracias a sus consejos entendí la importancia de rodearse de quienes ya recorrieron el camino y que hoy
-            inspiran a miles de emprendedores a alcanzar sus propios sueños.
-          </p>
-        </div>
-        <div class="order-1 md:order-1 flex justify-center">
-          <img src="/pageImages/diegoConLideres.webp" alt="Mentoría de líderes"
-            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
-        </div>
-      </div>
+      <div set:html={t("about.mentoringLeaders")}></div>
 
       <!-- Qué busco transmitir -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
-        <div class="order-2 md:order-1 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
-          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">¿Qué busco transmitir?</h2>
-          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
-            Mi misión es <span class="font-semibold">inspirar</span> a que más personas construyan
-            <span class="text-[#00ff7f] font-semibold"> libertad</span>, con <span class="font-semibold">visión</span> y <span class="font-semibold">actitud positiva</span>.
-          </p>
-        </div>
-        <div class="order-1 md:order-2 flex justify-center">
-          <img src="/pageImages/diegoTransmitiendo.webp" alt="Diego transmitiendo"
-            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
-        </div>
-      </div>
+      <div set:html={t("about.whatAmILookingToConvey")}></div>
     </div>
 
     <!-- CTA final -->
     <ButtonContact
-      title="¿Te sentís identificado con mi historia?"
-      subtitle="Podés escribirme y dar el primer paso para construir tu propio camino."
-      buttonText="Contactame"
+      title = {t("about.buttonContact.title")}
+      subtitle = {t("about.buttonContact.subtitle")}
+      buttonText= {t("about.buttonContact.buttonText")}
       buttonLink="/contacto"
     />
   </section>

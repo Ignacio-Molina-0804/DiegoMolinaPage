@@ -115,6 +115,128 @@ export const labels = {
             </div>
         </section>        
     `,
+
+    // Sobre Mi
+
+    "about.pageTitle" : "Sobre mí | Diego Molina | Redes de Mercadeo",
+    "about.pageDescription" : "Conoce la historia de Diego Molina: quién soy, qué hacía antes y por qué decidí emprender en redes de mercadeo para transformar mi vida y la de otros.",
+
+    "about.buttonContact.title":"¿Te sentís identificado con mi historia?",
+    "about.buttonContact.subtitle":"Podés escribirme y dar el primer paso para construir tu propio camino.",
+    "about.buttonContact.buttonText" : "Contactame",
+
+    "about.title" : 
+    `
+        <h1 class="text-2xl sm:text-5xl font-bold text-center mb-10 sm:mb-20 pt-6">
+        Conocé <span class="text-[#00ff7f]">mi historia</span>
+        </h1>    
+    `,
+    "about.whoAmI":
+    `
+      <!-- Quién soy -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
+        <div class="order-1 flex justify-center">
+          <img src="/pageImages/diegoPerfilAhora.webp" alt="Diego Molina"
+            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
+        </div>
+        <div class="order-2 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">¿Quién soy?</h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
+            Soy <span class="font-semibold text-[#00ff7f]">Diego Molina</span>: esposo, papá y <span class="font-semibold">emprendedor</span>.
+            Me mueve la <span class="font-semibold text-[#00ff7f]">mentalidad de crecimiento</span> y la convicción de que cada
+            <span class="font-semibold">desafío</span> es una <span class="font-semibold">oportunidad</span>.
+          </p>
+        </div>
+      </div>    
+    `,
+    "about.whatDidIDoBefore":
+    `
+      <!-- Qué hacía antes -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
+        <div class="order-2 md:order-1 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">¿Qué hacía antes?</h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
+            Trabajaba en un <span class="font-semibold">empleo tradicional</span>, con <span class="font-semibold text-[#00ff7f]">poco tiempo</span>
+            para mi familia y sin un <span class="font-semibold">plan B</span>.
+          </p>
+        </div>
+        <div class="order-1 md:order-2 flex justify-center">
+          <img src="/pageImages/diegoPerfilAntes.webp" alt="Diego antes"
+            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
+        </div>
+      </div>
+    `,
+    "about.howIFoundOutAboutTheProject":
+    `
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
+        <div class="order-1 flex justify-center">
+          <img src="/pageImages/diegoConFabi.webp" alt="Cómo conocí el proyecto"
+            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
+        </div>
+        <div class="order-2 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">¿Cómo conocí el proyecto?</h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
+            Un día, casi por casualidad, encontré una publicación en internet sobre un modelo de negocio distinto.
+            Al principio desconfié, pero pronto entendí la clave: con la capacitación correcta y una actitud positiva,
+            es totalmente posible construir algo grande y alcanzar esa estabilidad financiera que tanto buscaba.
+          </p>
+        </div>
+      </div>
+    `,
+    "about.whyDidIDecideToEnter":
+    `
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
+        <div class="order-1 md:order-2 flex justify-center">
+          <img src="/pageImages/diegoLiderando.webp" alt="Diego Molina Liderando"
+            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
+        </div>
+        <div class="order-2 md:order-1 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">¿Por qué decidí entrar?</h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
+            Tres frases marcaron mi vida:
+          </p>
+          <div class="mt-2 space-y-2 text-sm sm:text-base md:text-lg">
+            <p>• <span class="text-[#00ff7f] font-semibold">¿Cómo te ves en cinco años?</span></p>
+            <p>• <span class="font-semibold">No esperes resultados distintos</span> si haces siempre lo mismo.</p>
+            <p>• Lo más valioso no es el dinero, sino el <span class="text-[#00ff7f] font-semibold">tiempo con tu familia</span>.</p>
+          </div>
+        </div>
+      </div>
+    `,
+    "about.mentoringLeaders":
+    `
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
+        <div class="order-2 md:order-2 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">Mentoría de líderes</h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
+            No caminé este camino solo. Tuve la oportunidad de aprender directamente de <span class="font-semibold text-[#00ff7f]">líderes de la industria</span>,
+            personas con resultados comprobados que me guiaron en cada paso.  
+            Gracias a sus consejos entendí la importancia de rodearse de quienes ya recorrieron el camino y que hoy
+            inspiran a miles de emprendedores a alcanzar sus propios sueños.
+          </p>
+        </div>
+        <div class="order-1 md:order-1 flex justify-center">
+          <img src="/pageImages/diegoConLideres.webp" alt="Mentoría de líderes"
+            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
+        </div>
+      </div>
+    `,
+    "about.whatAmILookingToConvey":
+    `
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
+        <div class="order-2 md:order-1 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">¿Qué busco transmitir?</h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
+            Mi misión es <span class="font-semibold">inspirar</span> a que más personas construyan
+            <span class="text-[#00ff7f] font-semibold"> libertad</span>, con <span class="font-semibold">visión</span> y <span class="font-semibold">actitud positiva</span>.
+          </p>
+        </div>
+        <div class="order-1 md:order-2 flex justify-center">
+          <img src="/pageImages/diegoTransmitiendo.webp" alt="Diego transmitiendo"
+            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
+        </div>
+      </div>
+    `,
   },
 
   pt: {
@@ -225,6 +347,128 @@ export const labels = {
             </div>
             </div>
         </section>        
+    `,
+
+    // Sobre Mim
+
+    "about.pageTitle" : "Sobre mim | Diego Molina | Redes de Marketing",
+    "about.pageDescription" : "Conheça a história de Diego Molina: quem sou, o que fazia antes e por que decidi empreender em redes de marketing para transformar minha vida e a de outros.",
+
+    "about.buttonContact.title":"Você se identifica com a minha história?",
+    "about.buttonContact.subtitle":"Você pode me escrever e dar o primeiro passo para construir seu próprio caminho.",
+    "about.buttonContact.buttonText" : "Fale comigo",
+
+    "about.title" : 
+    `
+        <h1 class="text-2xl sm:text-5xl font-bold text-center mb-10 sm:mb-20 pt-6">
+        Conheça <span class="text-[#00ff7f]">minha história</span>
+        </h1>    
+    `,
+    "about.whoAmI":
+    `
+      <!-- Quem sou -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
+        <div class="order-1 flex justify-center">
+          <img src="/pageImages/diegoPerfilAhora.webp" alt="Diego Molina"
+            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
+        </div>
+        <div class="order-2 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">Quem sou?</h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
+            Sou <span class="font-semibold text-[#00ff7f]">Diego Molina</span>: esposo, pai e <span class="font-semibold">empreendedor</span>.
+            Sou movido pela <span class="font-semibold text-[#00ff7f]">mentalidade de crescimento</span> e pela convicção de que cada
+            <span class="font-semibold">desafio</span> é uma <span class="font-semibold">oportunidade</span>.
+          </p>
+        </div>
+      </div>    
+    `,
+    "about.whatDidIDoBefore":
+    `
+      <!-- O que eu fazia antes -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
+        <div class="order-2 md:order-1 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">O que eu fazia antes?</h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
+            Trabalhava em um <span class="font-semibold">emprego tradicional</span>, com <span class="font-semibold text-[#00ff7f]">pouco tempo</span>
+            para minha família e sem um <span class="font-semibold">plano B</span>.
+          </p>
+        </div>
+        <div class="order-1 md:order-2 flex justify-center">
+          <img src="/pageImages/diegoPerfilAntes.webp" alt="Diego antes"
+            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
+        </div>
+      </div>
+    `,
+    "about.howIFoundOutAboutTheProject":
+    `
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
+        <div class="order-1 flex justify-center">
+          <img src="/pageImages/diegoConFabi.webp" alt="Como conheci o projeto"
+            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
+        </div>
+        <div class="order-2 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">Como conheci o projeto?</h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
+            Um dia, quase por acaso, encontrei uma publicação na internet sobre um modelo de negócio diferente.
+            No começo desconfiei, mas logo entendi o segredo: com o treinamento certo e uma atitude positiva,
+            é totalmente possível construir algo grande e alcançar aquela estabilidade financeira que tanto buscava.
+          </p>
+        </div>
+      </div>
+    `,
+    "about.whyDidIDecideToEnter":
+    `
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
+        <div class="order-1 md:order-2 flex justify-center">
+          <img src="/pageImages/diegoLiderando.webp" alt="Diego Molina Liderando"
+            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
+        </div>
+        <div class="order-2 md:order-1 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">Por que decidi entrar?</h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
+            Três frases marcaram minha vida:
+          </p>
+          <div class="mt-2 space-y-2 text-sm sm:text-base md:text-lg">
+            <p>• <span class="text-[#00ff7f] font-semibold">Como você se vê em cinco anos?</span></p>
+            <p>• <span class="font-semibold">Não espere resultados diferentes</span> se você faz sempre o mesmo.</p>
+            <p>• O mais valioso não é o dinheiro, e sim o <span class="text-[#00ff7f] font-semibold">tempo com sua família</span>.</p>
+          </div>
+        </div>
+      </div>
+    `,
+    "about.mentoringLeaders":
+    `
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
+        <div class="order-2 md:order-2 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">Mentoria de líderes</h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
+            Não caminhei esse caminho sozinho. Tive a oportunidade de aprender diretamente com <span class="font-semibold text-[#00ff7f]">líderes da indústria</span>,
+            pessoas com resultados comprovados que me guiaram em cada passo.  
+            Graças aos seus conselhos, entendi a importância de estar perto de quem já percorreu o caminho e que hoje
+            inspira milhares de empreendedores a alcançar seus próprios sonhos.
+          </p>
+        </div>
+        <div class="order-1 md:order-1 flex justify-center">
+          <img src="/pageImages/diegoConLideres.webp" alt="Mentoria de líderes"
+            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
+        </div>
+      </div>
+    `,
+    "about.whatAmILookingToConvey":
+    `
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
+        <div class="order-2 md:order-1 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">O que busco transmitir?</h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
+            Minha missão é <span class="font-semibold">inspirar</span> mais pessoas a construírem
+            <span class="text-[#00ff7f] font-semibold"> liberdade</span>, com <span class="font-semibold">visão</span> e <span class="font-semibold">atitude positiva</span>.
+          </p>
+        </div>
+        <div class="order-1 md:order-2 flex justify-center">
+          <img src="/pageImages/diegoTransmitiendo.webp" alt="Diego transmitindo"
+            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
+        </div>
+      </div>
     `,
   },
 };
