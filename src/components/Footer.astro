@@ -8,11 +8,13 @@ import { languageList } from "../i18n/ui";
 
 const currentLang = Astro.currentLocale || "es";
 const t = useTranslations(currentLang as keyof typeof languageList);
+
+// Ruta dinámica para membresía según idioma
+const membresiaLink = currentLang === "pt" ? "/pt/membresia" : "/membresia";
 ---
 
 <footer class="bg-gradient-to-t from-[#15011c] to-transparent text-gray-200">
   <div class="max-w-6xl mx-auto px-6 py-10">
-    
     <!-- Contenedor flexible -->
     <div class="flex flex-col items-center md:justify-between md:items-center gap-6">
       
@@ -44,10 +46,9 @@ const t = useTranslations(currentLang as keyof typeof languageList);
           <InstagramIcon />
         </a>
         <a
-          href="/membresia"
-          target="_blank"
+          href={membresiaLink}
           class="hover:text-[#00ff7f]"
-          aria-label="Membresía"
+          aria-label={t("footer.membresia") || "Membresía"}
         >
           <DiamondIcon />
         </a>

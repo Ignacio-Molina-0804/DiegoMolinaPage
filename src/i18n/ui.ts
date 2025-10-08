@@ -6,15 +6,14 @@ export const languageList = {
 
 export const labels = {
   es: {
-
     // Footer
 
-    "footer.text": 
-    `
+    "footer.text": `
       <p class="text-sm text-gray-400 text-center md:text-right">
         © 2025 Diego Molina. Todos los derechos reservados.
       </p>    
     `,
+    "footer.membresia": "Membresía",
 
     // Home
 
@@ -121,12 +120,12 @@ export const labels = {
   pt: {
     // Footer
 
-    "footer.text": 
-    `
+    "footer.text": `
       <p class="text-sm text-gray-400 text-center md:text-right">
         © 2025 Diego Molina. Todos os direitos reservados.
       </p>    
     `,
+    "footer.membresia": "Assinatura",
 
     // Home
 
