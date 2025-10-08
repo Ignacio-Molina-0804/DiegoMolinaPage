@@ -4,9 +4,15 @@
 import Layout from "../../layouts/Layout.astro";
 import ButtonContact from "../../components/ButtonContact.astro";
 
+import { useTranslations } from "../../i18n/util";
+import { languageList } from "../../i18n/ui";
+
+const currentLang = Astro.currentLocale || "es";
+const t = useTranslations(currentLang as keyof typeof languageList);
+
 const {
-  pageTitle = "Audios | Diego Molina | Redes de Mercadeo",
-  pageDescription = "Escucha los audios de Diego Molina: herramientas, inspiración y motivación para impulsar tu crecimiento personal y profesional en redes de mercadeo.",
+  pageTitle = t("audios.pageTitle"),
+  pageDescription = t("audios.pageDescription"),
 } = Astro.props;
 
 const spotifyAudios = [
@@ -52,21 +58,10 @@ const spotifyAudios = [
 <Layout title={pageTitle} description={pageDescription}>
   <section class="relative max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 text-white">
     <!-- Título -->
-    <h1 class="text-4xl sm:text-5xl font-bold text-center mb-8 pt-6 sm:pt-10">
-      Mis <span class="text-[#00ff7f]">Audios</span>
-    </h1>
+    <h1 set:html={t("audios.title")}></h1>
 
     <!-- Descripción -->
-    <div class="max-w-2xl sm:max-w-3xl mx-auto text-center text-gray-300 mb-12 sm:mb-16">
-      <p class="text-base sm:text-lg mb-4">
-        Aquí encontrarás algunos de mis
-        <span class="text-[#00ff7f] font-semibold">episodios destacados en Spotify</span>,
-        creados para inspirarte, motivarte y ayudarte a crecer en tu camino.
-      </p>
-      <p class="italic text-gray-400 text-sm sm:text-base">
-        “Un audio puede ser el inicio de un gran cambio.”
-      </p>
-    </div>
+    <div set:html={t("audios.description")}></div>
 
     <!-- Grid -->
     <div class="grid gap-8 sm:gap-10 md:grid-cols-2">
@@ -93,9 +88,9 @@ const spotifyAudios = [
   </section>
 
   <ButtonContact
-    title="¿Querés dar el siguiente paso?"
-    subtitle="Si lo que escuchaste te inspiró, escribime y empecemos a trabajar juntos en tu crecimiento."
-    buttonText="Hablemos"
+    title= {t("audios.buttonContact.title")}
+    subtitle= {t("audios.buttonContact.subtitle")}
+    buttonText= {t("audios.buttonContact.buttonText")}
     buttonLink="/contacto"
   />
 </Layout>

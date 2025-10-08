@@ -333,6 +333,36 @@ export const labels = {
     </div>
     `,
 
+    // Audios
+
+    "audios.pageTitle" : "Audios | Diego Molina | Redes de Mercadeo",
+    "audios.pageDescription" : "Escucha los audios de Diego Molina: herramientas, inspiración y motivación para impulsar tu crecimiento personal y profesional en redes de mercadeo.",
+
+    "audios.buttonContact.title":"¿Querés dar el siguiente paso?",
+    "audios.buttonContact.subtitle":"Si lo que escuchaste te inspiró, escribime y empecemos a trabajar juntos en tu crecimiento.",
+    "audios.buttonContact.buttonText" : "Hablemos",
+
+    "audios.title" : 
+    `
+    <h1 class="text-4xl sm:text-5xl font-bold text-center mb-8 pt-6 sm:pt-10">
+      Mis <span class="text-[#00ff7f]">Audios</span>
+    </h1>
+    `,
+
+    "audios.description" : 
+    `
+    <div class="max-w-2xl sm:max-w-3xl mx-auto text-center text-gray-300 mb-12 sm:mb-16">
+      <p class="text-base sm:text-lg mb-4">
+        Aquí encontrarás algunos de mis
+        <span class="text-[#00ff7f] font-semibold">episodios destacados en Spotify</span>,
+        creados para inspirarte, motivarte y ayudarte a crecer en tu camino.
+      </p>
+      <p class="italic text-gray-400 text-sm sm:text-base">
+        “Un audio puede ser el inicio de un gran cambio.”
+      </p>
+    </div>
+    `,
+
   },
 
   pt: {
@@ -658,6 +688,36 @@ export const labels = {
       <p class="text-base sm:text-lg text-gray-300 mb-4">
         O melhor é que essa oportunidade não tem fronteiras: estamos em grande parte da
         <span class="text-[#00ff7f] font-semibold"> América Latina</span>.
+      </p>
+    </div>
+    `,
+
+    // Áudios
+
+    "audios.pageTitle" : "Áudios | Diego Molina | Redes de Marketing",
+    "audios.pageDescription" : "Ouça os áudios de Diego Molina: ferramentas, inspiração e motivação para impulsionar seu crescimento pessoal e profissional em redes de marketing.",
+
+    "audios.buttonContact.title":"Quer dar o próximo passo?",
+    "audios.buttonContact.subtitle":"Se o que você ouviu te inspirou, escreva para mim e vamos começar a trabalhar juntos no seu crescimento.",
+    "audios.buttonContact.buttonText" : "Vamos conversar",
+
+    "audios.title" : 
+    `
+    <h1 class="text-4xl sm:text-5xl font-bold text-center mb-8 pt-6 sm:pt-10">
+      Meus <span class="text-[#00ff7f]">Áudios</span>
+    </h1>
+    `,
+
+    "audios.description" : 
+    `
+    <div class="max-w-2xl sm:max-w-3xl mx-auto text-center text-gray-300 mb-12 sm:mb-16">
+      <p class="text-base sm:text-lg mb-4">
+        Aqui você encontrará alguns dos meus
+        <span class="text-[#00ff7f] font-semibold">episódios em destaque no Spotify</span>,
+        criados para te inspirar, motivar e ajudar no seu caminho de crescimento.
+      </p>
+      <p class="italic text-gray-400 text-sm sm:text-base">
+        “Um áudio pode ser o início de uma grande mudança.”
       </p>
     </div>
     `,
