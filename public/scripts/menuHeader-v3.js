@@ -40,13 +40,32 @@ document.addEventListener("DOMContentLoaded", () => {
       .join("");
   }
 
-  // Control del menú de idioma
+// --- Control del menú de idioma ---
   langBtn?.addEventListener("click", (e) => {
     e.stopPropagation();
     langMenu?.classList.toggle("hidden");
   });
 
   document.addEventListener("click", () => langMenu?.classList.add("hidden"));
+
+  // Detectar ruta actual
+  const currentPath = window.location.pathname;
+
+  // Calcular versión en otro idioma
+  const pathInPT = currentPath.startsWith("/pt")
+    ? currentPath // ya en PT
+    : "/pt" + (currentPath === "/" ? "" : currentPath);
+  const pathInES = currentPath.startsWith("/pt")
+    ? currentPath.replace(/^\/pt/, "") || "/"
+    : currentPath;
+
+  // Actualizar links del menú de idioma dinámicamente
+  if (langMenu) {
+    langMenu.innerHTML = `
+      <a href="${pathInES}" class="block px-3 py-2 hover:bg-[#00ff7f]/20 transition">Español</a>
+      <a href="${pathInPT}" class="block px-3 py-2 hover:bg-[#00ff7f]/20 transition">Português</a>
+    `;
+  }
 
   // --- Tu parte del botón hamburguesa ---
   const menuBtn = document.getElementById("menu-btn");
