@@ -21,5 +21,6 @@ const t = useTranslations(currentLang as keyof typeof languageList);
   <section set:html={t('home.section.benefits')}></section>
 
   <!-- CTA intermedio -->
-  <ButtonContact />
+  <ButtonContact 
+  buttonLink="/pt/contacto"/>
 </Layout>
