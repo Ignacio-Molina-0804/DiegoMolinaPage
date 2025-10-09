@@ -1,10 +1,17 @@
+---
+import { useTranslations } from "../i18n/util";
+import { languageList } from "../i18n/ui";
+
+const currentLang = Astro.currentLocale || "es";
+const t = useTranslations(currentLang as keyof typeof languageList);
+---
+
 <header
   class="fixed bg-[#15011c]/70 backdrop-blur-md text-white shadow-md w-full z-50"
 >
   <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
     <!-- Logo + Idiomas -->
     <div class="flex items-center space-x-4">
-      <!-- Logo -->
       <a href="/" class="flex items-center" id="logo-link">
         <img
           src="/logos/textLogo.webp"
@@ -13,131 +20,40 @@
         />
       </a>
 
-      <!-- Selector de idioma -->
       <div class="relative">
         <button
           id="lang-btn"
           class="flex items-center gap-1 bg-[#1b0123]/80 px-3 py-1.5 rounded-md text-sm font-medium hover:bg-[#24012f] transition"
         >
           <span id="current-lang">ES</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-4 w-4 transition-transform"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
             <path
               fill-rule="evenodd"
               d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.25 8.27a.75.75 0 01-.02-1.06z"
-              clip-rule="evenodd"></path>
+              clip-rule="evenodd"
+            />
           </svg>
         </button>
 
-        <!-- Menú desplegable -->
-        <div
-          id="lang-menu"
-          class="absolute hidden bg-[#1b0123]/95 rounded-md shadow-lg mt-1 w-28 border border-white/10"
-        >
-          <a href="/" class="block px-3 py-2 hover:bg-[#00ff7f]/20 transition"
-            >Español</a
-          >
-          <a href="/pt" class="block px-3 py-2 hover:bg-[#00ff7f]/20 transition"
-            >Português</a
-          >
+        <div id="lang-menu" class="absolute hidden bg-[#1b0123]/95 rounded-md shadow-lg mt-1 w-28 border border-white/10">
+          <a href="/" class="block px-3 py-2 hover:bg-[#00ff7f]/20 transition">Español</a>
+          <a href="/pt" class="block px-3 py-2 hover:bg-[#00ff7f]/20 transition">Português</a>
         </div>
       </div>
     </div>
 
-    <!-- Botón hamburguesa (solo móvil) -->
-    <button
-      id="menu-btn"
-      class="md:hidden flex flex-col justify-center items-center space-y-1 focus:outline-none relative w-8 h-8"
-    >
-      <span class="line1 block w-6 h-0.5 bg-white transition-all duration-300"
-      ></span>
-      <span class="line2 block w-6 h-0.5 bg-white transition-all duration-300"
-      ></span>
-      <span class="line3 block w-6 h-0.5 bg-white transition-all duration-300"
-      ></span>
+    <button id="menu-btn" class="md:hidden flex flex-col justify-center items-center space-y-1 focus:outline-none relative w-8 h-8">
+      <span class="line1 block w-6 h-0.5 bg-white transition-all duration-300"></span>
+      <span class="line2 block w-6 h-0.5 bg-white transition-all duration-300"></span>
+      <span class="line3 block w-6 h-0.5 bg-white transition-all duration-300"></span>
     </button>
 
-    <!-- Navegación escritorio -->
     <nav id="desktop-nav" class="hidden md:flex space-x-6 font-medium"></nav>
   </div>
 
-  <!-- Navegación móvil -->
-  <nav
-    id="mobile-menu"
-    class="md:hidden max-h-0 overflow-hidden transition-all duration-500 bg-[#15011c]/90 backdrop-blur-md"
-  >
-    <div
-      id="mobile-nav-links"
-      class="flex flex-col space-y-4 px-6 py-4 font-medium"
-    >
-    </div>
+  <nav id="mobile-menu" class="md:hidden max-h-0 overflow-hidden transition-all duration-500 bg-[#15011c]/90 backdrop-blur-md">
+    <div id="mobile-nav-links" class="flex flex-col space-y-4 px-6 py-4 font-medium"></div>
   </nav>
 </header>
 
-<!-- JS -->
 <script src="/scripts/menuHeader.js" defer></script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const langBtn = document.getElementById("lang-btn");
-    const langMenu = document.getElementById("lang-menu");
-    const currentLang = document.getElementById("current-lang");
-    const desktopNav = document.getElementById("desktop-nav");
-    const mobileNav = document.getElementById("mobile-nav-links");
-    const logoLink = document.getElementById("logo-link");
-
-    // Detectar idioma actual
-    const isPT = window.location.pathname.startsWith("/pt");
-    const base = isPT ? "/pt" : "";
-
-    if (currentLang) {
-      currentLang.textContent = isPT ? "PT" : "ES";
-    }
-    (logoLink as HTMLAnchorElement).href = base + "/";
-
-    // Enlaces comunes
-    const links = [
-      { href: "/", label: "Home" },
-      { href: "/sobre-mi", label: "Sobre mí" },
-      { href: "/oportunidad", label: "Oportunidad" },
-      { href: "/audios", label: "Audios" },
-      { href: "/contacto", label: "Contacto" },
-    ];
-
-    // Render desktop nav
-    if (desktopNav) {
-      desktopNav.innerHTML = links
-        .map(
-          (l) =>
-            `<a href="${base + l.href}" class="hover:text-[#00ff7f] transition">${l.label}</a>`
-        )
-        .join("");
-    }
-
-    // Render mobile nav
-    if (mobileNav) {
-      mobileNav.innerHTML = `
-      ${links
-        .map(
-          (l) =>
-            `<a href="${base + l.href}" class="hover:text-[#00ff7f] transition">${l.label}</a>`
-        )
-        .join("")}
-    `;
-    }
-
-    // Control del menú de idioma
-    langBtn?.addEventListener("click", (e) => {
-      e.stopPropagation();
-      langMenu?.classList.toggle("hidden");
-    });
-
-    document.addEventListener("click", () => {
-      langMenu?.classList.add("hidden");
-    });
-  });
-</script>

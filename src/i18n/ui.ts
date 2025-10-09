@@ -6,6 +6,16 @@ export const languageList = {
 
 export const labels = {
   es: {
+
+    // Header
+
+    "header.home": "Home",
+    "header.sobreMi": "Sobre Mí",
+    "header.opotunidad": "Oportunidad",
+    "header.audios": "Audios",
+    "header.contacto": "Contacto",
+
+
     // Footer
 
     "footer.text": `
@@ -544,6 +554,15 @@ export const labels = {
   },
 
   pt: {
+
+    // Header
+
+    "header.home": "Início",
+    "header.sobreMi": "Sobre Mim",
+    "header.oportunidad": "Oportunidade",
+    "header.audios": "Áudios",
+    "header.contacto": "Contato",    
+
     // Footer
 
     "footer.text": `

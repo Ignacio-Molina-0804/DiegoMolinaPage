@@ -1,30 +1,77 @@
-const menuBtn = document.getElementById("menu-btn");
-const mobileMenu = document.getElementById("mobile-menu");
-const line1 = menuBtn?.querySelector(".line1");
-const line2 = menuBtn?.querySelector(".line2");
-const line3 = menuBtn?.querySelector(".line3");
+document.addEventListener("DOMContentLoaded", () => {
+  const langBtn = document.getElementById("lang-btn");
+  const langMenu = document.getElementById("lang-menu");
+  const currentLang = document.getElementById("current-lang");
+  const desktopNav = document.getElementById("desktop-nav");
+  const mobileNav = document.getElementById("mobile-nav-links");
+  const logoLink = document.getElementById("logo-link");
 
-let open = false;
+  const isPT = window.location.pathname.startsWith("/pt");
+  const base = isPT ? "/pt" : "";
 
-menuBtn?.addEventListener("click", () => {
-  open = !open;
+  if (currentLang) currentLang.textContent = isPT ? "PT" : "ES";
+  if (logoLink) logoLink.href = base + "/";
 
-  // Animación del menú
-  if (open) {
-    mobileMenu?.classList.remove("max-h-0");
-    mobileMenu?.classList.add("max-h-screen");
+  const links = [
+    { href: "/", label: isPT ? "Início" : "Inicio" },
+    { href: "/sobre-mi", label: isPT ? "Sobre mim" : "Sobre mí" },
+    { href: "/oportunidad", label: isPT ? "Oportunidade" : "Oportunidad" },
+    { href: "/audios", label: isPT ? "Áudios" : "Audios" },
+    { href: "/contacto", label: isPT ? "Contato" : "Contacto" },
+  ];
 
-    // Animación a "X"
-    line1?.classList.add("rotate-45", "translate-y-2");
-    line2?.classList.add("opacity-0");
-    line3?.classList.add("-rotate-45", "-translate-y-2");
-  } else {
-    mobileMenu?.classList.add("max-h-0");
-    mobileMenu?.classList.remove("max-h-screen");
-
-    // Volver a hamburguesa
-    line1?.classList.remove("rotate-45", "translate-y-2");
-    line2?.classList.remove("opacity-0");
-    line3?.classList.remove("-rotate-45", "-translate-y-2");
+  // Render desktop nav
+  if (desktopNav) {
+    desktopNav.innerHTML = links
+      .map(
+        (l) =>
+          `<a href="${base + l.href}" class="hover:text-[#00ff7f] transition">${l.label}</a>`
+      )
+      .join("");
   }
+
+  // Render mobile nav
+  if (mobileNav) {
+    mobileNav.innerHTML = links
+      .map(
+        (l) =>
+          `<a href="${base + l.href}" class="hover:text-[#00ff7f] transition">${l.label}</a>`
+      )
+      .join("");
+  }
+
+  // Control del menú de idioma
+  langBtn?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    langMenu?.classList.toggle("hidden");
+  });
+
+  document.addEventListener("click", () => langMenu?.classList.add("hidden"));
+
+  // --- Tu parte del botón hamburguesa ---
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const line1 = menuBtn?.querySelector(".line1");
+  const line2 = menuBtn?.querySelector(".line2");
+  const line3 = menuBtn?.querySelector(".line3");
+
+  let open = false;
+
+  menuBtn?.addEventListener("click", () => {
+    open = !open;
+
+    if (open) {
+      mobileMenu?.classList.remove("max-h-0");
+      mobileMenu?.classList.add("max-h-screen");
+      line1?.classList.add("rotate-45", "translate-y-2");
+      line2?.classList.add("opacity-0");
+      line3?.classList.add("-rotate-45", "-translate-y-2");
+    } else {
+      mobileMenu?.classList.add("max-h-0");
+      mobileMenu?.classList.remove("max-h-screen");
+      line1?.classList.remove("rotate-45", "translate-y-2");
+      line2?.classList.remove("opacity-0");
+      line3?.classList.remove("-rotate-45", "-translate-y-2");
+    }
+  });
 });
