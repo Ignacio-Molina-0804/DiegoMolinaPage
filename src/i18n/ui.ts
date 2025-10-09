@@ -118,21 +118,21 @@ export const labels = {
 
     // Sobre Mi
 
-    "about.pageTitle" : "Sobre mí | Diego Molina | Redes de Mercadeo",
-    "about.pageDescription" : "Conoce la historia de Diego Molina: quién soy, qué hacía antes y por qué decidí emprender en redes de mercadeo para transformar mi vida y la de otros.",
+    "about.pageTitle": "Sobre mí | Diego Molina | Redes de Mercadeo",
+    "about.pageDescription":
+      "Conoce la historia de Diego Molina: quién soy, qué hacía antes y por qué decidí emprender en redes de mercadeo para transformar mi vida y la de otros.",
 
-    "about.buttonContact.title":"¿Te sentís identificado con mi historia?",
-    "about.buttonContact.subtitle":"Podés escribirme y dar el primer paso para construir tu propio camino.",
-    "about.buttonContact.buttonText" : "Contactame",
+    "about.buttonContact.title": "¿Te sentís identificado con mi historia?",
+    "about.buttonContact.subtitle":
+      "Podés escribirme y dar el primer paso para construir tu propio camino.",
+    "about.buttonContact.buttonText": "Contactame",
 
-    "about.title" : 
-    `
+    "about.title": `
         <h1 class="text-2xl sm:text-5xl font-bold text-center mb-10 sm:mb-20 pt-6">
         Conocé <span class="text-[#00ff7f]">mi historia</span>
         </h1>    
     `,
-    "about.whoAmI":
-    `
+    "about.whoAmI": `
       <!-- Quién soy -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
         <div class="order-1 flex justify-center">
@@ -149,8 +149,7 @@ export const labels = {
         </div>
       </div>    
     `,
-    "about.whatDidIDoBefore":
-    `
+    "about.whatDidIDoBefore": `
       <!-- Qué hacía antes -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
         <div class="order-2 md:order-1 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
@@ -166,8 +165,7 @@ export const labels = {
         </div>
       </div>
     `,
-    "about.howIFoundOutAboutTheProject":
-    `
+    "about.howIFoundOutAboutTheProject": `
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
         <div class="order-1 flex justify-center">
           <img src="/pageImages/diegoConFabi.webp" alt="Cómo conocí el proyecto"
@@ -183,8 +181,7 @@ export const labels = {
         </div>
       </div>
     `,
-    "about.whyDidIDecideToEnter":
-    `
+    "about.whyDidIDecideToEnter": `
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
         <div class="order-1 md:order-2 flex justify-center">
           <img src="/pageImages/diegoLiderando.webp" alt="Diego Molina Liderando"
@@ -203,8 +200,7 @@ export const labels = {
         </div>
       </div>
     `,
-    "about.mentoringLeaders":
-    `
+    "about.mentoringLeaders": `
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
         <div class="order-2 md:order-2 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
           <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">Mentoría de líderes</h2>
@@ -221,8 +217,7 @@ export const labels = {
         </div>
       </div>
     `,
-    "about.whatAmILookingToConvey":
-    `
+    "about.whatAmILookingToConvey": `
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
         <div class="order-2 md:order-1 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
           <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">¿Qué busco transmitir?</h2>
@@ -239,16 +234,16 @@ export const labels = {
     `,
 
     // Oportunidad
-    
-    "oportunity.pageTitle" : `Oportunidad | Diego Molina | Redes de Mercadeo`,
-    "oportunity.pageDescription" : `Descubrí cómo generar ingresos con un supermercado digital global, presente en más de 100 países y con más de 60 años de historia. Transforma tu consumo en una oportunidad de negocio.`,
 
-    "oportunity.buttonContact.title" : "¿Listo para aprender cómo hacerlo?",
-    "oportunity.buttonContact.subtitle" : "Podés comenzar hoy mismo. En 5 años vas a agradecer haber dado este paso hacia tu libertad.",
-    "oportunity.buttonContact.buttonText" : "Quiero aprender cómo hacerlo",
+    "oportunity.pageTitle": `Oportunidad | Diego Molina | Redes de Mercadeo`,
+    "oportunity.pageDescription": `Descubrí cómo generar ingresos con un supermercado digital global, presente en más de 100 países y con más de 60 años de historia. Transforma tu consumo en una oportunidad de negocio.`,
 
-    "oportunity.intro" : 
-    `
+    "oportunity.buttonContact.title": "¿Listo para aprender cómo hacerlo?",
+    "oportunity.buttonContact.subtitle":
+      "Podés comenzar hoy mismo. En 5 años vas a agradecer haber dado este paso hacia tu libertad.",
+    "oportunity.buttonContact.buttonText": "Quiero aprender cómo hacerlo",
+
+    "oportunity.intro": `
     <div class="text-center mb-12 sm:mb-20">
       <h1 class="text-3xl sm:text-5xl font-bold mb-6 pt-10">
         Una <span class="text-[#00ff7f]">Oportunidad</span> que puede cambiar tu vida
@@ -260,8 +255,7 @@ export const labels = {
       </p>
     </div>
     `,
-    "oportunity.benefitsOfConsumption":
-    `
+    "oportunity.benefitsOfConsumption": `
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center mb-16 sm:mb-20">
       <div class="bg-white/5 p-6 sm:p-8 rounded-2xl backdrop-blur-sm shadow-lg hover:scale-[1.02] transition">
         <h2 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">¿Qué ofrece?</h2>
@@ -280,8 +274,7 @@ export const labels = {
       </div>
     </div>
     `,
-    "oportunity.generateIncome" : 
-    `
+    "oportunity.generateIncome": `
     <div class="bg-gradient-to-r from-[#0f172a] to-[#1a0b20] p-8 sm:p-10 rounded-2xl shadow-xl mb-16 sm:mb-20">
       <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center">Lo más interesante...</h2>
       <p class="text-base sm:text-lg text-gray-300 text-center max-w-3xl mx-auto">
@@ -289,8 +282,7 @@ export const labels = {
       </p>
     </div>
     `,
-    "oportunity.incomeExample" : 
-    `
+    "oportunity.incomeExample": `
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center mb-16 sm:mb-20">
       <div>
         <img src="/pageImages/redDeUsuarios.webp" alt="Red de usuarios"
@@ -310,8 +302,7 @@ export const labels = {
       </div>
     </div>
     `,
-    "oportunity.marketingPower":
-    `
+    "oportunity.marketingPower": `
     <div class="bg-[#00ff7f]/10 p-6 sm:p-8 rounded-2xl shadow-lg mb-16 sm:mb-20 text-center">
       <p class="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
         ✨ Y probablemente vos solo invitaste a <span class="font-semibold">10 personas</span>…
@@ -319,8 +310,7 @@ export const labels = {
       </p>
     </div>
     `,
-    "oportunity.finalReflection":
-    `
+    "oportunity.finalReflection": `
     <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
       <h2 class="text-2xl sm:text-3xl font-bold mb-4">Si te tomara de 2 a 5 años construirlo...</h2>
       <p class="text-base sm:text-lg text-gray-300 mb-4">
@@ -335,22 +325,22 @@ export const labels = {
 
     // Audios
 
-    "audios.pageTitle" : "Audios | Diego Molina | Redes de Mercadeo",
-    "audios.pageDescription" : "Escucha los audios de Diego Molina: herramientas, inspiración y motivación para impulsar tu crecimiento personal y profesional en redes de mercadeo.",
+    "audios.pageTitle": "Audios | Diego Molina | Redes de Mercadeo",
+    "audios.pageDescription":
+      "Escucha los audios de Diego Molina: herramientas, inspiración y motivación para impulsar tu crecimiento personal y profesional en redes de mercadeo.",
 
-    "audios.buttonContact.title":"¿Querés dar el siguiente paso?",
-    "audios.buttonContact.subtitle":"Si lo que escuchaste te inspiró, escribime y empecemos a trabajar juntos en tu crecimiento.",
-    "audios.buttonContact.buttonText" : "Hablemos",
+    "audios.buttonContact.title": "¿Querés dar el siguiente paso?",
+    "audios.buttonContact.subtitle":
+      "Si lo que escuchaste te inspiró, escribime y empecemos a trabajar juntos en tu crecimiento.",
+    "audios.buttonContact.buttonText": "Hablemos",
 
-    "audios.title" : 
-    `
+    "audios.title": `
     <h1 class="text-4xl sm:text-5xl font-bold text-center mb-8 pt-6 sm:pt-10">
       Mis <span class="text-[#00ff7f]">Audios</span>
     </h1>
     `,
 
-    "audios.description" : 
-    `
+    "audios.description": `
     <div class="max-w-2xl sm:max-w-3xl mx-auto text-center text-gray-300 mb-12 sm:mb-16">
       <p class="text-base sm:text-lg mb-4">
         Aquí encontrarás algunos de mis
@@ -365,11 +355,11 @@ export const labels = {
 
     // Contacto
 
-    "contact.pageTitle" : "Contacto | Diego Molina | Redes de Mercadeo",
-    "contact.pageDescription" : "Ponte en contacto con Diego Molina. Da el primer paso hacia tu desarrollo personal y financiero en redes de mercadeo.",
+    "contact.pageTitle": "Contacto | Diego Molina | Redes de Mercadeo",
+    "contact.pageDescription":
+      "Ponte en contacto con Diego Molina. Da el primer paso hacia tu desarrollo personal y financiero en redes de mercadeo.",
 
-    "contact.intro" : 
-    `
+    "contact.intro": `
     <div
       class="max-w-2xl sm:max-w-3xl text-center mb-12 sm:mb-16 pt-6 sm:pt-10"
     >
@@ -384,19 +374,21 @@ export const labels = {
     </div>
     `,
 
-    "contact.form.title" : "Tu Cuestionario",
-    "contact.form.placehoolderName" : "Tu Nombre",
-    "contact.form.placehoolderEmail" : "Tu email",
-    "contact.form.placehoolderPhone" : "Tu celular",
-    "contact.form.placehoolderMessage" : "Escribe tu mensaje...",
-    "contact.form.placehoolderButton" : "Enviar Whatsapp",
-    
-    "contact.directContact.title" : "Contacto",
-    "contact.directContact.description" : "¿Querés escribirme directamente? Estas son las formas más rápidas de ponerte en contacto conmigo:",
-    "contact.directContact.invitationText" : "Además de escribirme, seguime en redes: comparto contenido de crecimiento personal, motivación y estrategias en redes de mercadeo todos los días. ¡Sumate y mantenete inspirado!",
+    "contact.form.title": "Tu Cuestionario",
+    "contact.form.placehoolderName": "Tu Nombre",
+    "contact.form.placehoolderEmail": "Tu email",
+    "contact.form.placehoolderPhone": "Tu celular",
+    "contact.form.placehoolderMessage": "Escribe tu mensaje...",
+    "contact.form.placehoolderButton": "Enviar Gmail",
+    "contact.form.sendWhatsapp": "Enviar por WhatsApp",
 
-    "contact.directContact.extra" : 
-    `
+    "contact.directContact.title": "Contacto",
+    "contact.directContact.description":
+      "¿Querés escribirme directamente? Estas son las formas más rápidas de ponerte en contacto conmigo:",
+    "contact.directContact.invitationText":
+      "Además de escribirme, seguime en redes: comparto contenido de crecimiento personal, motivación y estrategias en redes de mercadeo todos los días. ¡Sumate y mantenete inspirado!",
+
+    "contact.directContact.extra": `
         <div class="mt-6 bg-[#0f172a]/70 rounded-xl p-4 sm:p-6">
           <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
             ¿Por qué contactarme?
@@ -410,15 +402,18 @@ export const labels = {
         </div>
     `,
 
+    
+
     // Gracias
 
-    "thanks.pageTitle" : "Gracias | Diego Molina | Redes de Mercadeo",
-    "thanks.pageDescription" : "Tu mensaje fue enviado con éxito. Muy pronto me pondré en contacto contigo.",
+    "thanks.pageTitle": "Gracias | Diego Molina | Redes de Mercadeo",
+    "thanks.pageDescription":
+      "Tu mensaje fue enviado con éxito. Muy pronto me pondré en contacto contigo.",
 
-    "thanks.title" : "¡Gracias por tu mensaje!",
-    "thanks.description" : "Tu consulta fue enviada con éxito y la recibí correctamente. En breve me pondré en contacto contigo para responder todas tus dudas.",
-    "thanks.redirect" : 
-    `
+    "thanks.title": "¡Gracias por tu mensaje!",
+    "thanks.description":
+      "Tu consulta fue enviada con éxito y la recibí correctamente. En breve me pondré en contacto contigo para responder todas tus dudas.",
+    "thanks.redirect": `
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
       <a href="/" class="px-8 py-3 rounded-xl bg-[#00ff7f] text-gray-900 font-semibold shadow-lg hover:bg-[#00e670] transition-colors duration-300">
         Volver al inicio
@@ -431,15 +426,16 @@ export const labels = {
 
     // Membresia
 
-    "membership.pageTitle" : "Membresía | Diego Molina | Redes de Mercadeo",
-    "membership.pageDescription" : "Con la membresía de Amway accedés a un mundo de beneficios: productos de calidad en nutrición, cuidado personal, hogar y belleza, comprados directamente de fábrica con descuentos exclusivos. Además, obtenés la posibilidad de emprender tu propio negocio digital, con respaldo global y más de 60 años de trayectoria.",
+    "membership.pageTitle": "Membresía | Diego Molina | Redes de Mercadeo",
+    "membership.pageDescription":
+      "Con la membresía de Amway accedés a un mundo de beneficios: productos de calidad en nutrición, cuidado personal, hogar y belleza, comprados directamente de fábrica con descuentos exclusivos. Además, obtenés la posibilidad de emprender tu propio negocio digital, con respaldo global y más de 60 años de trayectoria.",
 
-    "membership.buttonContact.title" : "¿Tenés dudas sobre cómo comenzar?",
-    "membership.buttonContact.subtitle" : "Podés escribirme y te ayudo paso a paso para crear tu cuenta Amway y empezar tu negocio.",
-    "membership.buttonContact.buttonText" : "Contactame",
+    "membership.buttonContact.title": "¿Tenés dudas sobre cómo comenzar?",
+    "membership.buttonContact.subtitle":
+      "Podés escribirme y te ayudo paso a paso para crear tu cuenta Amway y empezar tu negocio.",
+    "membership.buttonContact.buttonText": "Contactame",
 
-    "membership.introduction" : 
-    `
+    "membership.introduction": `
     <div class="text-center mb-16 pt-10">
       <h1 class="text-4xl sm:text-6xl font-bold mb-6 leading-tight">
         Conocé <span class="text-[#00ff7f]">Amway</span>
@@ -456,8 +452,7 @@ export const labels = {
       </p>
     </div>
     `,
-    "membership.hero":
-    `
+    "membership.hero": `
     <div class="text-center mb-20">
       <h2 class="text-4xl sm:text-5xl font-bold mb-6 leading-tight">
         ¿Por qué elegir <span class="text-[#00ff7f]">Amway</span>?
@@ -474,8 +469,7 @@ export const labels = {
       </p>
     </div>
     `,
-    "membership.benefits":
-    `
+    "membership.benefits": `
     <div class="grid md:grid-cols-2 gap-10 mb-20">
       <div
         class="bg-gradient-to-br from-white/10 to-transparent rounded-2xl p-8 shadow-xl hover:scale-[1.02] transition"
@@ -520,8 +514,7 @@ export const labels = {
       </div>
     </div>
     `,
-    "membership.callToAction" : 
-    `
+    "membership.callToAction": `
     <div class="text-center mb-20">
       <h2 class="text-3xl sm:text-4xl font-semibold text-[#00ff7f] mb-4">
         Si estás leyendo esto, es por algo
@@ -535,8 +528,7 @@ export const labels = {
     </div> 
     `,
     "membership.titleCountry": "Elegí tu país para registrarte",
-    "membership.farewell":
-    `
+    "membership.farewell": `
     <div class="text-center mb-20">
       <h2 class="text-3xl sm:text-4xl font-extrabold mb-4 text-[#00ff7f]">
         Tu historia puede empezar hoy
@@ -548,9 +540,7 @@ export const labels = {
         ayudar a otros a hacer lo mismo, este es el lugar indicado.
       </p>
     </div>
-    `
-
-
+    `,
   },
 
   pt: {
@@ -665,21 +655,21 @@ export const labels = {
 
     // Sobre Mim
 
-    "about.pageTitle" : "Sobre mim | Diego Molina | Redes de Marketing",
-    "about.pageDescription" : "Conheça a história de Diego Molina: quem sou, o que fazia antes e por que decidi empreender em redes de marketing para transformar minha vida e a de outros.",
+    "about.pageTitle": "Sobre mim | Diego Molina | Redes de Marketing",
+    "about.pageDescription":
+      "Conheça a história de Diego Molina: quem sou, o que fazia antes e por que decidi empreender em redes de marketing para transformar minha vida e a de outros.",
 
-    "about.buttonContact.title":"Você se identifica com a minha história?",
-    "about.buttonContact.subtitle":"Você pode me escrever e dar o primeiro passo para construir seu próprio caminho.",
-    "about.buttonContact.buttonText" : "Fale comigo",
+    "about.buttonContact.title": "Você se identifica com a minha história?",
+    "about.buttonContact.subtitle":
+      "Você pode me escrever e dar o primeiro passo para construir seu próprio caminho.",
+    "about.buttonContact.buttonText": "Fale comigo",
 
-    "about.title" : 
-    `
+    "about.title": `
         <h1 class="text-2xl sm:text-5xl font-bold text-center mb-10 sm:mb-20 pt-6">
         Conheça <span class="text-[#00ff7f]">minha história</span>
         </h1>    
     `,
-    "about.whoAmI":
-    `
+    "about.whoAmI": `
       <!-- Quem sou -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
         <div class="order-1 flex justify-center">
@@ -696,8 +686,7 @@ export const labels = {
         </div>
       </div>    
     `,
-    "about.whatDidIDoBefore":
-    `
+    "about.whatDidIDoBefore": `
       <!-- O que eu fazia antes -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
         <div class="order-2 md:order-1 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
@@ -713,8 +702,7 @@ export const labels = {
         </div>
       </div>
     `,
-    "about.howIFoundOutAboutTheProject":
-    `
+    "about.howIFoundOutAboutTheProject": `
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
         <div class="order-1 flex justify-center">
           <img src="/pageImages/diegoConFabi.webp" alt="Como conheci o projeto"
@@ -730,8 +718,7 @@ export const labels = {
         </div>
       </div>
     `,
-    "about.whyDidIDecideToEnter":
-    `
+    "about.whyDidIDecideToEnter": `
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
         <div class="order-1 md:order-2 flex justify-center">
           <img src="/pageImages/diegoLiderando.webp" alt="Diego Molina Liderando"
@@ -750,8 +737,7 @@ export const labels = {
         </div>
       </div>
     `,
-    "about.mentoringLeaders":
-    `
+    "about.mentoringLeaders": `
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
         <div class="order-2 md:order-2 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
           <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">Mentoria de líderes</h2>
@@ -768,8 +754,7 @@ export const labels = {
         </div>
       </div>
     `,
-    "about.whatAmILookingToConvey":
-    `
+    "about.whatAmILookingToConvey": `
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
         <div class="order-2 md:order-1 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
           <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">O que busco transmitir?</h2>
@@ -787,15 +772,15 @@ export const labels = {
 
     // Oportunidade
 
-    "oportunity.pageTitle" : `Oportunidade | Diego Molina | Redes de Marketing`,
-    "oportunity.pageDescription" : `Descubra como gerar renda com um supermercado digital global, presente em mais de 100 países e com mais de 60 anos de história. Transforme seu consumo em uma oportunidade de negócio.`,
+    "oportunity.pageTitle": `Oportunidade | Diego Molina | Redes de Marketing`,
+    "oportunity.pageDescription": `Descubra como gerar renda com um supermercado digital global, presente em mais de 100 países e com mais de 60 anos de história. Transforme seu consumo em uma oportunidade de negócio.`,
 
-    "oportunity.buttonContact.title" : "Pronto para aprender como fazer?",
-    "oportunity.buttonContact.subtitle" : "Você pode começar hoje mesmo. Em 5 anos vai agradecer por ter dado esse passo rumo à sua liberdade.",
-    "oportunity.buttonContact.buttonText" : "Quero aprender como fazer",
+    "oportunity.buttonContact.title": "Pronto para aprender como fazer?",
+    "oportunity.buttonContact.subtitle":
+      "Você pode começar hoje mesmo. Em 5 anos vai agradecer por ter dado esse passo rumo à sua liberdade.",
+    "oportunity.buttonContact.buttonText": "Quero aprender como fazer",
 
-    "oportunity.intro" : 
-    `
+    "oportunity.intro": `
     <div class="text-center mb-12 sm:mb-20">
       <h1 class="text-3xl sm:text-5xl font-bold mb-6 pt-10">
         Uma <span class="text-[#00ff7f]">Oportunidade</span> que pode mudar sua vida
@@ -807,8 +792,7 @@ export const labels = {
       </p>
     </div>
     `,
-    "oportunity.benefitsOfConsumption":
-    `
+    "oportunity.benefitsOfConsumption": `
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center mb-16 sm:mb-20">
       <div class="bg-white/5 p-6 sm:p-8 rounded-2xl backdrop-blur-sm shadow-lg hover:scale-[1.02] transition">
         <h2 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">O que oferece?</h2>
@@ -827,8 +811,7 @@ export const labels = {
       </div>
     </div>
     `,
-    "oportunity.generateIncome" : 
-    `
+    "oportunity.generateIncome": `
     <div class="bg-gradient-to-r from-[#0f172a] to-[#1a0b20] p-8 sm:p-10 rounded-2xl shadow-xl mb-16 sm:mb-20">
       <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center">O mais interessante...</h2>
       <p class="text-base sm:text-lg text-gray-300 text-center max-w-3xl mx-auto">
@@ -836,8 +819,7 @@ export const labels = {
       </p>
     </div>
     `,
-    "oportunity.incomeExample" : 
-    `
+    "oportunity.incomeExample": `
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center mb-16 sm:mb-20">
       <div>
         <img src="/pageImages/redDeUsuarios.webp" alt="Rede de usuários"
@@ -857,8 +839,7 @@ export const labels = {
       </div>
     </div>
     `,
-    "oportunity.marketingPower":
-    `
+    "oportunity.marketingPower": `
     <div class="bg-[#00ff7f]/10 p-6 sm:p-8 rounded-2xl shadow-lg mb-16 sm:mb-20 text-center">
       <p class="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
         ✨ E provavelmente você só convidou <span class="font-semibold">10 pessoas</span>…
@@ -866,8 +847,7 @@ export const labels = {
       </p>
     </div>
     `,
-    "oportunity.finalReflection":
-    `
+    "oportunity.finalReflection": `
     <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
       <h2 class="text-2xl sm:text-3xl font-bold mb-4">Se levasse de 2 a 5 anos para construir...</h2>
       <p class="text-base sm:text-lg text-gray-300 mb-4">
@@ -882,22 +862,22 @@ export const labels = {
 
     // Áudios
 
-    "audios.pageTitle" : "Áudios | Diego Molina | Redes de Marketing",
-    "audios.pageDescription" : "Ouça os áudios de Diego Molina: ferramentas, inspiração e motivação para impulsionar seu crescimento pessoal e profissional em redes de marketing.",
+    "audios.pageTitle": "Áudios | Diego Molina | Redes de Marketing",
+    "audios.pageDescription":
+      "Ouça os áudios de Diego Molina: ferramentas, inspiração e motivação para impulsionar seu crescimento pessoal e profissional em redes de marketing.",
 
-    "audios.buttonContact.title":"Quer dar o próximo passo?",
-    "audios.buttonContact.subtitle":"Se o que você ouviu te inspirou, escreva para mim e vamos começar a trabalhar juntos no seu crescimento.",
-    "audios.buttonContact.buttonText" : "Vamos conversar",
+    "audios.buttonContact.title": "Quer dar o próximo passo?",
+    "audios.buttonContact.subtitle":
+      "Se o que você ouviu te inspirou, escreva para mim e vamos começar a trabalhar juntos no seu crescimento.",
+    "audios.buttonContact.buttonText": "Vamos conversar",
 
-    "audios.title" : 
-    `
+    "audios.title": `
     <h1 class="text-4xl sm:text-5xl font-bold text-center mb-8 pt-6 sm:pt-10">
       Meus <span class="text-[#00ff7f]">Áudios</span>
     </h1>
     `,
 
-    "audios.description" : 
-    `
+    "audios.description": `
     <div class="max-w-2xl sm:max-w-3xl mx-auto text-center text-gray-300 mb-12 sm:mb-16">
       <p class="text-base sm:text-lg mb-4">
         Aqui você encontrará alguns dos meus
@@ -912,11 +892,11 @@ export const labels = {
 
     // Contato
 
-    "contact.pageTitle" : "Contato | Diego Molina | Redes de Marketing",
-    "contact.pageDescription" : "Entre em contato com Diego Molina. Dê o primeiro passo para o seu desenvolvimento pessoal e financeiro em redes de marketing.",
+    "contact.pageTitle": "Contato | Diego Molina | Redes de Marketing",
+    "contact.pageDescription":
+      "Entre em contato com Diego Molina. Dê o primeiro passo para o seu desenvolvimento pessoal e financeiro em redes de marketing.",
 
-    "contact.intro" : 
-    `
+    "contact.intro": `
     <div
       class="max-w-2xl sm:max-w-3xl text-center mb-12 sm:mb-16 pt-6 sm:pt-10"
     >
@@ -930,19 +910,21 @@ export const labels = {
     </div>
     `,
 
-    "contact.form.title" : "Seu Questionário",
-    "contact.form.placehoolderName" : "Seu Nome",
-    "contact.form.placehoolderEmail" : "Seu email",
-    "contact.form.placehoolderPhone" : "Seu celular",
-    "contact.form.placehoolderMessage" : "Escreva sua mensagem...",
-    "contact.form.placehoolderButton" : "Enviar Whatsapp",
-    
-    "contact.directContact.title" : "Contato",
-    "contact.directContact.description" : "Quer falar diretamente comigo? Estas são as formas mais rápidas de entrar em contato:",
-    "contact.directContact.invitationText" : "Além de escrever para mim, siga-me nas redes: compartilho conteúdo de crescimento pessoal, motivação e estratégias em redes de marketing todos os dias. Junte-se e mantenha-se inspirado!",
+    "contact.form.title": "Seu Questionário",
+    "contact.form.placehoolderName": "Seu Nome",
+    "contact.form.placehoolderEmail": "Seu email",
+    "contact.form.placehoolderPhone": "Seu celular",
+    "contact.form.placehoolderMessage": "Escreva sua mensagem...",
+    "contact.form.placehoolderButton": "Enviar Gmail",
+    "contact.form.sendWhatsapp": "Enviar pelo WhatsApp",
 
-    "contact.directContact.extra" : 
-    `
+    "contact.directContact.title": "Contato",
+    "contact.directContact.description":
+      "Quer falar diretamente comigo? Estas são as formas mais rápidas de entrar em contato:",
+    "contact.directContact.invitationText":
+      "Além de escrever para mim, siga-me nas redes: compartilho conteúdo de crescimento pessoal, motivação e estratégias em redes de marketing todos os dias. Junte-se e mantenha-se inspirado!",
+
+    "contact.directContact.extra": `
         <div class="mt-6 bg-[#0f172a]/70 rounded-xl p-4 sm:p-6">
           <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
             Por que falar comigo?
@@ -958,13 +940,14 @@ export const labels = {
 
     // Obrigado
 
-    "thanks.pageTitle" : "Obrigado | Diego Molina | Redes de Marketing",
-    "thanks.pageDescription" : "Sua mensagem foi enviada com sucesso. Em breve entrarei em contato com você.",
+    "thanks.pageTitle": "Obrigado | Diego Molina | Redes de Marketing",
+    "thanks.pageDescription":
+      "Sua mensagem foi enviada com sucesso. Em breve entrarei em contato com você.",
 
-    "thanks.title" : "Obrigado pela sua mensagem!",
-    "thanks.description" : "Sua consulta foi enviada com sucesso e recebi corretamente. Em breve entrarei em contato para responder todas as suas dúvidas.",
-    "thanks.redirect" : 
-    `
+    "thanks.title": "Obrigado pela sua mensagem!",
+    "thanks.description":
+      "Sua consulta foi enviada com sucesso e recebi corretamente. Em breve entrarei em contato para responder todas as suas dúvidas.",
+    "thanks.redirect": `
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
       <a href="/pt" class="px-8 py-3 rounded-xl bg-[#00ff7f] text-gray-900 font-semibold shadow-lg hover:bg-[#00e670] transition-colors duration-300">
         Voltar ao início
@@ -977,15 +960,16 @@ export const labels = {
 
     // Assinatura
 
-    "membership.pageTitle" : "Assinatura | Diego Molina | Redes de Marketing",
-    "membership.pageDescription" : "Com a assinatura Amway, você tem acesso a um mundo de benefícios: produtos de qualidade em nutrição, cuidados pessoais, lar e beleza, comprados diretamente da fábrica com descontos exclusivos. Além disso, você pode empreender seu próprio negócio digital, com respaldo global e mais de 60 anos de história.",
+    "membership.pageTitle": "Assinatura | Diego Molina | Redes de Marketing",
+    "membership.pageDescription":
+      "Com a assinatura Amway, você tem acesso a um mundo de benefícios: produtos de qualidade em nutrição, cuidados pessoais, lar e beleza, comprados diretamente da fábrica com descontos exclusivos. Além disso, você pode empreender seu próprio negócio digital, com respaldo global e mais de 60 anos de história.",
 
-    "membership.buttonContact.title" : "Tem dúvidas sobre como começar?",
-    "membership.buttonContact.subtitle" : "Pode me escrever e eu te ajudo passo a passo para criar sua conta Amway e iniciar seu negócio.",
-    "membership.buttonContact.buttonText" : "Fale comigo",
+    "membership.buttonContact.title": "Tem dúvidas sobre como começar?",
+    "membership.buttonContact.subtitle":
+      "Pode me escrever e eu te ajudo passo a passo para criar sua conta Amway e iniciar seu negócio.",
+    "membership.buttonContact.buttonText": "Fale comigo",
 
-    "membership.introduction" : 
-    `
+    "membership.introduction": `
     <div class="text-center mb-16 pt-10">
       <h1 class="text-4xl sm:text-6xl font-bold mb-6 leading-tight">
         Conheça <span class="text-[#00ff7f]">Amway</span>
@@ -997,8 +981,7 @@ export const labels = {
       </p>
     </div>
     `,
-    "membership.hero":
-    `
+    "membership.hero": `
     <div class="text-center mb-20">
       <h2 class="text-4xl sm:text-5xl font-bold mb-6 leading-tight">
         Por que escolher <span class="text-[#00ff7f]">Amway</span>?
@@ -1015,8 +998,7 @@ export const labels = {
       </p>
     </div>
     `,
-    "membership.benefits":
-    `
+    "membership.benefits": `
     <div class="grid md:grid-cols-2 gap-10 mb-20">
       <div
         class="bg-gradient-to-br from-white/10 to-transparent rounded-2xl p-8 shadow-xl hover:scale-[1.02] transition"
@@ -1058,8 +1040,7 @@ export const labels = {
       </div>
     </div>
     `,
-    "membership.callToAction" : 
-    `
+    "membership.callToAction": `
     <div class="text-center mb-20">
       <h2 class="text-3xl sm:text-4xl font-semibold text-[#00ff7f] mb-4">
         Se você está lendo isso, não é por acaso
@@ -1072,8 +1053,7 @@ export const labels = {
     </div> 
     `,
     "membership.titleCountry": "Escolha seu país para se cadastrar",
-    "membership.farewell":
-    `
+    "membership.farewell": `
     <div class="text-center mb-20">
       <h2 class="text-3xl sm:text-4xl font-extrabold mb-4 text-[#00ff7f]">
         Sua história pode começar hoje
@@ -1082,6 +1062,6 @@ export const labels = {
         Todas as grandes mudanças começam com uma decisão. Amway não é apenas uma oportunidade econômica: é um caminho de crescimento, liderança e liberdade. Se você está disposto a aprender, trabalhar em si mesmo e ajudar outros a fazer o mesmo, este é o lugar certo.
       </p>
     </div>
-    `
+    `,
   },
 };
