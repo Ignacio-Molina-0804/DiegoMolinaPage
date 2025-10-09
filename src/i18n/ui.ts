@@ -69,7 +69,7 @@ export const labels = {
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">
                     <!-- SOBRE MI -->
                     <a href="/sobre-mi"
-                    class="block p-6 rounded-xl shadow bg-white/5 border border-[#00ff7f]/50 hover:scale-105 transition">
+                    class="pulse-card block p-6 rounded-xl shadow bg-white/5 border border-[#00ff7f]/50 hover:scale-105 transition">
                         <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-[#00ff7f]">Sobre Mi</h3>
                         <p>
                             Conocé mi historia, mis aprendizajes y el camino que me llevó a dedicarme a las
@@ -79,7 +79,7 @@ export const labels = {
 
                     <!-- OPORTUNIDAD -->
                     <a href="/oportunidad"
-                    class="block p-6 rounded-xl shadow-lg hover:scale-105 transition
+                    class="pulse-card block p-6 rounded-xl shadow-lg hover:scale-105 transition
                     bg-gradient-to-br from-[#00ff7f]/20 to-[#00ff7f]/5
                     border border-[#00ff7f]/50 ring-1 sm:ring-2 ring-[#00ff7f]/30
                     hover:ring-[#00ff7f]/70 hover:shadow-[#00ff7f]/50">
@@ -92,7 +92,7 @@ export const labels = {
 
                     <!-- INSPIRACIÓN -->
                     <a href="/audios"
-                        class="block p-6 rounded-xl shadow bg-white/5 border border-[#00ff7f]/50 hover:scale-105 transition">
+                        class="pulse-card block p-6 rounded-xl shadow bg-white/5 border border-[#00ff7f]/50 hover:scale-105 transition">
                         <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-[#00ff7f]">Inspiración</h3>
                         <p>
                         Acceso a <span class="font-semibold">audios</span> y mensajes que te ayudan
