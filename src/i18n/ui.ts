@@ -614,8 +614,8 @@ export const labels = {
                 <!-- Cartões -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">
                     <!-- SOBRE MIM -->
-                    <a href="/sobre-mi"
-                    class="block p-6 rounded-xl shadow bg-white/5 border border-[#00ff7f]/50 hover:scale-105 transition">
+                    <a href="/pt/sobre-mi"
+                    class="pulse-card block p-6 rounded-xl shadow bg-white/5 border border-[#00ff7f]/50 hover:scale-105 transition">
                         <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-[#00ff7f]">Sobre Mim</h3>
                         <p>
                             Conheça minha história, meus aprendizados e o caminho que me levou a me dedicar às
@@ -624,8 +624,8 @@ export const labels = {
                     </a>
 
                     <!-- OPORTUNIDADE -->
-                    <a href="/oportunidad"
-                    class="block p-6 rounded-xl shadow-lg hover:scale-105 transition
+                    <a href="/pt/oportunidad"
+                    class="pulse-card block p-6 rounded-xl shadow-lg hover:scale-105 transition
                     bg-gradient-to-br from-[#00ff7f]/20 to-[#00ff7f]/5
                     border border-[#00ff7f]/50 ring-1 sm:ring-2 ring-[#00ff7f]/30
                     hover:ring-[#00ff7f]/70 hover:shadow-[#00ff7f]/50">
@@ -637,8 +637,8 @@ export const labels = {
                     </a>
 
                     <!-- INSPIRAÇÃO -->
-                    <a href="/audios"
-                        class="block p-6 rounded-xl shadow bg-white/5 border border-[#00ff7f]/50 hover:scale-105 transition">
+                    <a href="/pt/audios"
+                        class="pulse-card block p-6 rounded-xl shadow bg-white/5 border border-[#00ff7f]/50 hover:scale-105 transition">
                         <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-[#00ff7f]">Inspiração</h3>
                         <p>
                         Acesso a <span class="font-semibold">áudios</span> e mensagens que ajudam
