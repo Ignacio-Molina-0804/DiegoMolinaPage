@@ -42,6 +42,19 @@ body::before {
   }
 }
 
+@keyframes pulse-green {
+  0%, 100% {
+    color: white;
+  }
+  50% {
+    color: #00ff7f;
+  }
+}
+
+@utility animate-pulse-green {
+  animation: pulse-green 1.5s ease-in-out infinite;
+}
+
 .pulse-card {
   animation: pulseGlow 2s ease-in-out infinite;
 }
