@@ -38,19 +38,19 @@ const membresiaLink = currentLang === "pt" ? "/pt/membresia" : "/membresia";
           <WhatsappIcon />
         </a>
         <a
+          href={membresiaLink}
+          class="hover:text-[#00ff7f]"
+          aria-label={t("footer.membresia") || "Membresía"}
+        >
+          <DiamondIcon />
+        </a>        
+        <a
           href="https://www.instagram.com/diegomolina.ar"
           target="_blank"
           class="hover:text-[#00ff7f]"
           aria-label="Instagram"
         >
           <InstagramIcon />
-        </a>
-        <a
-          href={membresiaLink}
-          class="hover:text-[#00ff7f]"
-          aria-label={t("footer.membresia") || "Membresía"}
-        >
-          <DiamondIcon />
         </a>
       </div>
 
