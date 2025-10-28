@@ -399,17 +399,17 @@ export const labels = {
       "Además de escribirme, seguime en redes: comparto contenido de crecimiento personal, motivación y estrategias en redes de mercadeo todos los días. ¡Sumate y mantenete inspirado!",
 
     "contact.directContact.extra": `
-        <div class="mt-6 bg-[#0f172a]/70 rounded-xl p-4 sm:p-6">
-          <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
-            ¿Por qué contactarme?
-          </h3>
-          <ul class="space-y-1 sm:space-y-2 text-gray-300 text-xs sm:text-sm">
-            <li>✅ Acompañamiento personalizado</li>
-            <li>✅ Experiencia en redes de mercadeo</li>
-            <li>✅ Crecimiento personal y financiero</li>
-            <li>✅ Inspiración y motivación constante</li>
-          </ul>
-        </div>
+          <div>
+            <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
+              ¿Por qué contactarme?
+            </h3>
+            <ul class="space-y-1 sm:space-y-2 text-gray-300 text-xs sm:text-sm">
+              <li>✅ Acompañamiento personalizado</li>
+              <li>✅ Experiencia en redes de mercadeo</li>
+              <li>✅ Crecimiento personal y financiero</li>
+              <li>✅ Inspiración y motivación constante</li>
+            </ul>
+          </div>
     `,
 
     
@@ -944,11 +944,11 @@ export const labels = {
       "Além de escrever para mim, siga-me nas redes: compartilho conteúdo de crescimento pessoal, motivação e estratégias em redes de marketing todos os dias. Junte-se e mantenha-se inspirado!",
 
     "contact.directContact.extra": `
-        <div class="mt-6 bg-[#0f172a]/70 rounded-xl p-4 sm:p-6">
+        <div>
           <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
             Por que falar comigo?
           </h3>
-          <ul class="space-y-1 sm:space-y-2 text-gray-300 text-xs sm:text-sm">
+          <ul class="space-y-1 sm:space-y-2 text-gray-300 text-xs sm:text-sm>
             <li>✅ Acompanhamento personalizado</li>
             <li>✅ Experiência em redes de marketing</li>
             <li>✅ Crescimento pessoal e financeiro</li>
