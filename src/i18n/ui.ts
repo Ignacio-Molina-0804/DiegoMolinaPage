@@ -411,8 +411,7 @@ export const labels = {
             </ul>
           </div>
     `,
-
-    
+    "contact.directContact.extraGoogleMeetText":"",
 
     // Gracias
 
@@ -956,7 +955,8 @@ export const labels = {
             </ul>
           </div>
     `,
-    
+    "contact.directContact.extraGoogleMeetText":"",
+
     // Obrigado
 
     "thanks.pageTitle": "Obrigado | Diego Molina | Redes de Marketing",
