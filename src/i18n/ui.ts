@@ -944,19 +944,19 @@ export const labels = {
       "Além de escrever para mim, siga-me nas redes: compartilho conteúdo de crescimento pessoal, motivação e estratégias em redes de marketing todos os dias. Junte-se e mantenha-se inspirado!",
 
     "contact.directContact.extra": `
-        <div>
-          <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
-            Por que falar comigo?
-          </h3>
-          <ul class="space-y-1 sm:space-y-2 text-gray-300 text-xs sm:text-sm>
-            <li>✅ Acompanhamento personalizado</li>
-            <li>✅ Experiência em redes de marketing</li>
-            <li>✅ Crescimento pessoal e financeiro</li>
-            <li>✅ Inspiração e motivação constante</li>
-          </ul>
-        </div>
+          <div>
+            <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
+              Por que falar comigo?
+            </h3>
+            <ul class="space-y-1 sm:space-y-2 text-gray-300 text-xs sm:text-sm">
+              <li>✅ Acompanhamento personalizado</li>
+              <li>✅ Experiência em redes de marketing</li>
+              <li>✅ Crescimento pessoal e financeiro</li>
+              <li>✅ Inspiração e motivação constante</li>
+            </ul>
+          </div>
     `,
-
+    
     // Obrigado
 
     "thanks.pageTitle": "Obrigado | Diego Molina | Redes de Marketing",
