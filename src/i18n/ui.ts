@@ -411,7 +411,7 @@ export const labels = {
             </ul>
           </div>
     `,
-    "contact.directContact.extraGoogleMeetText":"",
+    "contact.directContact.extraGoogleMeetText":"Coordinemos tu reunión ahora!",
 
     // Gracias
 
@@ -955,7 +955,7 @@ export const labels = {
             </ul>
           </div>
     `,
-    "contact.directContact.extraGoogleMeetText":"",
+    "contact.directContact.extraGoogleMeetText":"Vamos agendar sua reunião agora!",
 
     // Obrigado
 
