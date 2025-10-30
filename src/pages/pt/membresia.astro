@@ -8,6 +8,7 @@ import { languageList } from "../../i18n/ui";
 const currentLang = Astro.currentLocale || "es";
 const t = useTranslations(currentLang as keyof typeof languageList);
 
+// JSON Paises
 import paises from "../../data/paises.json";
 
 const {
