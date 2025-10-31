@@ -1310,6 +1310,119 @@ export const labels = {
         </section>
       `,
 
+  // Opportunity
+
+  "opportunity.titlePage": "Opportunity | Diego Molina",
+  "opportunity.descriptionPage":
+    "Discover how network marketing can open a new path for your personal and financial growth. Learn how this opportunity can change your life.",
+
+  "opportunity.hero.texto": `
+        <section class="text-white text-center md:text-left py-12 px-6">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+                    <span class="text-[#00ff7f]">The Opportunity</span>
+                </h1>
+                <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
+                    Network marketing is one of the most powerful and accessible ways 
+                    to <span class="font-semibold text-[#00ff7f]">create income</span> and build a business 
+                    without needing a large investment.
+                </p>
+                <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
+                    It’s a business model based on <span class="font-semibold">teamwork</span> and 
+                    <span class="font-semibold">leadership development</span>. The more people you help succeed, 
+                    the more you grow.
+                </p>
+                <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
+                    This opportunity allows you to <span class="font-semibold text-[#00ff7f]">start part-time</span> 
+                    and progressively build a solid foundation toward your financial freedom.
+                </p>
+            </div>
+        </section>
+      `,
+
+  "opportunity.section.howitworks": `
+        <section class="py-16 px-6 text-white text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8">How Does It Work?</h2>
+            <p class="max-w-3xl mx-auto text-gray-300 mb-12 text-base sm:text-lg leading-relaxed">
+                In network marketing, you share products and a business opportunity that help people 
+                <span class="font-semibold text-[#00ff7f]">improve their lives</span>.
+                You earn income not only from your own results but also from those who join your team.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-3">1. Share</h3>
+                    <p class="text-gray-300">Recommend products and a business opportunity that truly make a difference.</p>
+                </div>
+
+                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-3">2. Grow</h3>
+                    <p class="text-gray-300">Build your team and develop leadership skills with personalized mentoring.</p>
+                </div>
+
+                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-3">3. Duplicate</h3>
+                    <p class="text-gray-300">Teach others to do the same — that’s how your network grows exponentially.</p>
+                </div>
+            </div>
+        </section>
+      `,
+
+  "opportunity.section.benefits": `
+        <section class="py-16 px-6 text-white text-center bg-white/5">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8">Benefits of This Model</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
+                    <h3 class="text-xl font-semibold text-[#00ff7f] mb-3">Low Risk</h3>
+                    <p class="text-gray-300">Start without needing large investments or high fixed costs.</p>
+                </div>
+
+                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
+                    <h3 class="text-xl font-semibold text-[#00ff7f] mb-3">Personal Growth</h3>
+                    <p class="text-gray-300">You’ll develop skills in leadership, communication, and financial education.</p>
+                </div>
+
+                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
+                    <h3 class="text-xl font-semibold text-[#00ff7f] mb-3">Passive Income</h3>
+                    <p class="text-gray-300">Earn residual income from your network’s production month after month.</p>
+                </div>
+
+                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
+                    <h3 class="text-xl font-semibold text-[#00ff7f] mb-3">Community</h3>
+                    <p class="text-gray-300">Be part of a network that supports and celebrates your growth and success.</p>
+                </div>
+
+                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
+                    <h3 class="text-xl font-semibold text-[#00ff7f] mb-3">Flexibility</h3>
+                    <p class="text-gray-300">Work from anywhere and manage your time your own way.</p>
+                </div>
+
+                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
+                    <h3 class="text-xl font-semibold text-[#00ff7f] mb-3">Impact</h3>
+                    <p class="text-gray-300">Help other people discover their potential and change their lives.</p>
+                </div>
+            </div>
+        </section>
+      `,
+
+  "opportunity.section.calltoaction": `
+        <section class="py-20 px-6 text-center text-white">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+                Are you ready to start your journey?
+            </h2>
+            <p class="max-w-2xl mx-auto text-gray-300 text-base sm:text-lg mb-8">
+                You don’t need to have experience — only the <span class="font-semibold text-[#00ff7f]">desire to grow</span> 
+                and a commitment to your goals. I’ll guide you step by step.
+            </p>
+            <a
+              href="/contacto"
+              class="inline-block bg-[#00ff7f] text-gray-900 font-semibold px-8 py-3 rounded-xl hover:bg-[#00ff7f]/80 transition"
+            >
+              Contact Me
+            </a>
+        </section>
+      `,
+      
 
   }
 }
