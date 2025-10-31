@@ -1,0 +1,202 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import WhatsappIcon from "../../components/icons/WhatsappIcon.astro";
+import InstagramIcon from "../../components/icons/InstagramIcon.astro";
+import GoogleMeetIcon from "../../components/icons/GoogleMeetIcon.astro";
+
+import { useTranslations } from "../../i18n/util";
+import { languageList } from "../../i18n/ui";
+
+const currentLang = Astro.currentLocale || "es";
+const t = useTranslations(currentLang as keyof typeof languageList);
+
+const {
+  pageTitle = t("contact.pageTitle"),
+  pageDescription = t("contact.pageDescription"),
+} = Astro.props;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <section
+    class="relative min-h-screen flex flex-col items-center px-4 sm:px-6 py-16 sm:py-20 text-white"
+  >
+    <!-- Intro -->
+    <div set:html={t("contact.intro")} />
+
+    <!-- Contenido principal -->
+    <div class="max-w-6xl w-full grid gap-8 md:gap-10 md:grid-cols-2">
+      <!-- Formulario -->
+      <div
+        class="bg-[#1a0b20]/90 backdrop-blur-md rounded-2xl shadow-lg p-6 sm:p-8"
+      >
+        <h2 class="text-xl sm:text-2xl font-bold text-[#00ff7f] mb-4 sm:mb-6">
+          {t("contact.form.title")}
+        </h2>
+
+        <form
+          id="contactForm"
+          action="https://formsubmit.co/diegomolina.ar@icloud.com"
+          method="POST"
+          class="space-y-5 sm:space-y-6"
+        >
+          <!-- Nombre -->
+          <input
+            type="text"
+            name="name"
+            id="nombre"
+            placeholder={t("contact.form.placehoolderName")}
+            required
+            class="w-full px-4 py-3 rounded-lg bg-[#0f172a] border border-gray-700 text-sm sm:text-base text-white placeholder-gray-400 focus:border-[#00ff7f] focus:ring-2 focus:ring-[#00ff7f] outline-none transition"
+          />
+
+          <!-- Email -->
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder={t("contact.form.placehoolderEmail")}
+            required
+            class="w-full px-4 py-3 rounded-lg bg-[#0f172a] border border-gray-700 text-sm sm:text-base text-white placeholder-gray-400 focus:border-[#00ff7f] focus:ring-2 focus:ring-[#00ff7f] outline-none transition"
+          />
+
+          <!-- Celular -->
+          <input
+            type="tel"
+            name="phone"
+            id="telefono"
+            placeholder={t("contact.form.placehoolderPhone")}
+            required
+            class="w-full px-4 py-3 rounded-lg bg-[#0f172a] border border-gray-700 text-sm sm:text-base text-white placeholder-gray-400 focus:border-[#00ff7f] focus:ring-2 focus:ring-[#00ff7f] outline-none transition"
+          />
+
+          <!-- Mensaje -->
+          <textarea
+            name="message"
+            id="mensaje"
+            rows="4"
+            placeholder={t("contact.form.placehoolderMessage")}
+            required
+            class="w-full px-4 py-3 rounded-lg bg-[#0f172a] border border-gray-700 text-sm sm:text-base text-white placeholder-gray-400 focus:border-[#00ff7f] focus:ring-2 focus:ring-[#00ff7f] outline-none transition resize-none"
+          ></textarea>
+
+          <!-- Botones -->
+          <div class="flex flex-col sm:flex-row gap-4">
+            <!-- Enviar por Form -->
+            <button
+              type="submit"
+              class="flex-1 py-3 rounded-lg bg-gradient-to-r from-[#00ff7f] to-[#00cc66] text-[#15011c] font-semibold text-base sm:text-lg hover:opacity-90 transition cursor-pointer"
+            >
+              {t("contact.form.placehoolderButton")}
+            </button>
+
+            <!-- Enviar por WhatsApp -->
+            <button
+              type="button"
+              id="btnWhatsapp"
+              class="flex-1 py-3 rounded-lg bg-[#25D366] text-[#15011c] font-semibold text-base sm:text-lg hover:opacity-90 transition cursor-pointer"
+            >
+              {t("contact.form.sendWhatsapp") || "Enviar por WhatsApp"}
+            </button>
+          </div>
+
+          <!-- Config formsubmit -->
+          <input
+            type="hidden"
+            name="_next"
+            value="https://diegomolina.ar/pt/gracias"
+          />
+          <input type="hidden" name="_captcha" value="true" />
+        </form>
+      </div>
+
+      <!-- Contacto directo -->
+      <div
+        class="bg-[#1a0b20]/90 backdrop-blur-md rounded-2xl shadow-lg p-6 sm:p-8 flex flex-col justify-between"
+      >
+        <div>
+          <h2 class="text-xl sm:text-2xl font-bold text-[#00ff7f] mb-3 sm:mb-4">
+            {t("contact.directContact.title")}
+          </h2>
+          <p class="text-gray-300 mb-5 sm:mb-6 text-sm sm:text-base">
+            {t("contact.directContact.description")}
+          </p>
+
+          <div class="space-y-3 sm:space-y-4 text-base sm:text-lg mb-6 sm:mb-8">
+            <a
+              href="https://www.instagram.com/diegomolina.ar"
+              target="_blank"
+              class="flex items-center space-x-3 hover:text-[#00ff7f] transition"
+            >
+              <InstagramIcon class="w-5 h-5 sm:w-6 sm:h-6" />
+              <span>@diegomolina.ar</span>
+            </a>
+
+            <a
+              href="https://wa.me/+5492616331357"
+              target="_blank"
+              class="flex items-center space-x-3 hover:text-[#00ff7f] transition"
+            >
+              <WhatsappIcon class="w-5 h-5 sm:w-6 sm:h-6" />
+              <span>+54 9 261 633 1357</span>
+            </a>
+          </div>
+
+          <!-- Texto invitación -->
+          <p class="text-xs sm:text-sm text-gray-400 leading-relaxed">
+            {t("contact.directContact.invitationText")}
+          </p>
+        </div>
+
+        <!-- Extra -->
+        <div
+          class="mt-6 bg-[#0f172a]/70 rounded-xl p-4 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-4"
+        >
+          <div set:html={t("contact.directContact.extra")} />
+
+          <a
+            href="https://qrcc.me/s9flqsc1mc0z"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex flex-col items-center justify-center bg-[#0f172a] border border-gray-700 hover:bg-[#1e293b]/80 rounded-xl text-center text-white transition duration-200 w-40 h-40"
+          >
+            <span class="text-sm font-medium text-center mx-2">
+              {t("contact.directContact.extraGoogleMeetText")}
+            </span>
+            <GoogleMeetIcon class="w-12 h-12 mt-3" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const form = document.getElementById("contactForm");
+    const btnWhatsapp = document.getElementById("btnWhatsapp");
+
+    // Botón de WhatsApp
+    btnWhatsapp?.addEventListener("click", function () {
+      const nombre = (document.getElementById("nombre") as HTMLInputElement)
+        .value;
+      const email = (document.getElementById("email") as HTMLInputElement)
+        .value;
+      const telefono = (document.getElementById("telefono") as HTMLInputElement)
+        .value;
+      const mensaje = (
+        document.getElementById("mensaje") as HTMLTextAreaElement
+      ).value;
+
+      if (!nombre || !email || !telefono || !mensaje) {
+        alert("Por favor, completá todos los campos antes de enviar.");
+        return;
+      }
+
+      const texto = encodeURIComponent(
+        `¡Hola Diego! 👋\n\nMi nombre es *${nombre}*.\nQuería ponerme en contacto contigo para conocerte un poco más y hablar sobre tu propuesta en redes de mercadeo.\n\n📧 Email: ${email}\n📱 Teléfono: ${telefono}\n💬 Mensaje:\n${mensaje}\n\n¡Espero tu respuesta! 🙌`
+      );
+
+      const numero = "5492616331357"; // Número del cliente
+      const url = `https://api.whatsapp.com/send?phone=${numero}&text=${texto}`;
+      window.open(url, "_blank");
+    });
+  </script>
+</Layout>

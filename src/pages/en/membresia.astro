@@ -1,0 +1,76 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ButtonContact from "../../components/ButtonContact.astro";
+
+import { useTranslations } from "../../i18n/util";
+import { languageList } from "../../i18n/ui";
+
+const currentLang = Astro.currentLocale || "es";
+const t = useTranslations(currentLang as keyof typeof languageList);
+
+// JSON Paises
+import paises from "../../data/paises.json";
+
+const {
+  pageTitle = t("oportunity.pageTitle"),
+  pageDescription = t("oportunity.pageDescription"),
+} = Astro.props;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <section class="max-w-6xl mx-auto px-4 sm:px-8 py-20 text-white">
+    <!-- INTRODUCCIÓN -->
+    <div set:html={t("membership.introduction")} />
+
+    <!-- HERO -->
+    <div set:html={t("membership.hero")} />
+
+    <!-- BENEFICIOS -->
+    <div set:html={t("membership.benefits")} />
+
+    <!-- LLAMADO A LA ACCIÓN -->
+    <div set:html={t("membership.callToAction")} />
+
+    <!-- PAISES -->
+    <div class="text-center mb-24">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-[#00ff7f] mb-10">
+        {t("membership.titleCountry")}
+      </h2>
+
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 justify-center"
+      >
+        {
+          paises.map((pais) => (
+            <a
+              href={pais.link}
+              class="flex flex-col items-center hover:scale-105 transition"
+            >
+              <img
+                src={`/pageImages/paisesImagenes/${pais.img}`}
+                alt={pais.nombre}
+                class="w-24 h-24 rounded-full shadow-md border border-white/20 object-cover"
+              />
+              <p class="mt-3 font-semibold">{pais.nombre}</p>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+
+    <!-- DESPEDIDA -->
+    <div set:html={t("membership.farewell")} />
+
+    <!-- CTA FINAL -->
+    <div class="mt-20">
+      <ButtonContact
+        title={t("membership.buttonContact.title")}
+        subtitle={t("membership.buttonContact.subtitle")}
+        buttonText={t("membership.buttonContact.buttonText")}
+        buttonLink="/pt/contacto"
+      />
+    </div>
+  </section>
+</Layout>
+
+<script src="/scripts/accesoProtegido-v2-pt.js" defer></script>

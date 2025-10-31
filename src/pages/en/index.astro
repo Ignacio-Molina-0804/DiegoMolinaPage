@@ -1,0 +1,26 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/Hero.astro";
+import ButtonContact from "../../components/ButtonContact.astro";
+
+import { useTranslations } from "../../i18n/util";
+import { languageList } from "../../i18n/ui";
+
+const currentLang = Astro.currentLocale || "es";
+const t = useTranslations(currentLang as keyof typeof languageList);
+--- 
+
+<Layout>
+  <!-- Hero principal -->
+  <Hero />
+
+  <!-- Qué es lo que vas a encontrar -->
+  <section set:html={t('home.section.whatigonnafind')}></section>
+
+  <!-- Beneficios -->
+  <section set:html={t('home.section.benefits')}></section>
+
+  <!-- CTA intermedio -->
+  <ButtonContact 
+  buttonLink="/pt/contacto"/>
+</Layout>

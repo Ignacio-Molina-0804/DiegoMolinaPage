@@ -1,0 +1,49 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ButtonContact from "../../components/ButtonContact.astro";
+
+import { useTranslations } from "../../i18n/util";
+import { languageList } from "../../i18n/ui";
+
+const currentLang = Astro.currentLocale || "es";
+const t = useTranslations(currentLang as keyof typeof languageList);
+
+const {
+  pageTitle = t("about.pageTitle"),
+  pageDescription = t("about.pageDescription"),
+} = Astro.props;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <section class="relative max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-20 text-white">
+    <h1 set:html={t("about.title")}></h1>
+
+    <div class="space-y-8 sm:space-y-24">
+      <!-- Quién soy -->
+      <div set:html={t("about.whoAmI")}></div>
+
+      <!-- Qué hacía antes -->
+      <div set:html={t("about.whatDidIDoBefore")}></div>
+
+      <!-- Cómo conocí el proyecto -->
+      <div set:html={t("about.howIFoundOutAboutTheProject")}></div>
+
+      <!-- Por qué decidí entrar -->
+      <div set:html={t("about.whyDidIDecideToEnter")}></div>
+
+      <!-- Mentoría de líderes -->
+      <div set:html={t("about.mentoringLeaders")}></div>
+
+      <!-- Qué busco transmitir -->
+      <div set:html={t("about.whatAmILookingToConvey")}></div>
+    </div>
+
+    <!-- CTA final -->
+    <ButtonContact
+      title = {t("about.buttonContact.title")}
+      subtitle = {t("about.buttonContact.subtitle")}
+      buttonText= {t("about.buttonContact.buttonText")}
+      buttonLink="/pt/contacto"
+    />
+  </section>
+</Layout>

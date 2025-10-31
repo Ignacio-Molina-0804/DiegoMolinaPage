@@ -1,0 +1,51 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ButtonContact from "../../components/ButtonContact.astro";
+
+import { useTranslations } from "../../i18n/util";
+import { languageList } from "../../i18n/ui";
+
+const currentLang = Astro.currentLocale || "es";
+const t = useTranslations(currentLang as keyof typeof languageList);
+
+const {
+  pageTitle = t("oportunity.pageTitle"),
+  pageDescription = t("oportunity.pageDescription"),
+} = Astro.props;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <section class="relative max-w-6xl mx-auto px-6 py-16 sm:py-20 text-white">
+    <!-- Intro -->
+    <div set:html={t("oportunity.intro")}></div>
+
+    <!-- Beneficios del consumo -->
+    <div set:html={t("oportunity.benefitsOfConsumption")}></div>
+
+    <!-- Generar ingresos -->
+    <div set:html={t("oportunity.generateIncome")}></div>
+
+    <!-- Ejemplo de ingresos -->
+    <div set:html={t("oportunity.incomeExample")}></div>
+
+    <!-- Poder del mercadeo -->
+    <div set:html={t("oportunity.marketingPower")}></div>
+
+    <!-- Reflexión final -->
+    <div set:html={t("oportunity.finalReflection")}></div>
+
+    <!-- Imagen de países -->
+    <div class="flex justify-center mb-8 sm:mb-12">
+      <img src="/pageImages/banderas.webp" alt="Países disponibles"
+        class="max-w-full w-full sm:w-[800px] object-contain" />
+    </div>
+
+    <!-- CTA con componente -->
+    <ButtonContact
+      title={t("oportunity.buttonContact.title")}
+      subtitle={t("oportunity.buttonContact.subtitle")}
+      buttonText={t("oportunity.buttonContact.buttonText")}
+      buttonLink="/pt/contacto"
+    />
+  </section>
+</Layout>

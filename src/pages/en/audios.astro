@@ -1,0 +1,60 @@
+---
+// audios.astro
+
+import Layout from "../../layouts/Layout.astro";
+import ButtonContact from "../../components/ButtonContact.astro";
+
+import { useTranslations } from "../../i18n/util";
+import { languageList } from "../../i18n/ui";
+
+const currentLang = Astro.currentLocale || "es";
+const t = useTranslations(currentLang as keyof typeof languageList);
+
+const {
+  pageTitle = t("audios.pageTitle"),
+  pageDescription = t("audios.pageDescription"),
+} = Astro.props;
+
+// JSON Audios
+import spotifyAudios from "../../data/audios.json";
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <section class="relative max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 text-white">
+    <!-- Título -->
+    <h1 set:html={t("audios.title")}></h1>
+
+    <!-- Descripción -->
+    <div set:html={t("audios.description")}></div>
+
+    <!-- Grid -->
+    <div class="grid gap-8 sm:gap-10 md:grid-cols-2">
+      {
+        spotifyAudios.map((audio) => (
+          <div class="bg-white/5 backdrop-blur-md p-5 sm:p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+            <h2 class="text-lg sm:text-xl font-semibold text-[#00ff7f] mb-2 sm:mb-3">
+              {audio.title}
+            </h2>
+            <p class="text-gray-300 text-xs sm:text-sm mb-3 sm:mb-4">{audio.description}</p>
+            <iframe
+              src={audio.embed}
+              width="100%"
+              height="152"
+              frameborder="0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              class="rounded-lg"
+            />
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <ButtonContact
+    title= {t("audios.buttonContact.title")}
+    subtitle= {t("audios.buttonContact.subtitle")}
+    buttonText= {t("audios.buttonContact.buttonText")}
+    buttonLink="/pt/contacto"
+  />
+</Layout>

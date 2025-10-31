@@ -1,0 +1,35 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import { useTranslations } from "../../i18n/util";
+import { languageList } from "../../i18n/ui";
+
+const currentLang = Astro.currentLocale || "es";
+const t = useTranslations(currentLang as keyof typeof languageList);
+
+const {
+  pageTitle = t("thanks.pageTitle"),
+  pageDescription = t("thanks.pageDescription"),
+} = Astro.props;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <section class="flex flex-col items-center justify-center min-h-[70vh] max-w-4xl mx-auto px-6 text-center text-white">
+    <!-- Icono check animado -->
+    <div class="flex justify-center mb-8 pt-30">
+      <div class="w-20 h-20 flex items-center justify-center rounded-full bg-[#00ff7f]/20 border-4 border-[#00ff7f] animate-bounce">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#00ff7f]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <h1 class="text-4xl font-bold mb-4">{t("thanks.title")}</h1>
+
+    <p class="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
+      {t("thanks.description")}
+    </p>
+
+    <div set:html={t("thanks.redirect")}></div>
+  </section>
+</Layout>
