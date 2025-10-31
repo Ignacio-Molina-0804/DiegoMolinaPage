@@ -1083,4 +1083,128 @@ export const labels = {
     </div>
     `,
   },
-};
+
+  en: {
+
+  // Header
+
+  "header.home": "Home",
+  "header.sobreMi": "About Me",
+  "header.opotunidad": "Opportunity",
+  "header.audios": "Audios",
+  "header.contacto": "Contact",
+
+
+  // Footer
+
+  "footer.text": `
+    <p class="text-sm text-gray-400 text-center md:text-right">
+      © 2025 Diego Molina. All rights reserved.
+    </p>    
+  `,
+  "footer.membresia": "Membership",
+
+  // Home
+
+  "home.titlePage": "Diego Molina | Network Marketing",
+  "home.descriptionPage":
+    "Discover your opportunity in network marketing with Diego Molina. Personal growth, financial freedom, and a vision for the future.",
+
+  "home.buttonContact.title":
+    "Ready to take the first step toward a new experience?",
+  "home.buttonContact.subtitle":
+    "Let's talk and schedule your first meeting.",
+  "home.buttonContact.buttonText": "Go to Contact",
+
+  "home.hero.texto": `
+          <div class="z-10 text-white text-center md:text-left">
+              <h1 class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
+                  Discover your opportunity in <br />
+                  <span class="text-[#00ff7f]">Network Marketing</span>
+              </h1>
+              <p class="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 max-w-md mx-auto md:mx-0">
+                  <span class="text-[#00ff7f] font-semibold">Join our team</span> and start your journey toward a new experience of personal and financial growth.
+              </p>
+          </div>
+      `,
+
+  "home.section.whatigonnafind": `
+          <section class="py-16 sm:py-24 px-6 text-center text-white">
+              <h2 class="text-3xl sm:text-4xl font-bold mb-8">
+                  What will you find on <span class="text-[#00ff7f]">diegomolina.ar</span>?
+              </h2>
+              <p class="max-w-2xl mx-auto text-base sm:text-lg text-gray-300 leading-relaxed mb-12">
+                  This space is designed for you to discover
+                  <span class="text-[#00ff7f] font-semibold"> new opportunities</span>, 
+                  learn about <span class="font-semibold">leadership</span>, listen to
+                  <span class="font-semibold"> inspiring audios</span>,
+                  and find the path to build your
+                  <span class="text-[#00ff7f] font-semibold"> personal and financial freedom</span>.
+              </p>
+
+              <!-- Cards -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">
+                  <!-- ABOUT ME -->
+                  <a href="/sobre-mi"
+                  class="pulse-card block p-6 rounded-xl shadow bg-white/5 border border-[#00ff7f]/50 hover:scale-105 transition">
+                      <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-[#00ff7f]">About Me</h3>
+                      <p>
+                          Learn about my story, my lessons, and the journey that led me to dedicate myself to
+                          <span class="font-semibold">network marketing</span>.
+                      </p>
+                  </a>
+
+                  <!-- OPPORTUNITY -->
+                  <a href="/oportunidad"
+                  class="pulse-card block p-6 rounded-xl shadow-lg hover:scale-105 transition
+                  bg-gradient-to-br from-[#00ff7f]/20 to-[#00ff7f]/5
+                  border border-[#00ff7f]/50 ring-1 sm:ring-2 ring-[#00ff7f]/30
+                  hover:ring-[#00ff7f]/70 hover:shadow-[#00ff7f]/50">
+                      <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-[#00ff7f]">Opportunity</h3>
+                      <p>
+                          Discover how <span class="font-semibold">network marketing</span>
+                          can open a <span class="font-semibold">new future</span> for you.
+                      </p>
+                  </a>
+
+                  <!-- INSPIRATION -->
+                  <a href="/audios"
+                      class="pulse-card block p-6 rounded-xl shadow bg-white/5 border border-[#00ff7f]/50 hover:scale-105 transition">
+                      <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-[#00ff7f]">Inspiration</h3>
+                      <p>
+                      Access <span class="font-semibold">audios</span> and messages that help you stay
+                      <span class="font-semibold">focused and energized</span>.
+                      </p>
+                  </a>
+              </div>
+          </section>
+      `,
+
+  "home.section.benefits": `
+      <section class="py-16 sm:py-24 px-6 text-white text-center">
+          <h2 class="text-3xl sm:text-4xl font-bold mb-8">Benefits of Joining</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-12 max-w-5xl mx-auto">
+          <div class="bg-white/5 p-6 sm:p-8 rounded-2xl hover:scale-[1.02] transition">
+              <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">Part-Time</h3>
+              <p>Gain <span class="font-semibold">flexibility</span> to share more moments with those you love.</p>
+          </div>
+          <div class="bg-white/5 p-6 sm:p-8 rounded-2xl hover:scale-[1.02] transition">
+              <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">Exponential Growth</h3>
+              <p>Improve your <span class="font-semibold">mindset</span>, develop <span class="font-semibold">skills</span>, and create new opportunities.</p>
+          </div>
+          <div class="bg-white/5 p-6 sm:p-8 rounded-2xl hover:scale-[1.02] transition">
+              <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">Income</h3>
+              <p>Build a <span class="font-semibold">financial plan B</span> that can become your main source of income.</p>
+          </div>
+          <div class="bg-white/5 p-6 sm:p-8 rounded-2xl hover:scale-[1.02] transition">
+              <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">Community</h3>
+              <p>Be part of a <span class="font-semibold">supportive team</span> that grows and advances with you.</p>
+          </div>
+          </div>
+      </section>        
+  `,
+
+
+
+  }
+}
