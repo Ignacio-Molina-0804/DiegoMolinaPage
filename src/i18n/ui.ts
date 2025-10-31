@@ -1512,6 +1512,93 @@ export const labels = {
             </a>
         </section>
       `,
+  // Contact
+
+  "contact.titlePage": "Contact | Diego Molina",
+  "contact.descriptionPage":
+    "Get in touch with Diego Molina. Schedule your first meeting or ask your questions about network marketing and personal growth.",
+
+  "contact.hero.texto": `
+        <section class="text-white text-center md:text-left py-12 px-6">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+                    <span class="text-[#00ff7f]">Let's Connect</span>
+                </h1>
+                <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
+                    If you’ve come this far, it’s because something inside you is telling you that
+                    it’s time to <span class="font-semibold text-[#00ff7f]">make a change</span>.
+                </p>
+                <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
+                    Whether you have questions, want to know more about the opportunity, or are ready 
+                    to start, I’m here to listen and guide you through your first steps.
+                </p>
+                <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
+                    Let’s schedule a short meeting so we can talk about 
+                    <span class="font-semibold text-[#00ff7f]">your goals and the path to achieve them</span>.
+                </p>
+            </div>
+        </section>
+      `,
+
+  "contact.section.methods": `
+        <section class="py-16 px-6 text-white text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-10">Ways to Contact Me</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                
+                <a
+                  href="https://wa.me/XXXXXXXXXXX"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex flex-col items-center justify-center bg-white/5 border border-[#00ff7f]/40 rounded-xl p-6 hover:scale-105 transition"
+                >
+                    <img src="/icons/whatsapp.svg" alt="WhatsApp" class="w-10 h-10 mb-3" />
+                    <h3 class="text-xl font-semibold text-[#00ff7f] mb-2">WhatsApp</h3>
+                    <p class="text-gray-300 text-sm sm:text-base">Send me a message directly and let’s coordinate a call.</p>
+                </a>
+
+                <a
+                  href="mailto:contacto@diegomolina.ar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex flex-col items-center justify-center bg-white/5 border border-[#00ff7f]/40 rounded-xl p-6 hover:scale-105 transition"
+                >
+                    <img src="/icons/email.svg" alt="Email" class="w-10 h-10 mb-3" />
+                    <h3 class="text-xl font-semibold text-[#00ff7f] mb-2">Email</h3>
+                    <p class="text-gray-300 text-sm sm:text-base">Write me with your questions or to book your meeting.</p>
+                </a>
+
+                <a
+                  href="https://qrcc.me/s9flqsc1mc0z"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex flex-col items-center justify-center bg-white/5 border border-[#00ff7f]/40 rounded-xl p-6 hover:scale-105 transition"
+                >
+                    <img src="/icons/calendar.svg" alt="Meeting" class="w-10 h-10 mb-3" />
+                    <h3 class="text-xl font-semibold text-[#00ff7f] mb-2">Schedule a Meeting</h3>
+                    <p class="text-gray-300 text-sm sm:text-base">Pick a time that works for you and let’s talk directly.</p>
+                </a>
+            </div>
+        </section>
+      `,
+
+  "contact.section.final": `
+        <section class="py-20 px-6 text-center text-white bg-white/5">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">It’s your time to take action</h2>
+            <p class="max-w-2xl mx-auto text-gray-300 text-base sm:text-lg mb-8">
+                Don’t wait for the “perfect moment” — start now and create your own opportunity.
+                I’ll accompany you on this journey of <span class="font-semibold text-[#00ff7f]">growth and transformation</span>.
+            </p>
+            <a
+              href="https://wa.me/XXXXXXXXXXX"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block bg-[#00ff7f] text-gray-900 font-semibold px-8 py-3 rounded-xl hover:bg-[#00ff7f]/80 transition"
+            >
+              Send Message
+            </a>
+        </section>
+      `,
 
   }
 }
