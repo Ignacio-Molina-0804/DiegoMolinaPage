@@ -1423,6 +1423,95 @@ export const labels = {
         </section>
       `,
       
+  // Audios
+
+  "audios.titlePage": "Audios | Diego Molina",
+  "audios.descriptionPage":
+    "Motivational audios and reflections to inspire you on your journey of growth and success in network marketing and life.",
+
+  "audios.hero.texto": `
+        <section class="text-white text-center md:text-left py-12 px-6">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+                    <span class="text-[#00ff7f]">Audios that Inspire</span>
+                </h1>
+                <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
+                    Personal development is the key to success in every area of life. 
+                    Here you’ll find <span class="font-semibold text-[#00ff7f]">motivational audios, reflections, and leadership lessons</span> 
+                    to help you strengthen your mindset and grow every day.
+                </p>
+                <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
+                    Take a few minutes for yourself, press play, and connect with the message you need today.
+                </p>
+            </div>
+        </section>
+      `,
+
+  "audios.section.audioslist": `
+        <section class="py-16 px-6 text-white text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-10">Motivational Audios</h2>
+
+            <p class="max-w-3xl mx-auto text-gray-300 mb-12 text-base sm:text-lg leading-relaxed">
+                These audios will help you <span class="font-semibold text-[#00ff7f]">stay focused, positive, and inspired</span>
+                while you build your goals and dreams.
+            </p>
+
+            <!-- Example of audios (you can duplicate as needed) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition flex flex-col items-center">
+                    <h3 class="text-lg sm:text-xl font-semibold text-[#00ff7f] mb-3">Mindset of Growth</h3>
+                    <iframe
+                        class="rounded-lg w-full h-28 sm:h-32"
+                        src="https://open.spotify.com/embed/track/EXAMPLE1"
+                        frameborder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                </div>
+
+                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition flex flex-col items-center">
+                    <h3 class="text-lg sm:text-xl font-semibold text-[#00ff7f] mb-3">Overcoming Fear</h3>
+                    <iframe
+                        class="rounded-lg w-full h-28 sm:h-32"
+                        src="https://open.spotify.com/embed/track/EXAMPLE2"
+                        frameborder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                </div>
+
+                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition flex flex-col items-center">
+                    <h3 class="text-lg sm:text-xl font-semibold text-[#00ff7f] mb-3">Discipline and Consistency</h3>
+                    <iframe
+                        class="rounded-lg w-full h-28 sm:h-32"
+                        src="https://open.spotify.com/embed/track/EXAMPLE3"
+                        frameborder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                </div>
+
+            </div>
+        </section>
+      `,
+
+  "audios.section.calltoaction": `
+        <section class="py-20 px-6 text-center text-white">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+                Growth starts from within
+            </h2>
+            <p class="max-w-2xl mx-auto text-gray-300 text-base sm:text-lg mb-8">
+                Let these messages guide you toward a stronger, more determined, and more inspiring version of yourself.
+            </p>
+            <a
+              href="/contacto"
+              class="inline-block bg-[#00ff7f] text-gray-900 font-semibold px-8 py-3 rounded-xl hover:bg-[#00ff7f]/80 transition"
+            >
+              Contact Me
+            </a>
+        </section>
+      `,
 
   }
 }
