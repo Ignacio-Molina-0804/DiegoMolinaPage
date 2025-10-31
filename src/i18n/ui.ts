@@ -1204,6 +1204,111 @@ export const labels = {
       </section>        
   `,
 
+  // About Me
+
+  "about.titlePage": "About Me | Diego Molina",
+  "about.descriptionPage":
+    "Learn more about Diego Molina — his story, his beginnings in network marketing, and how this opportunity changed his life and the lives of many others.",
+
+  "about.hero.texto": `
+        <section class="text-white text-center md:text-left py-12 px-6">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+                    <span class="text-[#00ff7f]">Who am I?</span>
+                </h1>
+                <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
+                    My name is <span class="font-semibold text-[#00ff7f]">Diego Molina</span>, 
+                    and years ago I discovered in <span class="font-semibold">network marketing</span> 
+                    a way to transform my future and help others do the same.
+                </p>
+                <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
+                    I started, like many, with doubts and fears — but with a <span class="font-semibold">clear vision</span>:
+                    to find a way to build something that depended on me and not just a job.
+                </p>
+                <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
+                    Today, I dedicate myself to <span class="font-semibold">developing leaders</span>,
+                    accompanying people who want to grow, and helping them achieve 
+                    <span class="font-semibold text-[#00ff7f]">financial independence and personal fulfillment</span>.
+                </p>
+            </div>
+        </section>
+      `,
+
+  "about.section.values": `
+        <section class="py-16 px-6 text-center text-white">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-10">My Values</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+
+                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-3">Integrity</h3>
+                    <p class="text-gray-300">Doing the right thing, even when no one is watching. Authenticity above all.</p>
+                </div>
+
+                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-3">Growth</h3>
+                    <p class="text-gray-300">Always learning, evolving, and sharing what I’ve learned with others.</p>
+                </div>
+
+                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-3">Leadership</h3>
+                    <p class="text-gray-300">Guiding by example and helping others bring out their best version.</p>
+                </div>
+
+            </div>
+        </section>
+      `,
+
+  "about.section.mission": `
+        <section class="py-16 px-6 text-white text-center md:text-left">
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+                        <span class="text-[#00ff7f]">My Mission</span>
+                    </h2>
+                    <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
+                        My mission is simple: to show that there is another way to live —
+                        one where <span class="font-semibold">time and money work for you</span>,
+                        not the other way around.
+                    </p>
+                    <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
+                        I help people discover their potential through a system that combines
+                        <span class="font-semibold text-[#00ff7f]">education, community, and entrepreneurship</span>.
+                    </p>
+                    <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
+                        If you are looking to take control of your future,
+                        I can show you the path I walked — step by step.
+                    </p>
+                </div>
+                <div class="flex justify-center">
+                    <img src="/images/about/mission.webp" alt="Mission - Diego Molina" class="rounded-2xl shadow-lg max-w-sm sm:max-w-md" />
+                </div>
+            </div>
+        </section>
+      `,
+
+  "about.section.vision": `
+        <section class="py-16 px-6 text-white text-center md:text-left bg-white/5">
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div class="order-2 md:order-1 flex justify-center">
+                    <img src="/images/about/vision.webp" alt="Vision - Diego Molina" class="rounded-2xl shadow-lg max-w-sm sm:max-w-md" />
+                </div>
+                <div class="order-1 md:order-2">
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+                        <span class="text-[#00ff7f]">My Vision</span>
+                    </h2>
+                    <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
+                        I believe in a world where <span class="font-semibold">people take ownership of their destiny</span>,
+                        where they can <span class="text-[#00ff7f] font-semibold">dream again</span> and make those dreams come true.
+                    </p>
+                    <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
+                        I want to build a <span class="font-semibold">community of leaders</span> 
+                        who multiply impact and inspire others to do the same — because success is greater when it’s shared.
+                    </p>
+                </div>
+            </div>
+        </section>
+      `,
 
 
   }
