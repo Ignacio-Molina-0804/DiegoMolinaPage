@@ -1086,519 +1086,533 @@ export const labels = {
 
   en: {
 
-  // Header
+    // Header
 
-  "header.home": "Home",
-  "header.sobreMi": "About Me",
-  "header.opotunidad": "Opportunity",
-  "header.audios": "Audios",
-  "header.contacto": "Contact",
+    "header.home": "Home",
+    "header.sobreMi": "About Me",
+    "header.opotunidad": "Opportunity",
+    "header.audios": "Audios",
+    "header.contacto": "Contact",
 
 
-  // Footer
+    // Footer
 
-  "footer.text": `
-    <p class="text-sm text-gray-400 text-center md:text-right">
-      © 2025 Diego Molina. All rights reserved.
-    </p>    
-  `,
-  "footer.membresia": "Membership",
+    "footer.text": `
+      <p class="text-sm text-gray-400 text-center md:text-right">
+        © 2025 Diego Molina. All rights reserved.
+      </p>    
+    `,
+    "footer.membresia": "Membership",
 
   // Home
 
   "home.titlePage": "Diego Molina | Network Marketing",
   "home.descriptionPage":
-    "Discover your opportunity in network marketing with Diego Molina. Personal growth, financial freedom, and a vision for the future.",
+    "Discover your opportunity in network marketing with Diego Molina. Personal growth, financial freedom and a vision for the future.",
 
   "home.buttonContact.title":
-    "Ready to take the first step toward a new experience?",
+    "Want to take the first step toward a new experience?",
   "home.buttonContact.subtitle":
     "Let's talk and schedule your first meeting.",
   "home.buttonContact.buttonText": "Go to Contact",
 
   "home.hero.texto": `
-          <div class="z-10 text-white text-center md:text-left">
-              <h1 class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
-                  Discover your opportunity in <br />
-                  <span class="text-[#00ff7f]">Network Marketing</span>
-              </h1>
-              <p class="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 max-w-md mx-auto md:mx-0">
-                  <span class="text-[#00ff7f] font-semibold">Join our team</span> and start your journey toward a new experience of personal and financial growth.
-              </p>
-          </div>
-      `,
+      <div class="z-10 text-white text-center md:text-left">
+        <h1 class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
+          Discover your opportunity in <br />
+          <span class="text-[#00ff7f]">Network Marketing</span>
+        </h1>
+        <p class="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 max-w-md mx-auto md:mx-0">
+          <span class="text-[#00ff7f] font-semibold">Join our team</span> and start
+          your journey toward personal growth and financial freedom.
+        </p>
+      </div>
+    `,
 
   "home.section.whatigonnafind": `
-          <section class="py-16 sm:py-24 px-6 text-center text-white">
-              <h2 class="text-3xl sm:text-4xl font-bold mb-8">
-                  What will you find on <span class="text-[#00ff7f]">diegomolina.ar</span>?
-              </h2>
-              <p class="max-w-2xl mx-auto text-base sm:text-lg text-gray-300 leading-relaxed mb-12">
-                  This space is designed for you to discover
-                  <span class="text-[#00ff7f] font-semibold"> new opportunities</span>, 
-                  learn about <span class="font-semibold">leadership</span>, listen to
-                  <span class="font-semibold"> inspiring audios</span>,
-                  and find the path to build your
-                  <span class="text-[#00ff7f] font-semibold"> personal and financial freedom</span>.
-              </p>
+      <section class="py-16 sm:py-24 px-6 text-center text-white">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-8">
+          What will you find on <span class="text-[#00ff7f]">diegomolina.ar</span>?
+        </h2>
+        <p class="max-w-2xl mx-auto text-base sm:text-lg text-gray-300 leading-relaxed mb-12">
+          This space is designed for you to discover
+          <span class="text-[#00ff7f] font-semibold"> new opportunities</span>,
+          learn about <span class="font-semibold">leadership</span>, listen to
+          <span class="font-semibold"> inspirational audios</span>
+          and find the path to build your
+          <span class="text-[#00ff7f] font-semibold"> personal and financial freedom</span>.
+        </p>
 
-              <!-- Cards -->
-              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">
-                  <!-- ABOUT ME -->
-                  <a href="/sobre-mi"
-                  class="pulse-card block p-6 rounded-xl shadow bg-white/5 border border-[#00ff7f]/50 hover:scale-105 transition">
-                      <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-[#00ff7f]">About Me</h3>
-                      <p>
-                          Learn about my story, my lessons, and the journey that led me to dedicate myself to
-                          <span class="font-semibold">network marketing</span>.
-                      </p>
-                  </a>
 
-                  <!-- OPPORTUNITY -->
-                  <a href="/oportunidad"
-                  class="pulse-card block p-6 rounded-xl shadow-lg hover:scale-105 transition
-                  bg-gradient-to-br from-[#00ff7f]/20 to-[#00ff7f]/5
-                  border border-[#00ff7f]/50 ring-1 sm:ring-2 ring-[#00ff7f]/30
-                  hover:ring-[#00ff7f]/70 hover:shadow-[#00ff7f]/50">
-                      <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-[#00ff7f]">Opportunity</h3>
-                      <p>
-                          Discover how <span class="font-semibold">network marketing</span>
-                          can open a <span class="font-semibold">new future</span> for you.
-                      </p>
-                  </a>
-
-                  <!-- INSPIRATION -->
-                  <a href="/audios"
-                      class="pulse-card block p-6 rounded-xl shadow bg-white/5 border border-[#00ff7f]/50 hover:scale-105 transition">
-                      <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-[#00ff7f]">Inspiration</h3>
-                      <p>
-                      Access <span class="font-semibold">audios</span> and messages that help you stay
-                      <span class="font-semibold">focused and energized</span>.
-                      </p>
-                  </a>
-              </div>
-          </section>
-      `,
-
-  "home.section.benefits": `
-      <section class="py-16 sm:py-24 px-6 text-white text-center">
-          <h2 class="text-3xl sm:text-4xl font-bold mb-8">Benefits of Joining</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-12 max-w-5xl mx-auto">
-          <div class="bg-white/5 p-6 sm:p-8 rounded-2xl hover:scale-[1.02] transition">
-              <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">Part-Time</h3>
-              <p>Gain <span class="font-semibold">flexibility</span> to share more moments with those you love.</p>
-          </div>
-          <div class="bg-white/5 p-6 sm:p-8 rounded-2xl hover:scale-[1.02] transition">
-              <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">Exponential Growth</h3>
-              <p>Improve your <span class="font-semibold">mindset</span>, develop <span class="font-semibold">skills</span>, and create new opportunities.</p>
-          </div>
-          <div class="bg-white/5 p-6 sm:p-8 rounded-2xl hover:scale-[1.02] transition">
-              <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">Income</h3>
-              <p>Build a <span class="font-semibold">financial plan B</span> that can become your main source of income.</p>
-          </div>
-          <div class="bg-white/5 p-6 sm:p-8 rounded-2xl hover:scale-[1.02] transition">
-              <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">Community</h3>
-              <p>Be part of a <span class="font-semibold">supportive team</span> that grows and advances with you.</p>
-          </div>
-          </div>
-      </section>        
-  `,
-
-  // About Me
-
-  "about.titlePage": "About Me | Diego Molina",
-  "about.descriptionPage":
-    "Learn more about Diego Molina — his story, his beginnings in network marketing, and how this opportunity changed his life and the lives of many others.",
-
-  "about.hero.texto": `
-        <section class="text-white text-center md:text-left py-12 px-6">
-            <div class="max-w-4xl mx-auto">
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
-                    <span class="text-[#00ff7f]">Who am I?</span>
-                </h1>
-                <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
-                    My name is <span class="font-semibold text-[#00ff7f]">Diego Molina</span>, 
-                    and years ago I discovered in <span class="font-semibold">network marketing</span> 
-                    a way to transform my future and help others do the same.
-                </p>
-                <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
-                    I started, like many, with doubts and fears — but with a <span class="font-semibold">clear vision</span>:
-                    to find a way to build something that depended on me and not just a job.
-                </p>
-                <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
-                    Today, I dedicate myself to <span class="font-semibold">developing leaders</span>,
-                    accompanying people who want to grow, and helping them achieve 
-                    <span class="font-semibold text-[#00ff7f]">financial independence and personal fulfillment</span>.
-                </p>
-            </div>
-        </section>
-      `,
-
-  "about.section.values": `
-        <section class="py-16 px-6 text-center text-white">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-10">My Values</h2>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-
-                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
-                    <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-3">Integrity</h3>
-                    <p class="text-gray-300">Doing the right thing, even when no one is watching. Authenticity above all.</p>
-                </div>
-
-                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
-                    <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-3">Growth</h3>
-                    <p class="text-gray-300">Always learning, evolving, and sharing what I’ve learned with others.</p>
-                </div>
-
-                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
-                    <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-3">Leadership</h3>
-                    <p class="text-gray-300">Guiding by example and helping others bring out their best version.</p>
-                </div>
-
-            </div>
-        </section>
-      `,
-
-  "about.section.mission": `
-        <section class="py-16 px-6 text-white text-center md:text-left">
-            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                <div>
-                    <h2 class="text-3xl sm:text-4xl font-bold mb-6">
-                        <span class="text-[#00ff7f]">My Mission</span>
-                    </h2>
-                    <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
-                        My mission is simple: to show that there is another way to live —
-                        one where <span class="font-semibold">time and money work for you</span>,
-                        not the other way around.
-                    </p>
-                    <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
-                        I help people discover their potential through a system that combines
-                        <span class="font-semibold text-[#00ff7f]">education, community, and entrepreneurship</span>.
-                    </p>
-                    <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
-                        If you are looking to take control of your future,
-                        I can show you the path I walked — step by step.
-                    </p>
-                </div>
-                <div class="flex justify-center">
-                    <img src="/images/about/mission.webp" alt="Mission - Diego Molina" class="rounded-2xl shadow-lg max-w-sm sm:max-w-md" />
-                </div>
-            </div>
-        </section>
-      `,
-
-  "about.section.vision": `
-        <section class="py-16 px-6 text-white text-center md:text-left bg-white/5">
-            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                <div class="order-2 md:order-1 flex justify-center">
-                    <img src="/images/about/vision.webp" alt="Vision - Diego Molina" class="rounded-2xl shadow-lg max-w-sm sm:max-w-md" />
-                </div>
-                <div class="order-1 md:order-2">
-                    <h2 class="text-3xl sm:text-4xl font-bold mb-6">
-                        <span class="text-[#00ff7f]">My Vision</span>
-                    </h2>
-                    <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
-                        I believe in a world where <span class="font-semibold">people take ownership of their destiny</span>,
-                        where they can <span class="text-[#00ff7f] font-semibold">dream again</span> and make those dreams come true.
-                    </p>
-                    <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
-                        I want to build a <span class="font-semibold">community of leaders</span> 
-                        who multiply impact and inspire others to do the same — because success is greater when it’s shared.
-                    </p>
-                </div>
-            </div>
-        </section>
-      `,
-
-  // Opportunity
-
-  "opportunity.titlePage": "Opportunity | Diego Molina",
-  "opportunity.descriptionPage":
-    "Discover how network marketing can open a new path for your personal and financial growth. Learn how this opportunity can change your life.",
-
-  "opportunity.hero.texto": `
-        <section class="text-white text-center md:text-left py-12 px-6">
-            <div class="max-w-4xl mx-auto">
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
-                    <span class="text-[#00ff7f]">The Opportunity</span>
-                </h1>
-                <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
-                    Network marketing is one of the most powerful and accessible ways 
-                    to <span class="font-semibold text-[#00ff7f]">create income</span> and build a business 
-                    without needing a large investment.
-                </p>
-                <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
-                    It’s a business model based on <span class="font-semibold">teamwork</span> and 
-                    <span class="font-semibold">leadership development</span>. The more people you help succeed, 
-                    the more you grow.
-                </p>
-                <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
-                    This opportunity allows you to <span class="font-semibold text-[#00ff7f]">start part-time</span> 
-                    and progressively build a solid foundation toward your financial freedom.
-                </p>
-            </div>
-        </section>
-      `,
-
-  "opportunity.section.howitworks": `
-        <section class="py-16 px-6 text-white text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-8">How Does It Work?</h2>
-            <p class="max-w-3xl mx-auto text-gray-300 mb-12 text-base sm:text-lg leading-relaxed">
-                In network marketing, you share products and a business opportunity that help people 
-                <span class="font-semibold text-[#00ff7f]">improve their lives</span>.
-                You earn income not only from your own results but also from those who join your team.
+        <!-- Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">
+          <!-- ABOUT ME -->
+          <a href="/sobre-mi"
+          class="pulse-card block p-6 rounded-xl shadow bg-white/5 border border-[#00ff7f]/50 hover:scale-105 transition">
+            <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-[#00ff7f]">About Me</h3>
+            <p>
+              Learn my story, my lessons and the path that led me to dedicate myself to
+              <span class="font-semibold">network marketing</span>.
             </p>
+          </a>
 
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
-                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
-                    <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-3">1. Share</h3>
-                    <p class="text-gray-300">Recommend products and a business opportunity that truly make a difference.</p>
-                </div>
-
-                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
-                    <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-3">2. Grow</h3>
-                    <p class="text-gray-300">Build your team and develop leadership skills with personalized mentoring.</p>
-                </div>
-
-                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
-                    <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-3">3. Duplicate</h3>
-                    <p class="text-gray-300">Teach others to do the same — that’s how your network grows exponentially.</p>
-                </div>
-            </div>
-        </section>
-      `,
-
-  "opportunity.section.benefits": `
-        <section class="py-16 px-6 text-white text-center bg-white/5">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-8">Benefits of This Model</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
-                    <h3 class="text-xl font-semibold text-[#00ff7f] mb-3">Low Risk</h3>
-                    <p class="text-gray-300">Start without needing large investments or high fixed costs.</p>
-                </div>
-
-                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
-                    <h3 class="text-xl font-semibold text-[#00ff7f] mb-3">Personal Growth</h3>
-                    <p class="text-gray-300">You’ll develop skills in leadership, communication, and financial education.</p>
-                </div>
-
-                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
-                    <h3 class="text-xl font-semibold text-[#00ff7f] mb-3">Passive Income</h3>
-                    <p class="text-gray-300">Earn residual income from your network’s production month after month.</p>
-                </div>
-
-                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
-                    <h3 class="text-xl font-semibold text-[#00ff7f] mb-3">Community</h3>
-                    <p class="text-gray-300">Be part of a network that supports and celebrates your growth and success.</p>
-                </div>
-
-                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
-                    <h3 class="text-xl font-semibold text-[#00ff7f] mb-3">Flexibility</h3>
-                    <p class="text-gray-300">Work from anywhere and manage your time your own way.</p>
-                </div>
-
-                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition">
-                    <h3 class="text-xl font-semibold text-[#00ff7f] mb-3">Impact</h3>
-                    <p class="text-gray-300">Help other people discover their potential and change their lives.</p>
-                </div>
-            </div>
-        </section>
-      `,
-
-  "opportunity.section.calltoaction": `
-        <section class="py-20 px-6 text-center text-white">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-6">
-                Are you ready to start your journey?
-            </h2>
-            <p class="max-w-2xl mx-auto text-gray-300 text-base sm:text-lg mb-8">
-                You don’t need to have experience — only the <span class="font-semibold text-[#00ff7f]">desire to grow</span> 
-                and a commitment to your goals. I’ll guide you step by step.
+          <!-- OPPORTUNITY -->
+          <a href="/oportunidad"
+          class="pulse-card block p-6 rounded-xl shadow-lg hover:scale-105 transition
+          bg-gradient-to-br from-[#00ff7f]/20 to-[#00ff7f]/5
+          border border-[#00ff7f]/50 ring-1 sm:ring-2 ring-[#00ff7f]/30
+          hover:ring-[#00ff7f]/70 hover:shadow-[#00ff7f]/50">
+            <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-[#00ff7f]">Opportunity</h3>
+            <p>
+              Discover how <span class="font-semibold">network marketing</span>
+              can open a <span class="font-semibold">new future</span> for you.
             </p>
-            <a
-              href="/contacto"
-              class="inline-block bg-[#00ff7f] text-gray-900 font-semibold px-8 py-3 rounded-xl hover:bg-[#00ff7f]/80 transition"
-            >
-              Contact Me
-            </a>
-        </section>
-      `,
-      
-  // Audios
+          </a>
 
-  "audios.titlePage": "Audios | Diego Molina",
-  "audios.descriptionPage":
-    "Motivational audios and reflections to inspire you on your journey of growth and success in network marketing and life.",
-
-  "audios.hero.texto": `
-        <section class="text-white text-center md:text-left py-12 px-6">
-            <div class="max-w-4xl mx-auto">
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
-                    <span class="text-[#00ff7f]">Audios that Inspire</span>
-                </h1>
-                <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
-                    Personal development is the key to success in every area of life. 
-                    Here you’ll find <span class="font-semibold text-[#00ff7f]">motivational audios, reflections, and leadership lessons</span> 
-                    to help you strengthen your mindset and grow every day.
-                </p>
-                <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
-                    Take a few minutes for yourself, press play, and connect with the message you need today.
-                </p>
-            </div>
-        </section>
-      `,
-
-  "audios.section.audioslist": `
-        <section class="py-16 px-6 text-white text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-10">Motivational Audios</h2>
-
-            <p class="max-w-3xl mx-auto text-gray-300 mb-12 text-base sm:text-lg leading-relaxed">
-                These audios will help you <span class="font-semibold text-[#00ff7f]">stay focused, positive, and inspired</span>
-                while you build your goals and dreams.
+          <!-- INSPIRATION -->
+          <a href="/audios"
+            class="pulse-card block p-6 rounded-xl shadow bg-white/5 border border-[#00ff7f]/50 hover:scale-105 transition">
+            <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-[#00ff7f]">Inspiration</h3>
+            <p>
+            Access <span class="font-semibold">audios</span> and messages that help
+            keep your <span class="font-semibold">energy</span> focused.
             </p>
-
-            <!-- Example of audios (you can duplicate as needed) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-
-                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition flex flex-col items-center">
-                    <h3 class="text-lg sm:text-xl font-semibold text-[#00ff7f] mb-3">Mindset of Growth</h3>
-                    <iframe
-                        class="rounded-lg w-full h-28 sm:h-32"
-                        src="https://open.spotify.com/embed/track/EXAMPLE1"
-                        frameborder="0"
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"
-                    ></iframe>
-                </div>
-
-                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition flex flex-col items-center">
-                    <h3 class="text-lg sm:text-xl font-semibold text-[#00ff7f] mb-3">Overcoming Fear</h3>
-                    <iframe
-                        class="rounded-lg w-full h-28 sm:h-32"
-                        src="https://open.spotify.com/embed/track/EXAMPLE2"
-                        frameborder="0"
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"
-                    ></iframe>
-                </div>
-
-                <div class="bg-white/5 border border-[#00ff7f]/40 p-6 rounded-xl hover:scale-105 transition flex flex-col items-center">
-                    <h3 class="text-lg sm:text-xl font-semibold text-[#00ff7f] mb-3">Discipline and Consistency</h3>
-                    <iframe
-                        class="rounded-lg w-full h-28 sm:h-32"
-                        src="https://open.spotify.com/embed/track/EXAMPLE3"
-                        frameborder="0"
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"
-                    ></iframe>
-                </div>
-
+          </a>
+        </div>
+      </section>
+    `,
+    "home.section.benefits": `
+        <section class="py-16 sm:py-24 px-6 text-white text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8">Benefits of joining</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-12 max-w-5xl mx-auto">
+            <div class="bg-white/5 p-6 sm:p-8 rounded-2xl hover:scale-[1.02] transition">
+                <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">Part-time</h3>
+                <p>You gain <span class="font-semibold">flexibility</span> to spend more time with those you love.</p>
             </div>
-        </section>
-      `,
-
-  "audios.section.calltoaction": `
-        <section class="py-20 px-6 text-center text-white">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-6">
-                Growth starts from within
-            </h2>
-            <p class="max-w-2xl mx-auto text-gray-300 text-base sm:text-lg mb-8">
-                Let these messages guide you toward a stronger, more determined, and more inspiring version of yourself.
-            </p>
-            <a
-              href="/contacto"
-              class="inline-block bg-[#00ff7f] text-gray-900 font-semibold px-8 py-3 rounded-xl hover:bg-[#00ff7f]/80 transition"
-            >
-              Contact Me
-            </a>
-        </section>
-      `,
-  // Contact
-
-  "contact.titlePage": "Contact | Diego Molina",
-  "contact.descriptionPage":
-    "Get in touch with Diego Molina. Schedule your first meeting or ask your questions about network marketing and personal growth.",
-
-  "contact.hero.texto": `
-        <section class="text-white text-center md:text-left py-12 px-6">
-            <div class="max-w-4xl mx-auto">
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
-                    <span class="text-[#00ff7f]">Let's Connect</span>
-                </h1>
-                <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
-                    If you’ve come this far, it’s because something inside you is telling you that
-                    it’s time to <span class="font-semibold text-[#00ff7f]">make a change</span>.
-                </p>
-                <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
-                    Whether you have questions, want to know more about the opportunity, or are ready 
-                    to start, I’m here to listen and guide you through your first steps.
-                </p>
-                <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
-                    Let’s schedule a short meeting so we can talk about 
-                    <span class="font-semibold text-[#00ff7f]">your goals and the path to achieve them</span>.
-                </p>
+            <div class="bg-white/5 p-6 sm:p-8 rounded-2xl hover:scale-[1.02] transition">
+                <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">Exponential Growth</h3>
+                <p>You improve your <span class="font-semibold">mindset</span>, develop <span class="font-semibold">skills</span> and create new opportunities.</p>
             </div>
-        </section>
-      `,
-
-  "contact.section.methods": `
-        <section class="py-16 px-6 text-white text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-10">Ways to Contact Me</h2>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-                
-                <a
-                  href="https://wa.me/XXXXXXXXXXX"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="flex flex-col items-center justify-center bg-white/5 border border-[#00ff7f]/40 rounded-xl p-6 hover:scale-105 transition"
-                >
-                    <img src="/icons/whatsapp.svg" alt="WhatsApp" class="w-10 h-10 mb-3" />
-                    <h3 class="text-xl font-semibold text-[#00ff7f] mb-2">WhatsApp</h3>
-                    <p class="text-gray-300 text-sm sm:text-base">Send me a message directly and let’s coordinate a call.</p>
-                </a>
-
-                <a
-                  href="mailto:contacto@diegomolina.ar"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="flex flex-col items-center justify-center bg-white/5 border border-[#00ff7f]/40 rounded-xl p-6 hover:scale-105 transition"
-                >
-                    <img src="/icons/email.svg" alt="Email" class="w-10 h-10 mb-3" />
-                    <h3 class="text-xl font-semibold text-[#00ff7f] mb-2">Email</h3>
-                    <p class="text-gray-300 text-sm sm:text-base">Write me with your questions or to book your meeting.</p>
-                </a>
-
-                <a
-                  href="https://qrcc.me/s9flqsc1mc0z"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="flex flex-col items-center justify-center bg-white/5 border border-[#00ff7f]/40 rounded-xl p-6 hover:scale-105 transition"
-                >
-                    <img src="/icons/calendar.svg" alt="Meeting" class="w-10 h-10 mb-3" />
-                    <h3 class="text-xl font-semibold text-[#00ff7f] mb-2">Schedule a Meeting</h3>
-                    <p class="text-gray-300 text-sm sm:text-base">Pick a time that works for you and let’s talk directly.</p>
-                </a>
+            <div class="bg-white/5 p-6 sm:p-8 rounded-2xl hover:scale-[1.02] transition">
+                <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">Income</h3>
+                <p>Build a <span class="font-semibold">financial plan B</span> that can become your main source of income.</p>
             </div>
-        </section>
-      `,
+            <div class="bg-white/5 p-6 sm:p-8 rounded-2xl hover:scale-[1.02] transition">
+                <h3 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">Community</h3>
+                <p>Be part of a <span class="font-semibold">supportive team</span> that grows and advances with you.</p>
+            </div>
+            </div>
+        </section>        
+    `,
 
-  "contact.section.final": `
-        <section class="py-20 px-6 text-center text-white bg-white/5">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-6">It’s your time to take action</h2>
-            <p class="max-w-2xl mx-auto text-gray-300 text-base sm:text-lg mb-8">
-                Don’t wait for the “perfect moment” — start now and create your own opportunity.
-                I’ll accompany you on this journey of <span class="font-semibold text-[#00ff7f]">growth and transformation</span>.
-            </p>
-            <a
-              href="https://wa.me/XXXXXXXXXXX"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-block bg-[#00ff7f] text-gray-900 font-semibold px-8 py-3 rounded-xl hover:bg-[#00ff7f]/80 transition"
-            >
-              Send Message
-            </a>
-        </section>
-      `,
+    // About
+
+    "about.pageTitle": "About me | Diego Molina | Network Marketing",
+    "about.pageDescription":
+      "Learn Diego Molina's story: who I am, what I did before and why I decided to enter network marketing to transform my life and others'.",
+
+    "about.buttonContact.title": "Do you relate to my story?",
+    "about.buttonContact.subtitle":
+      "You can write to me and take the first step to build your own path.",
+    "about.buttonContact.buttonText": "Contact me",
+
+    "about.title": `
+        <h1 class="text-2xl sm:text-5xl font-bold text-center mb-10 sm:mb-20 pt-6">
+        Learn <span class="text-[#00ff7f]">my story</span>
+        </h1>    
+    `,
+    "about.whoAmI": `
+      <!-- Who I am -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
+        <div class="order-1 flex justify-center">
+          <img src="/pageImages/diegoPerfilAhora.webp" alt="Diego Molina"
+            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
+        </div>
+        <div class="order-2 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">Who am I?</h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
+            I'm <span class="font-semibold text-[#00ff7f]">Diego Molina</span>: husband, dad and <span class="font-semibold">entrepreneur</span>.
+            I'm driven by a <span class="font-semibold text-[#00ff7f]">growth mindset</span> and the conviction that every
+            <span class="font-semibold">challenge</span> is an <span class="font-semibold">opportunity</span>.
+          </p>
+        </div>
+      </div>    
+    `,
+    "about.whatDidIDoBefore": `
+      <!-- What I did before -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
+        <div class="order-2 md:order-1 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">What did I do before?</h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
+            I worked in a <span class="font-semibold">traditional job</span>, with <span class="font-semibold text-[#00ff7f]">little time</span>
+            for my family and without a <span class="font-semibold">plan B</span>.
+          </p>
+        </div>
+        <div class="order-1 md:order-2 flex justify-center">
+          <img src="/pageImages/diegoPerfilAntes.webp" alt="Diego before"
+            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
+        </div>
+      </div>
+    `,
+    "about.howIFoundOutAboutTheProject": `
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
+        <div class="order-1 flex justify-center">
+          <img src="/pageImages/diegoConFabi.webp" alt="How I found the project"
+            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
+        </div>
+        <div class="order-2 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">How I found the project?</h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
+            One day, almost by chance, I found a post online about a different business model.
+            At first I was skeptical, but I soon understood the key: with the right training and a positive attitude,
+            it is totally possible to build something big and reach that financial stability I was looking for.
+          </p>
+        </div>
+      </div>
+    `,
+    "about.whyDidIDecideToEnter": `
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
+        <div class="order-1 md:order-2 flex justify-center">
+          <img src="/pageImages/diegoLiderando.webp" alt="Diego Molina Leading"
+            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
+        </div>
+        <div class="order-2 md:order-1 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">Why did I decide to join?</h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
+            Three sentences marked my life:
+          </p>
+          <div class="mt-2 space-y-2 text-sm sm:text-base md:text-lg">
+            <p>• <span class="text-[#00ff7f] font-semibold">How do you see yourself in five years?</span></p>
+            <p>• <span class="font-semibold">Don't expect different results</span> if you always do the same.</p>
+            <p>• The most valuable thing is not money, but <span class="text-[#00ff7f] font-semibold">time with your family</span>.</p>
+          </div>
+        </div>
+      </div>
+    `,
+    "about.mentoringLeaders": `
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
+        <div class="order-2 md:order-2 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">Leadership mentoring</h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
+            I didn't walk this path alone. I had the opportunity to learn directly from <span class="font-semibold text-[#00ff7f]">industry leaders</span>,
+            people with proven results who guided me every step of the way.
+            Thanks to their advice I understood the importance of surrounding yourself with those who have already traveled the path and who today
+            inspire thousands of entrepreneurs to reach their own dreams.
+          </p>
+        </div>
+        <div class="order-1 md:order-1 flex justify-center">
+          <img src="/pageImages/diegoConLideres.webp" alt="Leadership mentoring"
+            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
+        </div>
+      </div>
+    `,
+    "about.whatAmILookingToConvey": `
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
+        <div class="order-2 md:order-1 bg-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm hover:scale-[1.02] transition">
+          <h2 class="text-xl sm:text-3xl font-semibold text-[#00ff7f] mb-3">What do I want to convey?</h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed">
+            My mission is to <span class="font-semibold">inspire</span> more people to build
+            <span class="text-[#00ff7f] font-semibold"> freedom</span>, with <span class="font-semibold">vision</span> and <span class="font-semibold">a positive attitude</span>.
+          </p>
+        </div>
+        <div class="order-1 md:order-2 flex justify-center">
+          <img src="/pageImages/diegoTransmitiendo.webp" alt="Diego conveying"
+            class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-md md:max-w-full object-cover" />
+        </div>
+      </div>
+    `,
+
+    // Contact
+
+    "contact.pageTitle": "Contact | Diego Molina | Network Marketing",
+    "contact.pageDescription":
+      "Get in touch with Diego Molina. Take the first step toward your personal and financial development in network marketing.",
+
+    "contact.intro": `
+    <div
+      class="max-w-2xl sm:max-w-3xl text-center mb-12 sm:mb-16 pt-6 sm:pt-10"
+    >
+      <h1 class="text-4xl sm:text-5xl font-bold text-[#00ff7f] mb-4">
+        Let's talk
+      </h1>
+      <p class="text-gray-300 text-base sm:text-lg">
+        If you're here it's because you're ready to take an important step.
+        Complete the questionnaire or write to me directly — I'll be happy to accompany you on this growth journey.
+      </p>
+    </div>
+    `,
+
+    "contact.form.title": "Your Questionnaire",
+    "contact.form.placehoolderName": "Your Name",
+    "contact.form.placehoolderEmail": "Your email",
+    "contact.form.placehoolderPhone": "Your phone",
+    "contact.form.placehoolderMessage": "Write your message...",
+    "contact.form.placehoolderButton": "Send Gmail",
+    "contact.form.sendWhatsapp": "Send via WhatsApp",
+
+    "contact.directContact.title": "Contact",
+    "contact.directContact.description":
+      "Want to write to me directly? These are the fastest ways to get in touch:",
+    "contact.directContact.invitationText":
+      "Besides writing to me, follow me on social media: I share daily content on personal growth, motivation and network marketing strategies. Join and stay inspired!",
+
+    "contact.directContact.extra": `
+          <div>
+            <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
+              Why contact me?
+            </h3>
+            <ul class="space-y-1 sm:space-y-2 text-gray-300 text-xs sm:text-sm">
+              <li>✅ Personalized guidance</li>
+              <li>✅ Experience in network marketing</li>
+              <li>✅ Personal and financial growth</li>
+              <li>✅ Constant inspiration and motivation</li>
+            </ul>
+          </div>
+    `,
+    "contact.directContact.extraGoogleMeetText": "Let's schedule your meeting now!",
+
+    // Opportunity
+
+    "oportunity.pageTitle": "Opportunity | Diego Molina | Network Marketing",
+    "oportunity.pageDescription": `Discover how to generate income with a global digital supermarket present in over 100 countries and with more than 60 years of history. Turn your consumption into a business opportunity.`,
+
+    "oportunity.buttonContact.title": "Ready to learn how to do it?",
+    "oportunity.buttonContact.subtitle":
+      "You can start today. In 5 years you'll be glad you took this step toward your freedom.",
+    "oportunity.buttonContact.buttonText": "I want to learn how",
+
+    "oportunity.intro": `
+    <div class="text-center mb-12 sm:mb-20">
+      <h1 class="text-3xl sm:text-5xl font-bold mb-6 pt-10">
+        An <span class="text-[#00ff7f]">Opportunity</span> that can change your life
+      </h1>
+      <p class="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+        Did you know your home can become a <span class="font-semibold">gold mine</span>… without leaving it?
+        Today there is a <span class="text-[#00ff7f]">global platform</span> with more than 60 years of history and presence in over 100 countries,
+        that works as a <span class="font-semibold">100% digital supermarket</span>.
+      </p>
+    </div>
+    `,
+    "oportunity.benefitsOfConsumption": `
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center mb-16 sm:mb-20">
+      <div class="bg-white/5 p-6 sm:p-8 rounded-2xl backdrop-blur-sm shadow-lg hover:scale-[1.02] transition">
+        <h2 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">What does it offer?</h2>
+        <p class="text-gray-300 leading-relaxed">
+          It allows you to <span class="font-semibold">buy directly from the factory</span>, avoiding middlemen and paying less for what you already consume:
+          <br /><br />
+          ✔ Nutrition <br />
+          ✔ Personal care <br />
+          ✔ Home care <br />
+          ✔ Beauty
+        </p>
+      </div>
+      <div>
+        <img src="/pageImages/oportunidadSupermercado.webp" alt="Digital supermarket"
+          class="rounded-2xl w-full object-cover" />
+      </div>
+    </div>
+    `,
+    "oportunity.generateIncome": `
+    <div class="bg-gradient-to-r from-[#0f172a] to-[#1a0b20] p-8 sm:p-10 rounded-2xl shadow-xl mb-16 sm:mb-20">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center">The most interesting part...</h2>
+      <p class="text-base sm:text-lg text-gray-300 text-center max-w-3xl mx-auto">
+        You can also <span class="text-[#00ff7f] font-semibold">generate income</span> by recommending the platform to others.
+      </p>
+    </div>
+    `,
+    "oportunity.incomeExample": `
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center mb-16 sm:mb-20">
+      <div>
+        <img src="/pageImages/redDeUsuarios.webp" alt="User network"
+          class="rounded-2xl w-full object-cover" />
+      </div>
+      <div class="bg-white/5 p-6 sm:p-8 rounded-2xl backdrop-blur-sm shadow-lg">
+        <h2 class="text-xl sm:text-2xl font-semibold text-[#00ff7f] mb-4">Imagine this</h2>
+        <p class="text-gray-300 leading-relaxed">
+          You have your own network of <span class="font-semibold">1,000 users</span>, each consuming
+          <span class="text-[#00ff7f] font-semibold"> USD 50 per month</span>. That network would move
+          <span class="font-semibold"> USD 50,000 monthly</span>.
+        </p>
+        <p class="mt-4 text-gray-300 leading-relaxed">
+          From that monthly revenue, you could earn between <span class="font-semibold">3% and 21%</span>.
+          Your income would be between <span class="text-[#00ff7f] font-semibold">USD 1,500 and USD 10,000</span>.
+        </p>
+      </div>
+    </div>
+    `,
+    "oportunity.marketingPower": `
+    <div class="bg-[#00ff7f]/10 p-6 sm:p-8 rounded-2xl shadow-lg mb-16 sm:mb-20 text-center">
+      <p class="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        ✨ And you probably only invited <span class="font-semibold">10 people</span>…
+        The rest multiplied thanks to the <span class="text-[#00ff7f] font-semibold">power of network marketing</span>.
+      </p>
+    </div>
+    `,
+    "oportunity.finalReflection": `
+    <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4">If it took you 2 to 5 years to build it...</h2>
+      <p class="text-base sm:text-lg text-gray-300 mb-4">
+        Would you be interested in discovering the <span class="text-[#00ff7f] font-semibold">step-by-step</span>?
+      </p>
+      <p class="text-base sm:text-lg text-gray-300 mb-4">
+        The best part is this opportunity has no borders: we're present throughout much of
+        <span class="text-[#00ff7f] font-semibold"> Latin America</span>.
+      </p>
+    </div>
+    `,
+
+    // Audios
+
+    "audios.pageTitle": "Audios | Diego Molina | Network Marketing",
+    "audios.pageDescription":
+      "Listen to Diego Molina's audios: tools, inspiration and motivation to boost your personal and professional growth in network marketing.",
+
+    "audios.buttonContact.title": "Want to take the next step?",
+    "audios.buttonContact.subtitle":
+      "If what you heard inspired you, write to me and let's start working together on your growth.",
+    "audios.buttonContact.buttonText": "Let's talk",
+
+    "audios.title": `
+    <h1 class="text-4xl sm:text-5xl font-bold text-center mb-8 pt-6 sm:pt-10">
+      My <span class="text-[#00ff7f]">Audios</span>
+    </h1>
+    `,
+
+    "audios.description": `
+    <div class="max-w-2xl sm:max-w-3xl mx-auto text-center text-gray-300 mb-12 sm:mb-16">
+      <p class="text-base sm:text-lg mb-4">
+        Here you'll find some of my
+        <span class="text-[#00ff7f] font-semibold">featured episodes on Spotify</span>,
+        created to inspire, motivate and help you grow on your journey.
+      </p>
+      <p class="italic text-gray-400 text-sm sm:text-base">
+        “An audio can be the beginning of a great change.”
+      </p>
+    </div>
+    `,
+
+    // Thanks
+
+    "thanks.pageTitle": "Thank you | Diego Molina | Network Marketing",
+    "thanks.pageDescription":
+      "Your message has been sent successfully. I will contact you soon.",
+
+    "thanks.title": "Thank you for your message!",
+    "thanks.description":
+      "Your request was sent successfully and I received it correctly. I will contact you shortly to answer all your questions.",
+    "thanks.redirect": `
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/" class="px-8 py-3 rounded-xl bg-[#00ff7f] text-gray-900 font-semibold shadow-lg hover:bg-[#00e670] transition-colors duration-300">
+        Back to home
+      </a>
+      <a href="/oportunidad" class="px-8 py-3 rounded-xl bg-white/10 text-white font-semibold shadow-lg hover:bg-white/20 transition-colors duration-300">
+        See the opportunity
+      </a>
+    </div>
+    `,
+
+    // Membership
+
+    "membership.pageTitle": "Membership | Diego Molina | Network Marketing",
+    "membership.pageDescription":
+      "With the Amway membership you get access to a world of benefits: quality products in nutrition, personal care, home and beauty, bought directly from the factory with exclusive discounts. You also get the opportunity to start your own digital business with global support and over 60 years of history.",
+
+    "membership.buttonContact.title": "Have questions about how to get started?",
+    "membership.buttonContact.subtitle":
+      "You can write to me and I'll help you step by step to create your Amway account and start your business.",
+    "membership.buttonContact.buttonText": "Contact me",
+
+    "membership.introduction": `
+    <div class="text-center mb-16 pt-10">
+      <h1 class="text-4xl sm:text-6xl font-bold mb-6 leading-tight">
+        Meet <span class="text-[#00ff7f]">Amway</span>
+      </h1>
+      <p
+        class="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed"
+      >
+        Amway is a global company with over 60 years of history, present in more than 100 countries. Its mission is to empower people through entrepreneurship, offering world-class products in nutrition, beauty, home and wellness. Through its business model, thousands of people around the world build sustainable income while developing leadership, skills and personal freedom.
+      </p>
+    </div>
+    `,
+    "membership.hero": `
+    <div class="text-center mb-20">
+      <h2 class="text-4xl sm:text-5xl font-bold mb-6 leading-tight">
+        Why choose <span class="text-[#00ff7f]">Amway</span>?
+      </h2>
+      <p class="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto">
+        Because it's a real opportunity to build <span
+          class="font-semibold text-[#00ff7f]">income</span
+        > and <span class="font-semibold text-[#00ff7f]">freedom</span> long-term.
+        It's not just about selling products: it's about <span class="font-semibold">developing people</span>,
+        <span class="font-semibold">forming leaders</span> and <span class="font-semibold">creating networks with purpose</span>.
+      </p>
+    </div>
+    `,
+    "membership.benefits": `
+    <div class="grid md:grid-cols-2 gap-10 mb-20">
+      <div
+        class="bg-gradient-to-br from-white/10 to-transparent rounded-2xl p-8 shadow-xl hover:scale-[1.02] transition"
+      >
+        <h3 class="text-2xl font-semibold text-[#00ff7f] mb-4">
+          Scalable income
+        </h3>
+        <p>
+          Your effort determines your earnings, not your hours. Build an asset that grows with you.
+        </p>
+      </div>
+      <div
+        class="bg-gradient-to-br from-white/10 to-transparent rounded-2xl p-8 shadow-xl hover:scale-[1.02] transition"
+      >
+        <h3 class="text-2xl font-semibold text-[#00ff7f] mb-4">
+          Constant training
+        </h3>
+        <p>
+          Access mentoring, training and a community of personal and financial growth.
+        </p>
+      </div>
+      <div
+        class="bg-gradient-to-br from-white/10 to-transparent rounded-2xl p-8 shadow-xl hover:scale-[1.02] transition"
+      >
+        <h3 class="text-2xl font-semibold text-[#00ff7f] mb-4">
+          Total flexibility
+        </h3>
+        <p>
+          Work from wherever you want and at your own pace. It's your business, your way.
+        </p>
+      </div>
+      <div
+        class="bg-gradient-to-br from-white/10 to-transparent rounded-2xl p-8 shadow-xl hover:scale-[1.02] transition"
+      >
+        <h3 class="text-2xl font-semibold text-[#00ff7f] mb-4">Real impact</h3>
+        <p>
+          Help others improve their economy and quality of life while building your own success.
+        </p>
+      </div>
+    </div>
+    `,
+    "membership.callToAction": `
+    <div class="text-center mb-20">
+      <h2 class="text-3xl sm:text-4xl font-semibold text-[#00ff7f] mb-4">
+        If you're reading this, there's a reason
+      </h2>
+      <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+        You've already taken the most important step: <span
+          class="font-semibold text-[#00ff7f]">informing yourself</span
+        >. Now it's time to <span class="font-semibold">act</span> and build the future you want.
+      </p>
+    </div> 
+    `,
+    "membership.titleCountry": "Choose your country to register",
+    "membership.farewell": `
+    <div class="text-center mb-20">
+      <h2 class="text-3xl sm:text-4xl font-extrabold mb-4 text-[#00ff7f]">
+        Your story can start today
+      </h2>
+      <p class="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        All big changes start with a decision. Amway is not just an economic opportunity: it's a path of growth, leadership and freedom. If you're willing to learn, work on yourself and help others do the same, this is the right place.
+      </p>
+    </div>
+    `,
 
   }
 }
