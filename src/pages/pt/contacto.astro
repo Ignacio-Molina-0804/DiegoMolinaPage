@@ -173,7 +173,7 @@ const {
     const form = document.getElementById("contactForm");
     const btnWhatsapp = document.getElementById("btnWhatsapp");
 
-    // Botón de WhatsApp
+    // Botão do WhatsApp
     btnWhatsapp?.addEventListener("click", function () {
       const nombre = (document.getElementById("nombre") as HTMLInputElement)
         .value;
@@ -186,15 +186,15 @@ const {
       ).value;
 
       if (!nombre || !email || !telefono || !mensaje) {
-        alert("Por favor, completá todos los campos antes de enviar.");
+        alert("Por favor, preencha todos os campos antes de enviar.");
         return;
       }
 
       const texto = encodeURIComponent(
-        `¡Hola Diego! 👋\n\nMi nombre es *${nombre}*.\nQuería ponerme en contacto contigo para conocerte un poco más y hablar sobre tu propuesta en redes de mercadeo.\n\n📧 Email: ${email}\n📱 Teléfono: ${telefono}\n💬 Mensaje:\n${mensaje}\n\n¡Espero tu respuesta! 🙌`
+        `Olá Diego! 👋\n\nMeu nome é *${nombre}*.\nGostaria de entrar em contato com você para conhecê-lo melhor e conversar sobre sua proposta em marketing de rede.\n\n📧 Email: ${email}\n📱 Telefone: ${telefono}\n💬 Mensagem:\n${mensaje}\n\n Aguardo sua resposta! 🙌`
       );
 
-      const numero = "5492616331357"; // Número del cliente
+      const numero = "5492616331357"; // Número do cliente
       const url = `https://api.whatsapp.com/send?phone=${numero}&text=${texto}`;
       window.open(url, "_blank");
     });
