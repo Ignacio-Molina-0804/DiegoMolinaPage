@@ -169,34 +169,30 @@ const {
     </div>
   </section>
 
-  <script>
-    const form = document.getElementById("contactForm");
-    const btnWhatsapp = document.getElementById("btnWhatsapp");
+<script>
+  const form = document.getElementById("contactForm");
+  const btnWhatsapp = document.getElementById("btnWhatsapp");
 
-    // Botón de WhatsApp
-    btnWhatsapp?.addEventListener("click", function () {
-      const nombre = (document.getElementById("nombre") as HTMLInputElement)
-        .value;
-      const email = (document.getElementById("email") as HTMLInputElement)
-        .value;
-      const telefono = (document.getElementById("telefono") as HTMLInputElement)
-        .value;
-      const mensaje = (
-        document.getElementById("mensaje") as HTMLTextAreaElement
-      ).value;
+  // WhatsApp Button
+  btnWhatsapp?.addEventListener("click", function () {
+    const name = (document.getElementById("nombre") as HTMLInputElement).value;
+    const email = (document.getElementById("email") as HTMLInputElement).value;
+    const phone = (document.getElementById("telefono") as HTMLInputElement).value;
+    const message = (document.getElementById("mensaje") as HTMLTextAreaElement).value;
 
-      if (!nombre || !email || !telefono || !mensaje) {
-        alert("Por favor, completá todos los campos antes de enviar.");
-        return;
-      }
+    if (!name || !email || !phone || !message) {
+      alert("Please fill in all the fields before sending.");
+      return;
+    }
 
-      const texto = encodeURIComponent(
-        `¡Hola Diego! 👋\n\nMi nombre es *${nombre}*.\nQuería ponerme en contacto contigo para conocerte un poco más y hablar sobre tu propuesta en redes de mercadeo.\n\n📧 Email: ${email}\n📱 Teléfono: ${telefono}\n💬 Mensaje:\n${mensaje}\n\n¡Espero tu respuesta! 🙌`
-      );
+    const text = encodeURIComponent(
+      `Hi Diego! 👋\n\nMy name is *${name}*.\nI'd like to get in touch with you to learn more about your network marketing opportunity.\n\n📧 Email: ${email}\n📱 Phone: ${phone}\n💬 Message:\n${message}\n\nLooking forward to your reply! 🙌`
+    );
 
-      const numero = "5492616331357"; // Número del cliente
-      const url = `https://api.whatsapp.com/send?phone=${numero}&text=${texto}`;
-      window.open(url, "_blank");
-    });
-  </script>
+    const number = "5492616331357"; // Client's phone number
+    const url = `https://api.whatsapp.com/send?phone=${number}&text=${text}`;
+    window.open(url, "_blank");
+  });
+</script>
+
 </Layout>
