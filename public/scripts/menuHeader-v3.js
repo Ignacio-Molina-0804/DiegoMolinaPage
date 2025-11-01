@@ -6,21 +6,43 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileNav = document.getElementById("mobile-nav-links");
   const logoLink = document.getElementById("logo-link");
 
-  const isPT = window.location.pathname.startsWith("/pt");
-  const base = isPT ? "/pt" : "";
+  // Detectar idioma actual según ruta
+  const path = window.location.pathname;
+  const isPT = path.startsWith("/pt");
+  const isEN = path.startsWith("/en");
+  const base = isPT ? "/pt" : isEN ? "/en" : "";
 
-  if (currentLang) currentLang.textContent = isPT ? "PT" : "ES";
+  // Mostrar idioma actual
+  if (currentLang)
+    currentLang.textContent = isPT ? "PT" : isEN ? "EN" : "ES";
+
   if (logoLink) logoLink.href = base + "/";
 
+  // Links de navegación traducidos
   const links = [
-    { href: "/", label: isPT ? "Início" : "Inicio" },
-    { href: "/sobre-mi", label: isPT ? "Sobre mim" : "Sobre mí" },
-    { href: "/oportunidad", label: isPT ? "Oportunidade" : "Oportunidad" },
-    { href: "/audios", label: isPT ? "Áudios" : "Audios" },
-    { href: "/contacto", label: isPT ? "Contato" : "Contacto" },
+    {
+      href: "/",
+      label: isPT ? "Início" : isEN ? "Home" : "Inicio",
+    },
+    {
+      href: "/sobre-mi",
+      label: isPT ? "Sobre mim" : isEN ? "About me" : "Sobre mí",
+    },
+    {
+      href: "/oportunidad",
+      label: isPT ? "Oportunidade" : isEN ? "Opportunity" : "Oportunidad",
+    },
+    {
+      href: "/audios",
+      label: isPT ? "Áudios" : isEN ? "Audios" : "Audios",
+    },
+    {
+      href: "/contacto",
+      label: isPT ? "Contato" : isEN ? "Contact" : "Contacto",
+    },
   ];
 
-  // Render desktop nav
+  // --- Render menú desktop ---
   if (desktopNav) {
     desktopNav.innerHTML = links
       .map(
@@ -30,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .join("");
   }
 
-  // Render mobile nav
+  // --- Render menú móvil ---
   if (mobileNav) {
     mobileNav.innerHTML = links
       .map(
@@ -40,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .join("");
   }
 
-// --- Control del menú de idioma ---
+  // --- Control del menú de idioma ---
   langBtn?.addEventListener("click", (e) => {
     e.stopPropagation();
     langMenu?.classList.toggle("hidden");
@@ -48,26 +70,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.addEventListener("click", () => langMenu?.classList.add("hidden"));
 
-  // Detectar ruta actual
-  const currentPath = window.location.pathname;
+  // Calcular rutas equivalentes en otros idiomas
+  const cleanPath = path.replace(/^\/(pt|en)/, ""); // limpia el idioma actual, deja solo "/algo"
+  const pathInES = cleanPath || "/";
+  const pathInPT = "/pt" + (cleanPath === "/" ? "" : cleanPath);
+  const pathInEN = "/en" + (cleanPath === "/" ? "" : cleanPath);
 
-  // Calcular versión en otro idioma
-  const pathInPT = currentPath.startsWith("/pt")
-    ? currentPath // ya en PT
-    : "/pt" + (currentPath === "/" ? "" : currentPath);
-  const pathInES = currentPath.startsWith("/pt")
-    ? currentPath.replace(/^\/pt/, "") || "/"
-    : currentPath;
 
-  // Actualizar links del menú de idioma dinámicamente
+  // Actualizar menú de idiomas dinámico
   if (langMenu) {
     langMenu.innerHTML = `
       <a href="${pathInES}" class="block px-3 py-2 hover:bg-[#00ff7f]/20 transition">Español</a>
       <a href="${pathInPT}" class="block px-3 py-2 hover:bg-[#00ff7f]/20 transition">Português</a>
+      <a href="${pathInEN}" class="block px-3 py-2 hover:bg-[#00ff7f]/20 transition">English</a>
     `;
   }
 
-  // --- Tu parte del botón hamburguesa ---
+  // --- Botón hamburguesa ---
   const menuBtn = document.getElementById("menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
   const line1 = menuBtn?.querySelector(".line1");
