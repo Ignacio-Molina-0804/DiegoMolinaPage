@@ -1147,7 +1147,7 @@ export const labels = {
         <!-- Cards -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">
           <!-- ABOUT ME -->
-          <a href="/sobre-mi"
+          <a href="/en/sobre-mi"
           class="pulse-card block p-6 rounded-xl shadow bg-white/5 border border-[#00ff7f]/50 hover:scale-105 transition">
             <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-[#00ff7f]">About Me</h3>
             <p>
@@ -1157,7 +1157,7 @@ export const labels = {
           </a>
 
           <!-- OPPORTUNITY -->
-          <a href="/oportunidad"
+          <a href="/en/oportunidad"
           class="pulse-card block p-6 rounded-xl shadow-lg hover:scale-105 transition
           bg-gradient-to-br from-[#00ff7f]/20 to-[#00ff7f]/5
           border border-[#00ff7f]/50 ring-1 sm:ring-2 ring-[#00ff7f]/30
@@ -1170,7 +1170,7 @@ export const labels = {
           </a>
 
           <!-- INSPIRATION -->
-          <a href="/audios"
+          <a href="/en/audios"
             class="pulse-card block p-6 rounded-xl shadow bg-white/5 border border-[#00ff7f]/50 hover:scale-105 transition">
             <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-[#00ff7f]">Inspiration</h3>
             <p>
