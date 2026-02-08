@@ -1,0 +1,182 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const valorPuntoDefault = 1;
+const meses = Array.from({ length: 12 }, (_, i) => i + 1);
+---
+
+<Layout
+  title="Simulador de Negocios"
+  description="Calculadora comparativa de crecimiento de negocio"
+>
+  <div class="container mx-auto px-4 py-12 max-w-6xl">
+    <h1
+      class="text-6xl font-bold text-center mb-12 text-primary-500 font-poppins mt-20"
+    >
+      Simulador de Proyección
+    </h1>
+
+    <!-- Global Settings -->
+    <div class="flexjustify-center mb-12">
+      <div
+        class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 flex items-center gap-4 mx-auto w-fit"
+      >
+        <label for="valorPunto" class="font-bold text-xl text-[#25D366]"
+          >$</label
+        >
+        <input
+          type="number"
+          id="valorPunto"
+          value={valorPuntoDefault}
+          class="bg-[#25D366] text-black font-bold text-xl px-4 py-2 rounded w-32 text-center focus:outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all"
+        />
+        <label for="valorPunto" class="font-bold text-xl text-white"
+          >Valor PUNTO</label
+        >
+      </div>
+    </div>
+
+    <!-- Comparativa Grid -->
+    <div class="grid md:grid-cols-2 gap-8 text-white relative">
+      <!-- Divider (Desktop only) -->
+      <div
+        class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gray-600 transform -translate-x-1/2"
+      >
+      </div>
+
+      <!-- Escenario 1 -->
+      <div class="scenario-container" id="scenario-1">
+        <h2 class="text-2xl font-bold mb-6 text-center text-green-400">
+          ESCENARIO A
+        </h2>
+
+        <div
+          class="flex flex-col gap-4 mb-8 bg-gray-800 p-6 rounded-xl border border-gray-700"
+        >
+          <div class="flex items-center justify-between">
+            <input
+              type="number"
+              id="nuevos-1"
+              value="1"
+              min="1"
+              max="5"
+              class="scenario-input bg-[#25D366] text-black font-bold text-lg px-3 py-1 rounded w-24 text-center focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            />
+            <span class="font-semibold text-gray-300">NUEVO / MES</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-gray-400 text-sm"
+              >Crecimiento geométrico base</span
+            >
+            <span class="font-mono text-green-400"
+              >x<span id="factor-display-1">2</span></span
+            >
+          </div>
+          <div class="flex items-center justify-between">
+            <input
+              type="number"
+              id="promedio-1"
+              value="300"
+              class="scenario-input bg-[#25D366] text-black font-bold text-lg px-3 py-1 rounded w-24 text-center focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            />
+            <span class="font-semibold text-gray-300">PUNTOS PROMEDIO</span>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto rounded-xl border border-gray-700">
+          <table class="w-full text-center">
+            <thead class="bg-gray-700 text-gray-200 uppercase text-sm">
+              <tr>
+                <th class="py-3 px-2 text-center border-r border-gray-700"
+                  >Mes</th
+                >
+                <th class="py-3 px-2 text-center border-r border-gray-700"
+                  >Socios</th
+                >
+                <th class="py-3 px-2 text-center border-r border-gray-700"
+                  >Volumen</th
+                >
+                <th class="py-3 px-2 text-center text-green-400"
+                  >Ganancia (5%)</th
+                >
+              </tr>
+            </thead>
+            <tbody
+              id="table-body-1"
+              class="bg-gray-800/50 divide-y divide-gray-700"
+            >
+              <!-- JS will populate -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Escenario 2 -->
+      <div class="scenario-container" id="scenario-2">
+        <h2 class="text-2xl font-bold mb-6 text-center text-[#25D366]">
+          COMPARATIVA (B)
+        </h2>
+
+        <div
+          class="flex flex-col gap-4 mb-8 bg-gray-800 p-6 rounded-xl border border-gray-700"
+        >
+          <div class="flex items-center justify-between">
+            <input
+              type="number"
+              id="nuevos-2"
+              value="3"
+              min="1"
+              max="5"
+              class="scenario-input bg-[#25D366] text-black font-bold text-lg px-3 py-1 rounded w-24 text-center focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            />
+            <span class="font-semibold text-gray-300">NUEVO / MES</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-gray-400 text-sm"
+              >Crecimiento geométrico base</span
+            >
+            <span class="font-mono text-[#25D366]"
+              >x<span id="factor-display-2">4</span></span
+            >
+          </div>
+          <div class="flex items-center justify-between">
+            <input
+              type="number"
+              id="promedio-2"
+              value="10"
+              class="scenario-input bg-[#25D366] text-black font-bold text-lg px-3 py-1 rounded w-24 text-center focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            />
+            <span class="font-semibold text-gray-300">PUNTOS PROMEDIO</span>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto rounded-xl border border-gray-700">
+          <table class="w-full text-center">
+            <thead class="bg-gray-700 text-gray-200 uppercase text-sm">
+              <tr>
+                <th class="py-3 px-2 text-center border-r border-gray-700"
+                  >Mes</th
+                >
+                <th class="py-3 px-2 text-right border-r border-gray-700"
+                  >Socios</th
+                >
+                <th class="py-3 px-2 text-right border-r border-gray-700"
+                  >Volumen</th
+                >
+                <th class="py-3 px-2 text-green-400">Valor ($)</th>
+              </tr>
+            </thead>
+            <tbody
+              id="table-body-2"
+              class="bg-gray-800/50 divide-y divide-gray-700"
+            >
+              <!-- JS will populate -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script src="/scripts/simuladorScript.js" defer></script>
