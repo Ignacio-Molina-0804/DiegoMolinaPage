@@ -16,8 +16,8 @@ function calculateScenario(id) {
   let nuevosPorMes =
     parseFloat(document.getElementById(`nuevos-${id}`).value) || 0;
 
-  // Clamp to 1-5
-  if (nuevosPorMes < 1) nuevosPorMes = 1;
+  // Clamp to 0-5
+  if (nuevosPorMes < 0) nuevosPorMes = 0;
   if (nuevosPorMes > 5) nuevosPorMes = 5;
   const puntosPromedio =
     parseFloat(document.getElementById(`promedio-${id}`).value) || 0;
