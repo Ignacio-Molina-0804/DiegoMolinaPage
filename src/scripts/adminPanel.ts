@@ -334,12 +334,20 @@ function renderVentas(filtro = "") {
     });
     const clienteTag = v.clientes ? v.clientes.nombre : "Cliente Borrado";
 
+    let sumDetalles = 0;
     let detalleHtml = "";
     if (v.venta_detalles && v.venta_detalles.length > 0) {
       v.venta_detalles.forEach((d: any) => {
         const prodName = d.productos ? d.productos.nombre : "Prod. Borrado";
-        detalleHtml += `<div class="flex justify-between bg-black/40 p-3 rounded-lg border border-white/5 mb-2"><span class="font-medium flex items-center gap-2"><span class="bg-white/10 px-2 py-0.5 rounded text-xs">${d.cantidad}x</span> ${prodName}</span> <span class="text-[#00ff7f] font-mono">${formatearDinero(d.precio_historico * d.cantidad)}</span></div>`;
+        const subdet = d.precio_historico * d.cantidad;
+        sumDetalles += subdet;
+        detalleHtml += `<div class="flex justify-between bg-black/40 p-3 rounded-lg border border-white/5 mb-2"><span class="font-medium flex items-center gap-2"><span class="bg-white/10 px-2 py-0.5 rounded text-xs">${d.cantidad}x</span> ${prodName}</span> <span class="text-[#00ff7f] font-mono">${formatearDinero(subdet)}</span></div>`;
       });
+    }
+
+    const envio = parseFloat(v.total) - sumDetalles;
+    if (envio > 0) {
+      detalleHtml += `<div class="flex justify-between bg-white/5 p-3 rounded-lg border border-[#00ff7f]/20 mt-2"><span class="font-medium flex items-center gap-2"><span class="bg-[#00ff7f] text-black font-bold px-2 py-0.5 rounded text-xs">ENVÍO</span></span> <span class="text-[#00ff7f] font-mono">+${formatearDinero(envio)}</span></div>`;
     }
 
     const botonOjo = `<button onclick="verDetalle('${encodeURIComponent(detalleHtml)}')" class="text-[#00ff7f] bg-[#00ff7f]/10 hover:bg-[#00ff7f]/20 hover:scale-105 px-3 py-1.5 rounded-lg text-sm transition-all font-medium flex items-center gap-1.5 border border-[#00ff7f]/20">${svgEye()} Ver</button>`;
@@ -394,8 +402,19 @@ function renderCarrito() {
       </li>
     `;
   });
+
+  const envioInput = document.getElementById("v-envio") as HTMLInputElement | null;
+  if (envioInput && envioInput.value) {
+    const envioNum = parseFloat(envioInput.value);
+    if (!isNaN(envioNum) && envioNum > 0) {
+      sum += envioNum;
+    }
+  }
+
   totalEl.textContent = formatearDinero(sum);
 }
+
+document.getElementById("v-envio")?.addEventListener("input", renderCarrito);
 
 window.quitarDelCarrito = function (index) {
   carritoVenta.splice(index, 1);
@@ -444,7 +463,14 @@ document.getElementById("btn-finalizar-venta")?.addEventListener("click", async 
     btn.disabled = true;
   }
 
-  const totalCalculado = carritoVenta.reduce((acc, item) => acc + item.subtotal, 0);
+  let totalCalculado = carritoVenta.reduce((acc, item) => acc + item.subtotal, 0);
+  const envioInput = document.getElementById("v-envio") as HTMLInputElement | null;
+  if (envioInput && envioInput.value) {
+    const envioNum = parseFloat(envioInput.value);
+    if (!isNaN(envioNum) && envioNum > 0) {
+      totalCalculado += envioNum;
+    }
+  }
 
   const { data: vData, error: vErr } = await supabase
     .from("ventas")
@@ -475,6 +501,9 @@ document.getElementById("btn-finalizar-venta")?.addEventListener("click", async 
 
   carritoVenta = [];
   (document.getElementById("v-cliente") as HTMLSelectElement).value = "";
+let envioInputRef = document.getElementById("v-envio") as HTMLInputElement | null;
+  if(envioInputRef) envioInputRef.value = "";
+  
   renderCarrito();
   await cargarVentas();
 
